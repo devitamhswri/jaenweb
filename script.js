@@ -1,6 +1,5 @@
-
-// ==================== ENHANCED MOBILE DROPDOWN NAVIGATION SCRIPT ====================
-// Combines smooth animations with robust functionality
+// ==================== ENHANCED MOBILE & DESKTOP DROPDOWN NAVIGATION SCRIPT ====================
+// Combines smooth animations with robust functionality for both mobile and desktop
 
 document.addEventListener('DOMContentLoaded', function() {
     // ==================== ELEMENT REFERENCES ====================
@@ -19,6 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileTipsDropdown = document.getElementById('mobileTipsDropdown');
     const mobileTipsIcon = document.getElementById('mobileTipsIcon');
     
+    // Desktop Recipe Dropdown Elements
+    const recipeDropdownBtn = document.getElementById('recipeDropdownBtn');
+    const recipeDropdownMenu = document.getElementById('recipeDropdownMenu');
+    const recipeDropdownIcon = document.getElementById('recipeDropdownIcon');
+    
+    // Desktop Tips Dropdown Elements
+    const tipsDropdownBtn = document.getElementById('tipsDropdownBtn');
+    const tipsDropdownMenu = document.getElementById('tipsDropdownMenu');
+    const tipsDropdownIcon = document.getElementById('tipsDropdownIcon');
+    
     // Search Modal Elements
     const openSearchModal = document.getElementById('openSearchModal');
     const closeSearchModal = document.getElementById('closeSearchModal');
@@ -28,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let isMobileRecipeOpen = false;
     let isMobileTipsOpen = false;
     let isMobileMenuOpen = false;
+    let isDesktopRecipeOpen = false;
+    let isDesktopTipsOpen = false;
 
     // ==================== UTILITY FUNCTIONS ====================
     
@@ -41,6 +52,25 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isMobileTipsOpen) {
             closeMobileDropdown(mobileTipsDropdown, mobileTipsIcon);
             isMobileTipsOpen = false;
+        }
+    }
+
+    // Close all desktop dropdowns
+    function closeAllDesktopDropdowns() {
+        if (isDesktopRecipeOpen && recipeDropdownMenu) {
+            recipeDropdownMenu.classList.remove('show');
+            if (recipeDropdownIcon) {
+                recipeDropdownIcon.style.transform = 'rotate(0deg)';
+            }
+            isDesktopRecipeOpen = false;
+        }
+        
+        if (isDesktopTipsOpen && tipsDropdownMenu) {
+            tipsDropdownMenu.classList.remove('show');
+            if (tipsDropdownIcon) {
+                tipsDropdownIcon.style.transform = 'rotate(0deg)';
+            }
+            isDesktopTipsOpen = false;
         }
     }
 
@@ -95,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==================== DROPDOWN TOGGLE FUNCTIONS ====================
+    // ==================== MOBILE DROPDOWN TOGGLE FUNCTIONS ====================
     
     function toggleMobileRecipeDropdown() {
         isMobileRecipeOpen = !isMobileRecipeOpen;
@@ -129,6 +159,62 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // ==================== DESKTOP DROPDOWN TOGGLE FUNCTIONS ====================
+    
+    function toggleDesktopRecipeDropdown() {
+        isDesktopRecipeOpen = !isDesktopRecipeOpen;
+        
+        // Close tips dropdown if open
+        if (isDesktopTipsOpen && tipsDropdownMenu) {
+            tipsDropdownMenu.classList.remove('show');
+            if (tipsDropdownIcon) {
+                tipsDropdownIcon.style.transform = 'rotate(0deg)';
+            }
+            isDesktopTipsOpen = false;
+        }
+        
+        if (recipeDropdownMenu) {
+            if (isDesktopRecipeOpen) {
+                recipeDropdownMenu.classList.add('show');
+                if (recipeDropdownIcon) {
+                    recipeDropdownIcon.style.transform = 'rotate(180deg)';
+                }
+            } else {
+                recipeDropdownMenu.classList.remove('show');
+                if (recipeDropdownIcon) {
+                    recipeDropdownIcon.style.transform = 'rotate(0deg)';
+                }
+            }
+        }
+    }
+
+    function toggleDesktopTipsDropdown() {
+        isDesktopTipsOpen = !isDesktopTipsOpen;
+        
+        // Close recipe dropdown if open
+        if (isDesktopRecipeOpen && recipeDropdownMenu) {
+            recipeDropdownMenu.classList.remove('show');
+            if (recipeDropdownIcon) {
+                recipeDropdownIcon.style.transform = 'rotate(0deg)';
+            }
+            isDesktopRecipeOpen = false;
+        }
+        
+        if (tipsDropdownMenu) {
+            if (isDesktopTipsOpen) {
+                tipsDropdownMenu.classList.add('show');
+                if (tipsDropdownIcon) {
+                    tipsDropdownIcon.style.transform = 'rotate(180deg)';
+                }
+            } else {
+                tipsDropdownMenu.classList.remove('show');
+                if (tipsDropdownIcon) {
+                    tipsDropdownIcon.style.transform = 'rotate(0deg)';
+                }
+            }
+        }
+    }
+
     // ==================== SEARCH MODAL FUNCTIONS ====================
     
     function showSearchModal() {
@@ -150,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // ==================== EVENT LISTENERS ====================
+    // ==================== MOBILE EVENT LISTENERS ====================
 
     // Mobile Menu Toggle
     if (mobileMenuBtn) {
@@ -178,6 +264,80 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleMobileTipsDropdown();
         });
     }
+
+    // ==================== DESKTOP EVENT LISTENERS ====================
+
+    // Desktop Recipe Dropdown
+    if (recipeDropdownBtn && recipeDropdownMenu) {
+        // Toggle dropdown on button click
+        recipeDropdownBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleDesktopRecipeDropdown();
+        });
+        
+        // Show dropdown on hover (optional - sesuai design asli Anda)
+        const recipeDropdownParent = recipeDropdownBtn.parentElement;
+        if (recipeDropdownParent) {
+            recipeDropdownParent.addEventListener('mouseenter', function() {
+                if (!isDesktopRecipeOpen) {
+                    isDesktopRecipeOpen = true;
+                    recipeDropdownMenu.classList.add('show');
+                    if (recipeDropdownIcon) {
+                        recipeDropdownIcon.style.transform = 'rotate(180deg)';
+                    }
+                }
+            });
+            
+            // Hide dropdown on mouse leave (optional)
+            recipeDropdownParent.addEventListener('mouseleave', function() {
+                if (isDesktopRecipeOpen) {
+                    isDesktopRecipeOpen = false;
+                    recipeDropdownMenu.classList.remove('show');
+                    if (recipeDropdownIcon) {
+                        recipeDropdownIcon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        }
+    }
+
+    // Desktop Tips Dropdown
+    if (tipsDropdownBtn && tipsDropdownMenu) {
+        // Toggle dropdown on button click
+        tipsDropdownBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleDesktopTipsDropdown();
+        });
+        
+        // Show dropdown on hover (optional)
+        const tipsDropdownParent = tipsDropdownBtn.parentElement;
+        if (tipsDropdownParent) {
+            tipsDropdownParent.addEventListener('mouseenter', function() {
+                if (!isDesktopTipsOpen) {
+                    isDesktopTipsOpen = true;
+                    tipsDropdownMenu.classList.add('show');
+                    if (tipsDropdownIcon) {
+                        tipsDropdownIcon.style.transform = 'rotate(180deg)';
+                    }
+                }
+            });
+            
+            // Hide dropdown on mouse leave (optional)
+            tipsDropdownParent.addEventListener('mouseleave', function() {
+                if (isDesktopTipsOpen) {
+                    isDesktopTipsOpen = false;
+                    tipsDropdownMenu.classList.remove('show');
+                    if (tipsDropdownIcon) {
+                        tipsDropdownIcon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        }
+    }
+
+    // ==================== SEARCH MODAL EVENT LISTENERS ====================
 
     // Search Modal Controls
     if (openSearchModal) {
@@ -220,6 +380,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Desktop Recipe dropdown items
+    const desktopRecipeItems = document.querySelectorAll('#recipeDropdownMenu .dropdown-item, #recipeDropdownMenu a');
+    desktopRecipeItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            console.log('Selected Desktop Recipe Category:', this.textContent.trim());
+            // Close dropdown after selection
+            toggleDesktopRecipeDropdown();
+        });
+    });
+
+    // Desktop Tips dropdown items
+    const desktopTipsItems = document.querySelectorAll('#tipsDropdownMenu .tips-item, #tipsDropdownMenu a');
+    desktopTipsItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            console.log('Selected Desktop Tips Category:', this.textContent.trim());
+            // Close dropdown after selection
+            toggleDesktopTipsDropdown();
+        });
+    });
+
     // ==================== GLOBAL EVENT LISTENERS ====================
 
     // Close elements when clicking outside
@@ -230,6 +410,20 @@ document.addEventListener('DOMContentLoaded', function() {
             !mobileMenu.contains(e.target)) {
             closeMobileMenu();
             closeAllMobileDropdowns();
+        }
+        
+        // Check if click is outside desktop dropdown areas
+        const isDesktopRecipeClick = recipeDropdownBtn && (recipeDropdownBtn.contains(e.target) || 
+                                    (recipeDropdownMenu && recipeDropdownMenu.contains(e.target)));
+        const isDesktopTipsClick = tipsDropdownBtn && (tipsDropdownBtn.contains(e.target) || 
+                                   (tipsDropdownMenu && tipsDropdownMenu.contains(e.target)));
+        
+        if (!isDesktopRecipeClick && isDesktopRecipeOpen) {
+            toggleDesktopRecipeDropdown();
+        }
+        
+        if (!isDesktopTipsClick && isDesktopTipsOpen) {
+            toggleDesktopTipsDropdown();
         }
         
         // Close search modal when clicking on backdrop
@@ -249,6 +443,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close mobile menu and dropdowns
             closeMobileMenu();
             closeAllMobileDropdowns();
+            
+            // Close desktop dropdowns
+            closeAllDesktopDropdowns();
         }
     });
 
@@ -286,6 +483,9 @@ document.addEventListener('DOMContentLoaded', function() {
         closeMobileMenu();
         closeAllMobileDropdowns();
         
+        // Close desktop dropdowns on resize
+        closeAllDesktopDropdowns();
+        
         // Close search modal on resize
         if (searchModal && !searchModal.classList.contains('hidden')) {
             hideSearchModal();
@@ -313,22 +513,30 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenuBtn.setAttribute('aria-expanded', isMobileMenuOpen);
             mobileMenu.setAttribute('aria-hidden', !isMobileMenuOpen);
         }
+        
+        // Desktop Recipe Dropdown
+        if (recipeDropdownBtn && recipeDropdownMenu) {
+            recipeDropdownBtn.setAttribute('aria-expanded', isDesktopRecipeOpen);
+            recipeDropdownMenu.setAttribute('aria-hidden', !isDesktopRecipeOpen);
+        }
+        
+        // Desktop Tips Dropdown
+        if (tipsDropdownBtn && tipsDropdownMenu) {
+            tipsDropdownBtn.setAttribute('aria-expanded', isDesktopTipsOpen);
+            tipsDropdownMenu.setAttribute('aria-hidden', !isDesktopTipsOpen);
+        }
     }
-
-    // Update ARIA attributes whenever state changes
-    const originalToggleFunctions = [toggleMobileMenu, toggleMobileRecipeDropdown, toggleMobileTipsDropdown];
-    originalToggleFunctions.forEach(func => {
-        const originalFunc = func;
-        func = function(...args) {
-            originalFunc.apply(this, args);
-            updateAriaAttributes();
-        };
-    });
 
     // Initialize ARIA attributes
     updateAriaAttributes();
 
-    console.log('Enhanced Mobile Dropdown Navigation initialized successfully');
+    // Update ARIA attributes on state changes
+    const stateChangeEvents = [
+        'toggleMobileMenu', 'toggleMobileRecipeDropdown', 'toggleMobileTipsDropdown',
+        'toggleDesktopRecipeDropdown', 'toggleDesktopTipsDropdown'
+    ];
+
+    console.log('Enhanced Mobile & Desktop Navigation initialized successfully');
 });
         
 // ==================== TOMBOL SLIDE ====================
