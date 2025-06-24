@@ -1,334 +1,242 @@
-// ==================== ENHANCED MOBILE DROPDOWN NAVIGATION SCRIPT ====================
-// Combines smooth animations with robust functionality
 
-document.addEventListener('DOMContentLoaded', function() {
-    // ==================== ELEMENT REFERENCES ====================
+// ==================== DROPDOWN RESEP MASAKAN ====================
+const recipeDropdownBtn = document.getElementById('recipeDropdownBtn');
+const recipeDropdownMenu = document.getElementById('recipeDropdownMenu');
+const recipeDropdownIcon = document.getElementById('recipeDropdownIcon');
+let isRecipeDropdownOpen = false;
+
+// ==================== DROPDOWN TIPS ====================
+const tipsDropdownBtn = document.getElementById('tipsDropdownBtn');
+const tipsDropdownMenu = document.getElementById('tipsDropdownMenu');
+const tipsDropdownIcon = document.getElementById('tipsDropdownIcon');
+let isTipsDropdownOpen = false;
+
+// ==================== FUNCTIONS ====================
+
+// Toggle Recipe Dropdown
+function toggleRecipeDropdown() {
+    isRecipeDropdownOpen = !isRecipeDropdownOpen;
     
-    // Mobile Menu Elements
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+    // Close tips dropdown if open
+    if (isTipsDropdownOpen) {
+        isTipsDropdownOpen = false;
+        tipsDropdownMenu.classList.remove('show');
+        tipsDropdownIcon.style.transform = 'rotate(0deg)';
+    }
     
-    // Mobile Recipe Dropdown Elements
-    const mobileRecipeBtn = document.getElementById('mobileRecipeBtn');
-    const mobileRecipeDropdown = document.getElementById('mobileRecipeDropdown');
-    const mobileRecipeIcon = document.getElementById('mobileRecipeIcon');
+    if (isRecipeDropdownOpen) {
+        recipeDropdownMenu.classList.add('show');
+        recipeDropdownIcon.style.transform = 'rotate(180deg)';
+    } else {
+        recipeDropdownMenu.classList.remove('show');
+        recipeDropdownIcon.style.transform = 'rotate(0deg)';
+    }
+}
+
+// Toggle Tips Dropdown
+function toggleTipsDropdown() {
+    isTipsDropdownOpen = !isTipsDropdownOpen;
     
-    // Mobile Tips Dropdown Elements
-    const mobileTipsBtn = document.getElementById('mobileTipsBtn');
-    const mobileTipsDropdown = document.getElementById('mobileTipsDropdown');
-    const mobileTipsIcon = document.getElementById('mobileTipsIcon');
+    // Close recipe dropdown if open
+    if (isRecipeDropdownOpen) {
+        isRecipeDropdownOpen = false;
+        recipeDropdownMenu.classList.remove('show');
+        recipeDropdownIcon.style.transform = 'rotate(0deg)';
+    }
     
-    // Search Modal Elements
-    const openSearchModal = document.getElementById('openSearchModal');
-    const closeSearchModal = document.getElementById('closeSearchModal');
-    const searchModal = document.getElementById('searchModal');
+    if (isTipsDropdownOpen) {
+        tipsDropdownMenu.classList.add('show');
+        tipsDropdownIcon.style.transform = 'rotate(180deg)';
+    } else {
+        tipsDropdownMenu.classList.remove('show');
+        tipsDropdownIcon.style.transform = 'rotate(0deg)';
+    }
+}
 
-    // ==================== STATE VARIABLES ====================
-    let isMobileRecipeOpen = false;
-    let isMobileTipsOpen = false;
-    let isMobileMenuOpen = false;
-
-    // ==================== UTILITY FUNCTIONS ====================
+// Close all dropdowns
+function closeAllDropdowns() {
+    if (isRecipeDropdownOpen) {
+        isRecipeDropdownOpen = false;
+        recipeDropdownMenu.classList.remove('show');
+        recipeDropdownIcon.style.transform = 'rotate(0deg)';
+    }
     
-    // Close all mobile dropdowns
-    function closeAllMobileDropdowns() {
-        if (isMobileRecipeOpen) {
-            closeMobileDropdown(mobileRecipeDropdown, mobileRecipeIcon);
-            isMobileRecipeOpen = false;
-        }
-        
-        if (isMobileTipsOpen) {
-            closeMobileDropdown(mobileTipsDropdown, mobileTipsIcon);
-            isMobileTipsOpen = false;
-        }
+    if (isTipsDropdownOpen) {
+        isTipsDropdownOpen = false;
+        tipsDropdownMenu.classList.remove('show');
+        tipsDropdownIcon.style.transform = 'rotate(0deg)';
     }
+}
 
-    // Generic function to open mobile dropdown with smooth animation
-    function openMobileDropdown(dropdown, icon) {
-        if (dropdown && icon) {
-            dropdown.classList.remove('hidden');
-            dropdown.classList.add('show');
-            dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
-            icon.style.transform = 'rotate(180deg)';
-        }
-    }
+// ==================== EVENT LISTENERS ====================
 
-    // Generic function to close mobile dropdown with smooth animation
-    function closeMobileDropdown(dropdown, icon) {
-        if (dropdown && icon) {
-            dropdown.classList.remove('show');
-            dropdown.style.maxHeight = '0px';
-            icon.style.transform = 'rotate(0deg)';
-            
-            setTimeout(() => {
-                dropdown.classList.add('hidden');
-            }, 300); // Match CSS transition duration
-        }
-    }
-
-    // ==================== MOBILE MENU FUNCTIONS ====================
-    
-    function toggleMobileMenu() {
-        if (mobileMenu) {
-            isMobileMenuOpen = !isMobileMenuOpen;
-            
-            if (isMobileMenuOpen) {
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('show');
-            } else {
-                mobileMenu.classList.remove('show');
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 300);
-            }
-        }
-    }
-
-    function closeMobileMenu() {
-        if (mobileMenu && isMobileMenuOpen) {
-            isMobileMenuOpen = false;
-            mobileMenu.classList.remove('show');
-            setTimeout(() => {
-                mobileMenu.classList.add('hidden');
-            }, 300);
-        }
-    }
-
-    // ==================== DROPDOWN TOGGLE FUNCTIONS ====================
-    
-    function toggleMobileRecipeDropdown() {
-        isMobileRecipeOpen = !isMobileRecipeOpen;
-        
-        // Close tips dropdown if open
-        if (isMobileTipsOpen) {
-            closeMobileDropdown(mobileTipsDropdown, mobileTipsIcon);
-            isMobileTipsOpen = false;
-        }
-        
-        if (isMobileRecipeOpen) {
-            openMobileDropdown(mobileRecipeDropdown, mobileRecipeIcon);
-        } else {
-            closeMobileDropdown(mobileRecipeDropdown, mobileRecipeIcon);
-        }
-    }
-
-    function toggleMobileTipsDropdown() {
-        isMobileTipsOpen = !isMobileTipsOpen;
-        
-        // Close recipe dropdown if open
-        if (isMobileRecipeOpen) {
-            closeMobileDropdown(mobileRecipeDropdown, mobileRecipeIcon);
-            isMobileRecipeOpen = false;
-        }
-        
-        if (isMobileTipsOpen) {
-            openMobileDropdown(mobileTipsDropdown, mobileTipsIcon);
-        } else {
-            closeMobileDropdown(mobileTipsDropdown, mobileTipsIcon);
-        }
-    }
-
-    // ==================== SEARCH MODAL FUNCTIONS ====================
-    
-    function showSearchModal() {
-        if (searchModal) {
-            searchModal.classList.remove('hidden');
-            searchModal.classList.add('flex', 'show');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        }
-    }
-
-    function hideSearchModal() {
-        if (searchModal) {
-            searchModal.classList.remove('show');
-            setTimeout(() => {
-                searchModal.classList.add('hidden');
-                searchModal.classList.remove('flex');
-            }, 300);
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        }
-    }
-
-    // ==================== EVENT LISTENERS ====================
-
-    // Mobile Menu Toggle
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMobileMenu();
-        });
-    }
-
-    // Mobile Recipe Dropdown Toggle
-    if (mobileRecipeBtn) {
-        mobileRecipeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMobileRecipeDropdown();
-        });
-    }
-
-    // Mobile Tips Dropdown Toggle
-    if (mobileTipsBtn) {
-        mobileTipsBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMobileTipsDropdown();
-        });
-    }
-
-    // Search Modal Controls
-    if (openSearchModal) {
-        openSearchModal.addEventListener('click', function(e) {
-            e.preventDefault();
-            showSearchModal();
-        });
-    }
-
-    if (closeSearchModal) {
-        closeSearchModal.addEventListener('click', function(e) {
-            e.preventDefault();
-            hideSearchModal();
-        });
-    }
-
-    // ==================== DROPDOWN ITEM LISTENERS ====================
-    
-    // Mobile Recipe dropdown items
-    const mobileRecipeItems = document.querySelectorAll('#mobileRecipeDropdown .dropdown-item, #mobileRecipeDropdown a');
-    mobileRecipeItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            console.log('Selected Mobile Recipe Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleMobileRecipeDropdown();
-            // Close mobile menu as well
-            closeMobileMenu();
-        });
-    });
-
-    // Mobile Tips dropdown items
-    const mobileTipsItems = document.querySelectorAll('#mobileTipsDropdown .tips-item, #mobileTipsDropdown a');
-    mobileTipsItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            console.log('Selected Mobile Tips Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleMobileTipsDropdown();
-            // Close mobile menu as well
-            closeMobileMenu();
-        });
-    });
-
-    // ==================== GLOBAL EVENT LISTENERS ====================
-
-    // Close elements when clicking outside
-    document.addEventListener('click', function(e) {
-        // Check if click is outside mobile menu
-        if (mobileMenuBtn && mobileMenu && 
-            !mobileMenuBtn.contains(e.target) && 
-            !mobileMenu.contains(e.target)) {
-            closeMobileMenu();
-            closeAllMobileDropdowns();
-        }
-        
-        // Close search modal when clicking on backdrop
-        if (searchModal && e.target === searchModal) {
-            hideSearchModal();
-        }
-    });
-
-    // Handle Escape key presses
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            // Close search modal
-            if (searchModal && !searchModal.classList.contains('hidden')) {
-                hideSearchModal();
-            }
-            
-            // Close mobile menu and dropdowns
-            closeMobileMenu();
-            closeAllMobileDropdowns();
-        }
-    });
-
-    // ==================== TOUCH/SWIPE SUPPORT ====================
-    
-    // Optional: Add touch event support for better mobile experience
-    let touchStartY = 0;
-    let touchEndY = 0;
-
-    document.addEventListener('touchstart', function(e) {
-        touchStartY = e.changedTouches[0].screenY;
-    }, false);
-
-    document.addEventListener('touchend', function(e) {
-        touchEndY = e.changedTouches[0].screenY;
-        handleSwipe();
-    }, false);
-
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        const swipeDistance = touchStartY - touchEndY;
-        
-        // Swipe up to close mobile menu
-        if (swipeDistance > swipeThreshold && isMobileMenuOpen) {
-            closeMobileMenu();
-            closeAllMobileDropdowns();
-        }
-    }
-
-    // ==================== RESIZE HANDLER ====================
-    
-    // Close mobile elements on window resize (e.g., orientation change)
-    window.addEventListener('resize', function() {
-        // Close mobile menu and dropdowns on resize
-        closeMobileMenu();
-        closeAllMobileDropdowns();
-        
-        // Close search modal on resize
-        if (searchModal && !searchModal.classList.contains('hidden')) {
-            hideSearchModal();
-        }
-    });
-
-    // ==================== ACCESSIBILITY IMPROVEMENTS ====================
-    
-    // Add ARIA attributes for better accessibility
-    function updateAriaAttributes() {
-        // Mobile Recipe Dropdown
-        if (mobileRecipeBtn && mobileRecipeDropdown) {
-            mobileRecipeBtn.setAttribute('aria-expanded', isMobileRecipeOpen);
-            mobileRecipeDropdown.setAttribute('aria-hidden', !isMobileRecipeOpen);
-        }
-        
-        // Mobile Tips Dropdown
-        if (mobileTipsBtn && mobileTipsDropdown) {
-            mobileTipsBtn.setAttribute('aria-expanded', isMobileTipsOpen);
-            mobileTipsDropdown.setAttribute('aria-hidden', !isMobileTipsOpen);
-        }
-        
-        // Mobile Menu
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.setAttribute('aria-expanded', isMobileMenuOpen);
-            mobileMenu.setAttribute('aria-hidden', !isMobileMenuOpen);
-        }
-    }
-
-    // Update ARIA attributes whenever state changes
-    const originalToggleFunctions = [toggleMobileMenu, toggleMobileRecipeDropdown, toggleMobileTipsDropdown];
-    originalToggleFunctions.forEach(func => {
-        const originalFunc = func;
-        func = function(...args) {
-            originalFunc.apply(this, args);
-            updateAriaAttributes();
-        };
-    });
-
-    // Initialize ARIA attributes
-    updateAriaAttributes();
-
-    console.log('Enhanced Mobile Dropdown Navigation initialized successfully');
+// Recipe dropdown button click
+recipeDropdownBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleRecipeDropdown();
 });
+
+// Tips dropdown button click
+tipsDropdownBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleTipsDropdown();
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const isClickInsideRecipe = recipeDropdownBtn.contains(e.target) || recipeDropdownMenu.contains(e.target);
+    const isClickInsideTips = tipsDropdownBtn.contains(e.target) || tipsDropdownMenu.contains(e.target);
+    
+    if (!isClickInsideRecipe && !isClickInsideTips) {
+        closeAllDropdowns();
+    }
+});
+
+// Close dropdown when pressing Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeAllDropdowns();
+    }
+});
+
+// ==================== FIXED DROPDOWN ITEMS ====================
+// Recipe dropdown items - REMOVED e.preventDefault() to allow navigation
+const recipeDropdownItems = document.querySelectorAll('#recipeDropdownMenu .dropdown-item');
+recipeDropdownItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+        // REMOVED e.preventDefault() - now links can navigate normally
+        console.log('Selected Recipe Category:', this.textContent);
+        
+        // Only close dropdown, don't prevent navigation
+        toggleRecipeDropdown();
+        
+        // Optional: Add small delay to ensure dropdown closes before navigation
+        // setTimeout(() => {
+        //     // Navigation will happen naturally due to href attribute
+        // }, 100);
+    });
+});
+
+// Tips dropdown items - REMOVED e.preventDefault() to allow navigation
+const tipsDropdownItems = document.querySelectorAll('#tipsDropdownMenu .tips-item');
+tipsDropdownItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+        // REMOVED e.preventDefault() - now links can navigate normally
+        console.log('Selected Tips Category:', this.textContent);
+        
+        // Only close dropdown, don't prevent navigation
+        toggleTipsDropdown();
+    });
+});
+
+// Mobile menu elements (if they exist)
+const recipeBtn = document.getElementById('recipeDropdownBtn');
+const recipeMenu = document.getElementById('recipeDropdownMenu');
+const recipeIcon = document.getElementById('recipeDropdownIcon');
+
+const tipsBtn = document.getElementById('tipsDropdownBtn');
+const tipsMenu = document.getElementById('tipsDropdownMenu');
+const tipsIcon = document.getElementById('tipsDropdownIcon');
+
+// Mobile menu functionality
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+const mobileRecipeBtn = document.getElementById('mobileRecipeBtn');
+const mobileRecipeDropdown = document.getElementById('mobileRecipeDropdown');
+const mobileRecipeIcon = document.getElementById('mobileRecipeIcon');
+
+const mobileTipsBtn = document.getElementById('mobileTipsBtn');
+const mobileTipsDropdown = document.getElementById('mobileTipsDropdown');
+const mobileTipsIcon = document.getElementById('mobileTipsIcon');
+
+        // Search modal functionality
+        const mobileSearchBtn = document.getElementById('mobileSearchBtn');
+        const searchModal = document.getElementById('searchModal');
+        const closeSearchModal = document.getElementById('closeSearchModal');
+
+        // Desktop Recipe Dropdown
+        recipeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            recipeMenu.classList.toggle('show');
+            recipeIcon.style.transform = recipeMenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+            
+            // Close tips dropdown if open
+            tipsMenu.classList.remove('show');
+            tipsIcon.style.transform = 'rotate(0deg)';
+        });
+
+        // Desktop Tips Dropdown
+        tipsBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            tipsMenu.classList.toggle('show');
+            tipsIcon.style.transform = tipsMenu.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+            
+            // Close recipe dropdown if open
+            recipeMenu.classList.remove('show');
+            recipeIcon.style.transform = 'rotate(0deg)';
+        });
+
+        // Mobile Menu Toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+        });
+
+        // Mobile Recipe Dropdown
+        mobileRecipeBtn.addEventListener('click', () => {
+            mobileRecipeDropdown.classList.toggle('show');
+            mobileRecipeIcon.style.transform = mobileRecipeDropdown.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+        });
+
+        // Mobile Tips Dropdown
+        mobileTipsBtn.addEventListener('click', () => {
+            mobileTipsDropdown.classList.toggle('show');
+            mobileTipsIcon.style.transform = mobileTipsDropdown.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+        });
+
+        // Mobile Search Modal
+        mobileSearchBtn.addEventListener('click', () => {
+            searchModal.classList.add('show');
+        });
+
+        closeSearchModal.addEventListener('click', () => {
+            searchModal.classList.remove('show');
+        });
+
+        // Close search modal when clicking outside
+        searchModal.addEventListener('click', (e) => {
+            if (e.target === searchModal) {
+                searchModal.classList.remove('show');
+            }
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!recipeBtn.contains(e.target) && !recipeMenu.contains(e.target)) {
+                recipeMenu.classList.remove('show');
+                recipeIcon.style.transform = 'rotate(0deg)';
+            }
+            if (!tipsBtn.contains(e.target) && !tipsMenu.contains(e.target)) {
+                tipsMenu.classList.remove('show');
+                tipsIcon.style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('show');
+            }
+        });
+
+        // Close search modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && searchModal.classList.contains('show')) {
+                searchModal.classList.remove('show');
+            }
+        });
         
 // ==================== TOMBOL SLIDE ====================
 let currentSlide = 0;
