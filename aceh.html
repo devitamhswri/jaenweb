@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cemilan Khas Aceh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleResep(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-orange-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-orange-800 text-white py-5 text-center shadow">
+    <h1 class="text-3xl font-bold">Cemilan Khas Aceh</h1>
+    <p class="text-sm mt-1">Kelezatan tradisional Serambi Mekkah</p>
+  </header>
+
+  <!-- Konten -->
+  <main class="max-w-6xl mx-auto p-6 space-y-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Timphan -->
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <img src="timpan.jpg" alt="Timphan" class="rounded-md mb-3 h-40 w-full object-cover">
+        <h2 class="text-xl font-semibold">Kue Timphan</h2>
+        <p class="text-gray-700 text-sm mb-2">Kue kukus isi kelapa dan pisang yang dibungkus daun pisang. Lembut dan harum.</p>
+        <button onclick="toggleResep('resep1')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
+      </div>
+
+      <!-- Kue Adee -->
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <img src="kueade.jpg" alt="Kue Adee" class="rounded-md mb-3 h-40 w-full object-cover">
+        <h2 class="text-xl font-semibold">Kue Adee</h2>
+        <p class="text-gray-700 text-sm mb-2">Bolu tradisional Aceh dari campuran tepung, santan, telur, dan bawang goreng.</p>
+        <button onclick="toggleResep('resep2')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
+      </div>
+
+      <!-- Kue Keukarah -->
+      <div class="bg-white p-4 rounded-xl shadow-md">
+        <img src="kuekeukarah.jpeg" alt="Kue Keukarah" class="rounded-md mb-3 h-40 w-full object-cover">
+        <h2 class="text-xl font-semibold">Kue Keukarah</h2>
+        <p class="text-gray-700 text-sm mb-2">Kue renyah dan manis dari campuran tepung beras dan gula, dibentuk seperti sarang burung.</p>
+        <button onclick="toggleResep('resep3')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
+      </div>
+    </div>
+
+    <!-- Resep Timphan -->
+    <section id="resep1" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
+      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Timphan</h2>
+      <ul class="list-disc list-inside text-gray-700 mb-3">
+        <li>250 gr tepung ketan</li>
+        <li>2 buah pisang matang, haluskan</li>
+        <li>Isian: kelapa parut, gula merah, vanili</li>
+        <li>Daun pisang untuk membungkus</li>
+      </ul>
+      <ol class="list-decimal list-inside text-gray-700">
+        <li>Campur tepung dan pisang hingga kalis.</li>
+        <li>Masak isian hingga agak kering.</li>
+        <li>Bungkus adonan isi dalam daun pisang, kukus 20–30 menit.</li>
+      </ol>
+      <button onclick="toggleResep('resep1')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
+    </section>
+
+    <!-- Resep Kue Adee -->
+    <section id="resep2" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
+      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Adee</h2>
+      <ul class="list-disc list-inside text-gray-700 mb-3">
+        <li>200 gr tepung terigu</li>
+        <li>3 butir telur</li>
+        <li>200 ml santan kental</li>
+        <li>150 gr gula pasir, 1 sdt vanili</li>
+        <li>2 sdm bawang merah goreng</li>
+      </ul>
+      <ol class="list-decimal list-inside text-gray-700">
+        <li>Kocok telur dan gula hingga mengembang.</li>
+        <li>Tambahkan santan, tepung, vanili, aduk rata.</li>
+        <li>Tambahkan bawang goreng. Panggang 35–40 menit pada suhu 180°C.</li>
+      </ol>
+      <button onclick="toggleResep('resep2')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
+    </section>
+
+    <!-- Resep Keukarah -->
+    <section id="resep3" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
+      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Keukarah</h2>
+      <ul class="list-disc list-inside text-gray-700 mb-3">
+        <li>250 gr tepung beras</li>
+        <li>200 gr gula pasir</li>
+        <li>200 ml air</li>
+        <li>Minyak goreng secukupnya</li>
+      </ul>
+      <ol class="list-decimal list-inside text-gray-700">
+        <li>Larutkan gula dengan air, tambahkan tepung beras.</li>
+        <li>Aduk hingga menjadi adonan cair kental.</li>
+        <li>Masukkan ke botol berlubang, goreng membentuk jaring-jaring hingga renyah.</li>
+      </ol>
+      <button onclick="toggleResep('resep3')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-orange-800 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 ResepNusantara.id | Cemilan Aceh</p>
+  </footer>
+
+</body>
+</html>
