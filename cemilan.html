@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaen - Camilan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff7ed;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-6xl mx-auto px-4">
+  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Rekomendasi Camilan Favorit 🍩</h2>
+  <p class="text-center text-gray-600 mb-8">Cocok dinikmati di sela waktu atau teman ngobrol malam hari.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- 1: Pisang Goreng -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/pisanggoreng.jpg" alt="Pisang Goreng" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Pisang Goreng</h3>
+      <p class="text-sm text-gray-600 mb-4">Renyaak dan manis, camilan sejuta umat.</p>
+      <button onclick="toggleResep('resep-pisanggoreng')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-pisanggoreng" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Pisang kepok</li>
+          <li>Tepung terigu, gula, vanili</li>
+          <li>Air dan minyak goreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Buat adonan, celupkan pisang, goreng hingga keemasan.</p>
+      </div>
+    </div>
+
+    <!-- 2: Cireng -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/cireng.jpg" alt="Cireng" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Cireng</h3>
+      <p class="text-sm text-gray-600 mb-4">Kenyal gurih, enak dicocol sambal rujak.</p>
+      <button onclick="toggleResep('resep-cireng')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-cireng" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Tepung tapioka, bawang putih</li>
+          <li>Daun bawang, air panas</li>
+          <li>Garam dan kaldu bubuk</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Aduk bahan, bentuk pipih, goreng hingga garing.</p>
+      </div>
+    </div>
+
+    <!-- 3: Tahu Crispy -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/tahucrispy.jpg" alt="Tahu Crispy" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Tahu Crispy</h3>
+      <p class="text-sm text-gray-600 mb-4">Garing di luar, lembut di dalam. Camilan praktis dan nikmat.</p>
+      <button onclick="toggleResep('resep-tahucrispy')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-tahucrispy" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Tahu putih</li>
+          <li>Tepung bumbu serbaguna</li>
+          <li>Minyak goreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Potong tahu, lumuri tepung, goreng hingga kering dan renyah.</p>
+      </div>
+    </div>
+
+    <!-- 4: Roti Bakar -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/rotibakar.jpg" alt="Roti Bakar" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Roti Bakar</h3>
+      <p class="text-sm text-gray-600 mb-4">Hangat dan manis, cocok dinikmati malam hari.</p>
+      <button onclick="toggleResep('resep-rotibakar')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-rotibakar" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Roti tawar</li>
+          <li>Margarin, cokelat meises, keju</li>
+          <li>Susu kental manis</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Oles roti, panggang, taburi topping. Sajikan hangat.</p>
+      </div>
+    </div>
+
+    <!-- 5: Singkong Keju -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/singkongkeju.jpg" alt="Singkong Keju" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Singkong Keju</h3>
+      <p class="text-sm text-gray-600 mb-4">Empuk dan lumer, camilan khas yang makin mantap dengan taburan keju.</p>
+      <button onclick="toggleResep('resep-singkongkeju')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-singkongkeju" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Singkong</li>
+          <li>Garam, bawang putih</li>
+          <li>Keju parut dan susu kental</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Rebus singkong, goreng, lalu beri topping keju dan susu.</p>
+      </div>
+    </div>
+
+    <!-- 6: Bakwan Sayur -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/bakwan.jpg" alt="Bakwan Sayur" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Bakwan Sayur</h3>
+      <p class="text-sm text-gray-600 mb-4">Gurih, garing, dan kaya sayuran. Cocok untuk semua usia.</p>
+      <button onclick="toggleResep('resep-bakwan')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-bakwan" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Kol, wortel, daun bawang</li>
+          <li>Tepung terigu dan bumbu</li>
+          <li>Air dan minyak goreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Campur bahan, goreng adonan hingga kuning keemasan.</p>
+      </div>
+    </div>
+
+    <!-- 7: Martabak Mini -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/martabakmini.jpg" alt="Martabak Mini" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Martabak Mini</h3>
+      <p class="text-sm text-gray-600 mb-4">Mini tapi penuh rasa, bisa manis atau asin sesuai selera.</p>
+      <button onclick="toggleResep('resep-martabakmini')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-martabakmini" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Adonan terigu dan telur</li>
+          <li>Gula, baking powder</li>
+          <li>Topping: keju, meses, cokelat</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Tuang adonan di cetakan kecil, beri topping, masak hingga matang.</p>
+      </div>
+    </div>
+
+    <!-- 8: Ubi Rebus -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/ubirebus.jpg" alt="Ubi Rebus" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Ubi Rebus</h3>
+      <p class="text-sm text-gray-600 mb-4">Manis alami, cocok buat yang ingin camilan sehat dan sederhana.</p>
+      <button onclick="toggleResep('resep-ubirebus')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-ubirebus" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Ubi jalar</li>
+          <li>Air dan sedikit garam</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Cuci ubi, rebus sampai empuk, sajikan hangat.</p>
+      </div>
+    </div>
+
+    <!-- 9: Donat Kentang -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/donat.jpg" alt="Donat Kentang" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Donat Kentang</h3>
+      <p class="text-sm text-gray-600 mb-4">Empuk dan manis, cocok buat suguhan sore dan malam.</p>
+      <button onclick="toggleResep('resep-donat')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-donat" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Kentang kukus, tepung terigu</li>
+          <li>Ragi, gula, susu bubuk</li>
+          <li>Mentega dan telur</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Uleni adonan, diamkan hingga mengembang, goreng, taburi topping.</p>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/klepon.jpg" alt="Klepon" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Klepon</h3>
+      <p class="text-sm text-gray-600 mb-4">Kenyal dan manis, isian gula merahnya lumer di mulut.</p>
+      <button onclick="toggleResep('resep-klepon')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-klepon" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Tepung ketan, air daun pandan</li>
+          <li>Gula merah serut</li>
+          <li>Kelapa parut kukus</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Bentuk adonan isi gula merah, rebus hingga mengapung, gulingkan ke kelapa parut.</p>
+      </div>
+    </div>
+
+    <!-- 11: Lemper Ayam -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/lemper.jpg" alt="Lemper Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Lemper Ayam</h3>
+      <p class="text-sm text-gray-600 mb-4">Aroma daun pisangnya khas, isi ayam suwir gurih banget.</p>
+      <button onclick="toggleResep('resep-lemper')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-lemper" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Beras ketan, santan</li>
+          <li>Ayam suwir bumbu gurih</li>
+          <li>Daun pisang untuk membungkus</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Ketan dikukus dengan santan, beri isian ayam, bungkus daun pisang, kukus lagi.</p>
+      </div>
+    </div>
+
+    <!-- 12: Sosis Solo -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/sosissolo.jpg" alt="Sosis Solo" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Sosis Solo</h3>
+      <p class="text-sm text-gray-600 mb-4">Kulit lembut, isian daging gurih bikin nagih!</p>
+      <button onclick="toggleResep('resep-sosissolo')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-sosissolo" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Adonan kulit: telur, tepung, susu</li>
+          <li>Isian: daging cincang bumbu</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Buat kulit dadar, isi daging, gulung, goreng hingga keemasan.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</body>
+</html>
