@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Sumatera Utara - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Sumatera Utara 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Soto Medan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sotomedan.jpg" alt="Soto Medan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Medan</h2>
+      <p class="text-gray-700 mb-4">Soto berkuah santan khas Medan dengan cita rasa gurih dan rempah khas Sumut.</p>
+      <button onclick="toggleResep('resep-sotomedan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sotomedan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi, potong dadu</li>
+          <li>1 liter santan kelapa</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 lembar daun salam</li>
+          <li>1 sdt ketumbar bubuk</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Daun bawang, bawang goreng, dan jeruk nipis untuk taburan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging sapi hingga empuk, sisihkan kaldunya.</li>
+          <li>Tumis bawang putih, serai, dan daun salam hingga harum.</li>
+          <li>Masukkan tumisan ke dalam kaldu daging, tambahkan santan dan ketumbar bubuk.</li>
+          <li>Masak dengan api kecil hingga mendidih dan bumbu meresap.</li>
+          <li>Sajikan dengan taburan daun bawang, bawang goreng, dan perasan jeruk nipis.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bika Ambon -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bikaambon.jpg" alt="Bika Ambon" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bika Ambon</h2>
+      <p class="text-gray-700 mb-4">Kue khas Medan dengan tekstur kenyal dan aroma pandan yang harum.</p>
+      <button onclick="toggleResep('resep-bikaambon')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-bikaambon" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr tepung tapioka</li>
+          <li>150 gr gula pasir</li>
+          <li>200 ml santan kental</li>
+          <li>3 butir telur</li>
+          <li>Daun pandan 2 lembar, simpulkan</li>
+          <li>Ragi instan 1 sdt</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung tapioka, gula, telur, dan santan, aduk rata.</li>
+          <li>Tambahkan ragi dan daun pandan, diamkan selama 1 jam hingga adonan berbuih.</li>
+          <li>Tuang adonan ke loyang, panggang dalam oven suhu 170°C selama 45 menit.</li>
+          <li>Angkat dan dinginkan sebelum disajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Arsik Ikan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/arsikikan.jpg" alt="Arsik Ikan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Arsik Ikan</h2>
+      <p class="text-gray-700 mb-4">Ikan mas khas Batak yang dimasak dengan bumbu arsik pedas dan asam khas.</p>
+      <button onclick="toggleResep('resep-arsikikan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-arsikikan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ikan mas, bersihkan</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 buah cabe merah</li>
+          <li>2 cm jahe</li>
+          <li>2 cm kunyit</li>
+          <li>2 batang serai, memarkan</li>
+          <li>5 lembar daun jeruk</li>
+          <li>Air asam jawa dan garam secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabe, jahe, dan kunyit.</li>
+          <li>Tumis bumbu halus bersama serai dan daun jeruk hingga harum.</li>
+          <li>Masukkan ikan mas, beri air asam dan garam, masak hingga matang dan bumbu meresap.</li>
+          <li>Sajikan hangat dengan nasi putih.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Saksang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/saksang.jpg" alt="Saksang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Saksang</h2>
+      <p class="text-gray-700 mb-4">Masakan khas Batak yang menggunakan daging babi atau kerbau dimasak dengan darah dan rempah khas.</p>
+      <button onclick="toggleResep('resep-saksang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-saksang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging babi/kerbau, potong kecil</li>
+          <li>250 ml darah babi/kerbau</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 buah cabai merah</li>
+          <li>2 cm jahe</li>
+          <li>2 cm kunyit</li>
+          <li>Garam dan merica secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai, jahe, dan kunyit.</li>
+          <li>Tumis bumbu halus hingga harum, masukkan daging, aduk rata.</li>
+          <li>Tuang darah, masak dengan api kecil hingga daging empuk dan bumbu meresap.</li>
+          <li>Sajikan dengan nasi putih dan daun ubi tumbuk.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Naniura -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/naniura.jpg" alt="Naniura" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Naniura</h2>
+      <p class="text-gray-700 mb-4">Hidangan ikan mentah khas Batak yang diasamkan dengan jeruk nipis dan rempah.</p>
+      <button onclick="toggleResep('resep-naniura')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-naniura" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr ikan mas segar, iris tipis</li>
+          <li>3 buah jeruk nipis, ambil airnya</li>
+          <li>5 siung bawang merah, iris tipis</li>
+          <li>2 buah cabai rawit, iris tipis</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur ikan dengan air jeruk nipis, bawang merah, cabai, garam, dan gula.</li>
+          <li>Diamkan selama 30 menit agar ikan berubah warna dan bumbu meresap.</li>
+          <li>Sajikan segar sebagai hidangan pembuka atau lauk pendamping.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Saksang Padang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/saksangpadang" alt="Saksang Padang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Saksang Padang</h2>
+      <p class="text-gray-700 mb-4">Varian saksang dengan rempah dan cita rasa khas Sumatera Utara yang kaya.</p>
+      <button onclick="toggleResep('resep-saksangpadang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-saksangpadang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>400 gr daging babi, potong kecil</li>
+          <li>200 ml darah babi</li>
+          <li>6 siung bawang merah</li>
+          <li>4 siung bawang putih</li>
+          <li>5 buah cabai merah</li>
+          <li>3 cm jahe</li>
+          <li>3 cm kunyit</li>
+          <li>Garam dan merica secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bumbu, tumis hingga harum.</li>
+          <li>Masukkan daging, aduk rata.</li>
+          <li>Tuang darah, masak dengan api kecil hingga matang dan bumbu meresap.</li>
+          <li>Sajikan hangat dengan nasi dan sayur daun singkong.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

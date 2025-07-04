@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Jawa Tengah - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Jawa Tengah 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Gudeg -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/gudeg.jpg" alt="Gudeg" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Gudeg</h2>
+      <p class="text-gray-700 mb-4">Makanan manis dari nangka muda dimasak dengan santan khas Yogyakarta dan Jawa Tengah.</p>
+      <button onclick="toggleResep('resep-gudeg')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-gudeg" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 kg nangka muda, potong-potong</li>
+          <li>500 ml santan kental</li>
+          <li>200 gr gula merah</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 cm lengkuas, memarkan</li>
+          <li>2 daun salam</li>
+          <li>1 sdt garam</li>
+          <li>500 ml air kelapa</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus nangka muda dengan air kelapa hingga empuk.</li>
+          <li>Tumis bawang merah, bawang putih, lengkuas, dan daun salam hingga harum.</li>
+          <li>Masukkan tumisan dan gula merah ke dalam rebusan nangka, aduk rata.</li>
+          <li>Tambahkan santan dan garam, masak dengan api kecil hingga santan meresap dan kuah mengental.</li>
+          <li>Sajikan dengan nasi, telur pindang, dan ayam opor.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Soto Kudus -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sotokudus.jpg" alt="Soto Kudus" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Kudus</h2>
+      <p class="text-gray-700 mb-4">Soto ayam dengan kuah bening dan rasa khas dari Kudus, lengkap dengan koya dan kerupuk.</p>
+      <button onclick="toggleResep('resep-sotokudus')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sotokudus" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ayam kampung, potong</li>
+          <li>2 liter air</li>
+          <li>5 siung bawang putih</li>
+          <li>8 siung bawang merah</li>
+          <li>2 cm jahe</li>
+          <li>2 cm lengkuas, memarkan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Soun, tauge, daun bawang, dan koya untuk pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus ayam dengan air hingga empuk, angkat dan suwir-suwir dagingnya.</li>
+          <li>Tumis bawang putih, bawang merah, jahe, lengkuas, dan serai hingga harum.</li>
+          <li>Masukkan tumisan ke air rebusan ayam, bumbui garam dan merica, didihkan kembali.</li>
+          <li>Sajikan kuah soto dengan suwiran ayam, soun, tauge, dan taburan daun bawang serta koya.</li>
+          <li>Tambahkan kerupuk sebagai pelengkap.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tahu Petis -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tahupetis.jpg" alt="Tahu Petis" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Tahu Petis</h2>
+      <p class="text-gray-700 mb-4">Tahu goreng yang disajikan dengan saus petis manis khas Semarang.</p>
+      <button onclick="toggleResep('resep-tahupetis')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-tahupetis" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>10 potong tahu putih, goreng hingga kecokelatan</li>
+          <li>100 gr petis udang</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>2 cabai merah, haluskan</li>
+          <li>2 sdm gula merah, serut</li>
+          <li>100 ml air</li>
+          <li>Minyak untuk menumis</li>
+          <li>Garam secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Panaskan minyak, tumis bawang putih dan cabai hingga harum.</li>
+          <li>Masukkan petis, gula merah, air, dan garam. Masak hingga mengental dan berminyak.</li>
+          <li>Siram saus petis di atas tahu goreng saat disajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Wingko Babat -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/wingkobabat" alt="Wingko Babat" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Wingko Babat</h2>
+      <p class="text-gray-700 mb-4">Kue tradisional Jawa Tengah berbahan dasar kelapa parut dan tepung ketan.</p>
+      <button onclick="toggleResep('resep-wingkobabat')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-wingkobabat" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr kelapa parut</li>
+          <li>150 gr tepung ketan</li>
+          <li>150 gr gula pasir</li>
+          <li>100 ml santan kental</li>
+          <li>1/4 sdt garam</li>
+          <li>Margarin untuk olesan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur kelapa parut, tepung ketan, gula, dan garam hingga rata.</li>
+          <li>Tambahkan santan, aduk hingga adonan bisa dipulung.</li>
+          <li>Bentuk bulat pipih, oles margarin di atasnya.</li>
+          <li>Panggang dalam oven suhu 180°C selama 20-25 menit hingga kecokelatan.</li>
+          <li>Dinginkan sebelum disajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Nasi Liwet Solo -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasiliwetsolo" alt="Nasi Liwet Solo" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Nasi Liwet Solo</h2>
+      <p class="text-gray-700 mb-4">Nasi gurih khas Solo dimasak dengan santan, daun salam, dan disajikan dengan aneka lauk.</p>
+      <button onclick="toggleResep('resep-nasiliwetsolo')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-nasiliwetsolo" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>2 gelas beras</li>
+          <li>400 ml santan</li>
+          <li>2 lembar daun salam</li>
+          <li>2 batang serai, memarkan</li>
+          <li>5 siung bawang merah, iris tipis</li>
+          <li>3 siung bawang putih, iris tipis</li>
+          <li>1 sdt garam</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah dan bawang putih hingga harum.</li>
+          <li>Masukkan serai dan daun salam, aduk sebentar.</li>
+          <li>Tambahkan beras, aduk hingga tercampur rata.</li>
+          <li>Tuang santan dan garam, masak hingga santan menyusut.</li>
+          <li>Kukus hingga nasi matang sempurna.</li>
+          <li>Sajikan dengan ayam suwir, telur pindang, dan sambal goreng.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tengkleng -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+<img src="img/tengkleng.jpg" alt="Tengkleng" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Tengkleng</h2>
+  <p class="text-gray-700 mb-4">Sup tulang kambing berkuah gurih dan pedas khas Solo yang kaya rempah.</p>
+  <button onclick="toggleResep('resep-tengkleng')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-tengkleng" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>1 kg tulang kambing</li>
+      <li>500 gr daging kambing</li>
+      <li>3 liter air</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>3 cm jahe</li>
+      <li>3 cm lengkuas, memarkan</li>
+      <li>2 batang serai, memarkan</li>
+      <li>5 daun jeruk</li>
+      <li>3 cabai merah, iris serong</li>
+      <li>Garam, gula, dan merica secukupnya</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Rebus tulang dan daging kambing hingga empuk, buang busa.</li>
+      <li>Tumis bawang merah, bawang putih, jahe, lengkuas, serai, dan daun jeruk hingga harum.</li>
+      <li>Masukkan tumisan ke rebusan kambing, tambahkan cabai, garam, gula, dan merica.</li>
+      <li>Masak dengan api kecil hingga bumbu meresap dan kuah agak mengental.</li>
+      <li>Sajikan panas dengan taburan bawang goreng dan nasi hangat.</li>
+    </ol>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Jogja - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Jogja 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Gudeg -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/gudeg.jpg" alt="Gudeg Jogja" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Gudeg Jogja</h2>
+      <p class="text-gray-700 mb-4">Nangka muda dimasak santan dengan cita rasa manis khas Jogja.</p>
+      <button onclick="toggleResep('resep-gudeg')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-gudeg" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 kg nangka muda, potong-potong</li>
+          <li>1 liter santan kental</li>
+          <li>250 gr gula merah</li>
+          <li>5 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, iris</li>
+          <li>2 cm lengkuas, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>1 sdt garam</li>
+          <li>500 ml air kelapa</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus nangka muda dengan air kelapa hingga empuk.</li>
+          <li>Tumis bawang merah, bawang putih, lengkuas, dan daun salam sampai harum.</li>
+          <li>Masukkan tumisan dan gula merah ke rebusan nangka, aduk rata.</li>
+          <li>Tambahkan santan dan garam, masak dengan api kecil sampai santan meresap dan kuah mengental.</li>
+          <li>Sajikan dengan nasi, telur pindang, dan ayam opor.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bakpia Pathok -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bakpia-pathok.jpg" alt="Bakpia Pathok" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bakpia Pathok</h2>
+      <p class="text-gray-700 mb-4">Kue kering isi kacang hijau yang sangat populer sebagai oleh-oleh khas Jogja.</p>
+      <button onclick="toggleResep('resep-bakpia')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-bakpia" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan kulit:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr tepung terigu</li>
+          <li>50 gr gula halus</li>
+          <li>75 gr margarin, lelehkan</li>
+          <li>80 ml air</li>
+          <li>1/4 sdt garam</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan isian kacang hijau:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr kacang hijau kupas, rendam dan kukus</li>
+          <li>150 gr gula pasir</li>
+          <li>50 gr margarin</li>
+          <li>1/4 sdt vanili bubuk</li>
+          <li>150 ml santan kental</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur bahan kulit sampai kalis, diamkan 15 menit.</li>
+          <li>Haluskan kacang hijau kukus, masak dengan gula, margarin, vanili, dan santan hingga kering, dinginkan.</li>
+          <li>Bulatkan adonan kulit, pipihkan, isi dengan isian kacang hijau, bentuk bulat.</li>
+          <li>Panggang dengan suhu 160°C selama 25 menit hingga matang dan kecokelatan.</li>
+          <li>Dinginkan dan siap disajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sate Klathak -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sate-klathak.jpg" alt="Sate Klathak" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sate Klathak</h2>
+      <p class="text-gray-700 mb-4">Sate kambing unik dengan tusukan jeruji sepeda khas Bantul, rasanya gurih dan sederhana.</p>
+      <button onclick="toggleResep('resep-sateklathak')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sateklathak" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging kambing, potong dadu</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Minyak goreng secukupnya</li>
+          <li>Tusuk sate dari jeruji sepeda (atau tusuk sate biasa)</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Taburi daging dengan garam dan merica, diamkan 30 menit.</li>
+          <li>Tusuk daging dengan jeruji sepeda.</li>
+          <li>Bakar sate sambil sesekali dioles minyak goreng sampai matang dan kecokelatan.</li>
+          <li>Sajikan dengan kuah gulai kambing dan nasi putih hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bakmi Jawa -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bakmi-jawa.jpg" alt="Bakmi Jawa" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bakmi Jawa</h2>
+      <p class="text-gray-700 mb-4">Mie ayam khas Jawa dengan bumbu manis dan gurih yang terkenal di Jogja.</p>
+      <button onclick="toggleResep('resep-bakmijawa')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-bakmijawa" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr mie telur basah</li>
+          <li>150 gr daging ayam, suwir</li>
+          <li>2 siung bawang putih, cincang</li>
+          <li>2 siung bawang merah, iris</li>
+          <li>2 sdm kecap manis</li>
+          <li>1 sdt saus tiram</li>
+          <li>Garam, merica, dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+          <li>Daun bawang dan bawang goreng untuk taburan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang putih dan bawang merah hingga harum.</li>
+          <li>Masukkan ayam suwir, aduk rata dan bumbui dengan kecap manis, saus tiram, garam, merica, dan gula.</li>
+          <li>Rebus mie sebentar, tiriskan, lalu campur dengan tumisan ayam.</li>
+          <li>Sajikan dengan taburan daun bawang dan bawang goreng.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Jenang Sumsum -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/jenang-sumsum.jpg" alt="Jenang Sumsum" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Jenang Sumsum</h2>
+      <p class="text-gray-700 mb-4">Puding tepung beras dengan kuah gula jawa legit khas Jogja.</p>
+      <button onclick="toggleResep('resep-jenangsumsum')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-jenangsumsum" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan puding:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>150 gr tepung beras</li>
+          <li>500 ml santan</li>
+          <li>1/4 sdt garam</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan kuah gula jawa:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr gula merah, serut</li>
+          <li>200 ml air</li>
+          <li>2 lembar daun pandan</li>
+          <li>Sejumput garam</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung beras, santan, dan garam, aduk rata.</li>
+          <li>Masak dengan api kecil sambil diaduk hingga mengental dan matang. Tuang ke cetakan, dinginkan.</li>
+          <li>Rebus gula merah, air, daun pandan, dan garam hingga larut dan agak kental.</li>
+          <li>Sajikan puding dengan siraman kuah gula jawa hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Oseng-Oseng Mercon -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/oseng-oseng-mercon.jpg" alt="Oseng-Oseng Mercon" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Oseng-Oseng Mercon</h2>
+  <p class="text-gray-700 mb-4">Masakan pedas khas Jogja dengan daging sapi dan cabai rawit yang menggigit.</p>
+  <button onclick="toggleResep('resep-osengmercon')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-osengmercon" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>300 gr daging sapi, potong dadu kecil</li>
+      <li>15 buah cabai rawit merah, iris kasar</li>
+      <li>5 siung bawang merah, iris tipis</li>
+      <li>3 siung bawang putih, cincang</li>
+      <li>2 lembar daun salam</li>
+      <li>2 cm lengkuas, memarkan</li>
+      <li>2 sdm kecap manis</li>
+      <li>Garam dan gula secukupnya</li>
+      <li>Minyak untuk menumis</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Rebus daging sapi hingga empuk, tiriskan.</li>
+      <li>Tumis bawang merah dan bawang putih hingga harum.</li>
+      <li>Masukkan daun salam dan lengkuas, aduk sebentar.</li>
+      <li>Tambahkan cabai rawit, aduk hingga layu.</li>
+      <li>Masukkan daging, beri kecap manis, garam, dan gula. Masak hingga bumbu meresap dan agak kering.</li>
+      <li>Sajikan dengan nasi putih hangat.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Papua - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Papua 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Papeda -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/papeda.jpg" alt="Papeda" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Papeda</h2>
+      <p class="text-gray-700 mb-4">Bubur sagu khas Papua yang lengket dan kenyal, biasanya disantap dengan ikan kuah kuning.</p>
+      <button onclick="toggleResep('resep-papeda')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-papeda" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr tepung sagu</li>
+          <li>500 ml air</li>
+          <li>Ikan kuah kuning sebagai pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung sagu dengan air, aduk hingga rata.</li>
+          <li>Masak dengan api kecil sambil terus diaduk hingga mengental dan lengket.</li>
+          <li>Bentuk bulatan dan sajikan hangat bersama ikan kuah kuning.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Kuah Kuning Papua -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-kuah-kuning-papua.jpg" alt="Ikan Kuah Kuning Papua" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Kuah Kuning Papua</h2>
+      <p class="text-gray-700 mb-4">Ikan laut segar dimasak dengan bumbu kunyit dan rempah khas Papua yang segar dan pedas.</p>
+      <button onclick="toggleResep('resep-ikan-kuah-kuning-papua')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikan-kuah-kuning-papua" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan laut segar (misal kakap atau tenggiri)</li>
+          <li>3 cm kunyit, haluskan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 siung bawang merah, iris tipis</li>
+          <li>3 siung bawang putih, iris tipis</li>
+          <li>2 buah tomat, potong-potong</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, serai, dan kunyit hingga harum.</li>
+          <li>Masukkan air dan didihkan.</li>
+          <li>Masukkan ikan dan tomat, beri garam dan gula.</li>
+          <li>Masak hingga ikan matang dan bumbu meresap.</li>
+          <li>Sajikan bersama papeda hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Udang Selingkuh -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/udang-selingkuh.jpg" alt="Udang Selingkuh" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Udang Selingkuh</h2>
+      <p class="text-gray-700 mb-4">Udang segar dimasak dengan bumbu santan pedas, cita rasa unik dari Papua.</p>
+      <button onclick="toggleResep('resep-udang-selingkuh')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-udang-selingkuh" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr udang segar, bersihkan</li>
+          <li>200 ml santan</li>
+          <li>5 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, iris</li>
+          <li>5 buah cabai rawit, iris</li>
+          <li>2 lembar daun jeruk</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, cabai, dan daun jeruk hingga harum.</li>
+          <li>Masukkan udang, aduk hingga berubah warna.</li>
+          <li>Tuang santan, masak dengan api kecil sampai kuah mengental.</li>
+          <li>Beri garam dan gula sesuai selera.</li>
+          <li>Sajikan hangat dengan nasi putih.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sagu Lepa -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sagu-lepa.jpg" alt="Sagu Lepa" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sagu Lepa</h2>
+      <p class="text-gray-700 mb-4">Kue tradisional dari tepung sagu yang dibungkus daun sagu, lezat dan khas Papua.</p>
+      <button onclick="toggleResep('resep-sagu-lepa')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sagu-lepa" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr tepung sagu</li>
+          <li>100 ml santan kental</li>
+          <li>Garam sejumput</li>
+          <li>Daun sagu untuk membungkus</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung sagu dengan santan dan garam, aduk hingga kalis.</li>
+          <li>Bungkus adonan dengan daun sagu, bentuk segitiga atau bulat.</li>
+          <li>Kukus selama 30 menit hingga matang.</li>
+          <li>Sajikan sebagai camilan atau pendamping makan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Bakar Manokwari -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-bakar-manokwari.jpg" alt="Ikan Bakar Manokwari" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Bakar Manokwari</h2>
+      <p class="text-gray-700 mb-4">Ikan bakar dengan bumbu khas Manokwari, gurih dan pedas, favorit masyarakat Papua.</p>
+      <button onclick="toggleResep('resep-ikan-bakar-manokwari')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikan-bakar-manokwari" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ikan kakap atau ikan laut lainnya</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 buah cabai merah keriting</li>
+          <li>2 buah tomat</li>
+          <li>1 sdm air jeruk nipis</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai, dan tomat.</li>
+          <li>Marinasi ikan dengan bumbu halus dan air jeruk nipis selama 30 menit.</li>
+          <li>Bakar ikan hingga matang sambil sesekali dioles bumbu.</li>
+          <li>Sajikan hangat dengan nasi dan sambal.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Keripik Bayam Papua -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/keripik-bayam-papua.jpg" alt="Keripik Bayam Papua" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Keripik Bayam Papua</h2>
+      <p class="text-gray-700 mb-4">Camilan renyah dari daun bayam yang dibumbui, favorit orang Papua.</p>
+      <button onclick="toggleResep('resep-keripik-bayam-papua')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-keripik-bayam-papua" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr daun bayam segar, cuci bersih</li>
+          <li>100 gr tepung beras</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>Garam secukupnya</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung beras dengan bawang putih dan garam, aduk rata.</li>
+          <li>Celupkan daun bayam ke adonan tepung, goreng hingga renyah dan kecoklatan.</li>
+          <li>Angkat dan tiriskan.</li>
+          <li>Sajikan sebagai camilan sehat dan gurih.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

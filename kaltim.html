@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Kalimantan Timur - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Kalimantan Timur 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Soto Banjar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/soto-banjar-kaltim.jpg" alt="Soto Banjar Kaltim" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Banjar Kaltim</h2>
+      <p class="text-gray-700 mb-4">Varian soto khas Kalimantan Timur dengan kuah bening dan bumbu rempah khas.</p>
+      <button onclick="toggleResep('resep-sotobanjar-kaltim')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sotobanjar-kaltim" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ayam kampung, potong</li>
+          <li>2 liter air kaldu</li>
+          <li>5 siung bawang putih, haluskan</li>
+          <li>5 siung bawang merah, haluskan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>1 sdt pala bubuk</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>100 gr bihun, seduh air panas</li>
+          <li>Telur rebus, daun bawang, dan bawang goreng untuk pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus ayam hingga empuk, sisihkan kaldu.</li>
+          <li>Tumis bawang putih, bawang merah, serai, dan daun salam hingga harum, masukkan ke kaldu.</li>
+          <li>Tambahkan pala, garam, dan merica, masak hingga kuah matang dan bumbu meresap.</li>
+          <li>Siapkan mangkuk, tata bihun, ayam suwir, telur rebus, siram kuah soto.</li>
+          <li>Taburi bawang goreng dan daun bawang, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ayam Cincane -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayam-cincane.jpg" alt="Ayam Cincane" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Cincane</h2>
+      <p class="text-gray-700 mb-4">Ayam bakar khas Kalimantan Timur dengan bumbu manis dan rempah khas.</p>
+      <button onclick="toggleResep('resep-ayamcincane')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ayamcincane" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam kampung, potong menjadi beberapa bagian</li>
+          <li>4 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 cm jahe</li>
+          <li>2 cm kunyit</li>
+          <li>3 sdm kecap manis</li>
+          <li>1 sdm gula merah</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, jahe, dan kunyit.</li>
+          <li>Tumis bumbu halus hingga harum, masukkan kecap manis dan gula merah, aduk rata.</li>
+          <li>Marinasi ayam dengan bumbu, diamkan minimal 1 jam.</li>
+          <li>Bakar ayam sambil diolesi sisa bumbu hingga matang dan berwarna kecoklatan.</li>
+          <li>Sajikan hangat dengan nasi putih dan sambal.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Baung Bakar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-baung-bakar.jpg" alt="Ikan Baung Bakar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Baung Bakar</h2>
+      <p class="text-gray-700 mb-4">Ikan baung segar dibakar dengan bumbu rempah khas Kalimantan Timur.</p>
+      <button onclick="toggleResep('resep-ikanbaungbakar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikanbaungbakar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ikan baung segar, bersihkan</li>
+          <li>4 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 cm kunyit</li>
+          <li>2 cm jahe</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, kunyit, dan jahe.</li>
+          <li>Tumis bumbu halus dengan serai hingga harum.</li>
+          <li>Oleskan bumbu pada ikan hingga merata, diamkan 30 menit.</li>
+          <li>Bakar ikan hingga matang sambil sesekali dioles bumbu.</li>
+          <li>Sajikan hangat dengan sambal dan lalapan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Nasi Kuning Kaltim -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasi-kuning-kaltim.jpg" alt="Nasi Kuning Kaltim" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Nasi Kuning Kaltim</h2>
+      <p class="text-gray-700 mb-4">Nasi kuning dengan aroma khas rempah dan santan, hidangan istimewa Kalimantan Timur.</p>
+      <button onclick="toggleResep('resep-nasikuningkaltim')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-nasikuningkaltim" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>2 gelas beras</li>
+          <li>400 ml santan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>3 cm kunyit, parut</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>Garam secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Cuci beras hingga bersih.</li>
+          <li>Rebus santan bersama serai, daun salam, kunyit, bawang putih, dan garam hingga mendidih.</li>
+          <li>Masukkan beras, masak dengan api kecil sambil sesekali diaduk hingga santan meresap.</li>
+          <li>Kukus nasi hingga matang dan harum.</li>
+          <li>Sajikan dengan lauk pelengkap sesuai selera.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Kerupuk Amplang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/kerupuk-amplang.jpg" alt="Kerupuk Amplang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Kerupuk Amplang</h2>
+      <p class="text-gray-700 mb-4">Kerupuk khas Kalimantan Timur berbahan ikan tenggiri dengan tekstur renyah dan gurih.</p>
+      <button onclick="toggleResep('resep-kerupukamplang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-kerupukamplang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr ikan tenggiri giling</li>
+          <li>150 gr tepung tapioka</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Minyak goreng untuk menggoreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur ikan tenggiri, tepung tapioka, bawang putih, garam, dan merica hingga adonan kalis.</li>
+          <li>Giling adonan tipis-tipis, potong-potong sesuai selera.</li>
+          <li>Jemur di bawah sinar matahari hingga kering.</li>
+          <li>Goreng kerupuk hingga mengembang dan renyah.</li>
+          <li>Tiriskan dan sajikan sebagai camilan atau pelengkap hidangan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Roti Cane Kaltim -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/roti-cane-kaltim.jpg" alt="Roti Cane Kaltim" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Roti Cane Kaltim</h2>
+      <p class="text-gray-700 mb-4">Roti tipis dan renyah yang disajikan dengan kuah kari khas Kalimantan Timur.</p>
+      <button onclick="toggleResep('resep-roticane-kaltim')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-roticane-kaltim" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan roti:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr tepung terigu</li>
+          <li>150 ml air hangat</li>
+          <li>1 sdm minyak goreng</li>
+          <li>1/2 sdt garam</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan kuah kari:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr daging sapi</li>
+          <li>2 siung bawang putih</li>
+          <li>5 siung bawang merah</li>
+          <li>2 cm jahe</li>
+          <li>2 batang serai</li>
+          <li>2 sdm bubuk kari</li>
+          <li>400 ml santan</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat roti:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung, garam, air, dan minyak, uleni hingga kalis.</li>
+          <li>Diamkan adonan selama 30 menit.</li>
+          <li>Bagi adonan, gilas tipis dan pipihkan.</li>
+          <li>Goreng roti di wajan datar hingga kecoklatan dan renyah.</li>
+        </ol>
+        <h3 class="font-semibold mb-1">Cara membuat kuah kari:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, jahe, dan serai hingga harum.</li>
+          <li>Masukkan daging, aduk hingga berubah warna.</li>
+          <li>Tambahkan bubuk kari dan santan, masak hingga daging empuk dan kuah mengental.</li>
+          <li>Beri garam dan gula, koreksi rasa.</li>
+          <li>Sajikan roti cane dengan kuah kari hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

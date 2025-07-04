@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Sulawesi Utara - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Sulawesi Utara 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Tinutuan (Bubur Manado) -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tinutuan.jpg" alt="Tinutuan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Tinutuan (Bubur Manado)</h2>
+      <p class="text-gray-700 mb-4">Bubur khas Manado yang kaya sayuran seperti kangkung, bayam, dan jagung, sangat sehat dan lezat.</p>
+      <button onclick="toggleResep('resep-tinutuan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-tinutuan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr beras</li>
+          <li>100 gr jagung manis pipil</li>
+          <li>100 gr labu kuning, potong dadu</li>
+          <li>100 gr bayam</li>
+          <li>100 gr kangkung</li>
+          <li>2 batang daun bawang, iris</li>
+          <li>3 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, cincang</li>
+          <li>1 liter air</li>
+          <li>Garam dan lada secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Cuci beras, jagung, dan labu, rebus bersama air hingga beras lunak dan mengental menjadi bubur.</li>
+          <li>Tumis bawang merah dan bawang putih hingga harum, masukkan ke dalam bubur.</li>
+          <li>Tambahkan bayam, kangkung, dan daun bawang, masak hingga sayur layu.</li>
+          <li>Beri garam dan lada sesuai selera, aduk rata dan sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Paniki -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/paniki.jpg" alt="Paniki" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Paniki</h2>
+      <p class="text-gray-700 mb-4">Masakan khas Manado dari daging kelelawar yang dimasak dengan santan dan bumbu rempah khas.</p>
+      <button onclick="toggleResep('resep-paniki')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-paniki" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging kelelawar (atau bisa diganti ayam)</li>
+          <li>200 ml santan kental</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 cabai merah</li>
+          <li>2 cm jahe</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Daun kemangi secukupnya</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging hingga empuk, tiriskan.</li>
+          <li>Haluskan bawang, cabai, dan jahe, tumis hingga harum bersama serai.</li>
+          <li>Masukkan daging dan santan, masak hingga bumbu meresap dan kuah mengental.</li>
+          <li>Tambahkan daun kemangi, aduk sebentar, angkat dan sajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tinutuan Jagung -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tinutuan-jagung.jpg" alt="Tinutuan Jagung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Tinutuan Jagung</h2>
+      <p class="text-gray-700 mb-4">Varian bubur Manado menggunakan jagung sebagai bahan utama dengan tambahan sayuran segar.</p>
+      <button onclick="toggleResep('resep-tinutuan-jagung')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-tinutuan-jagung" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr jagung manis pipil</li>
+          <li>100 gr beras</li>
+          <li>100 gr bayam</li>
+          <li>100 gr kangkung</li>
+          <li>2 batang daun bawang, iris</li>
+          <li>3 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, cincang</li>
+          <li>1 liter air</li>
+          <li>Garam dan lada secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus jagung dan beras dengan air hingga menjadi bubur kental.</li>
+          <li>Tumis bawang merah dan bawang putih hingga harum, masukkan ke dalam bubur.</li>
+          <li>Tambahkan bayam, kangkung, dan daun bawang, masak hingga sayur layu.</li>
+          <li>Beri garam dan lada, aduk rata dan sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Binte Biluhuta -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/binte-biluhuta.jpg" alt="Binte Biluhuta" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Binte Biluhuta</h2>
+      <p class="text-gray-700 mb-4">Sup jagung khas Gorontalo dengan ikan dan rempah yang segar dan lezat.</p>
+      <button onclick="toggleResep('resep-binte-biluhuta')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-binte-biluhuta" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr jagung manis pipil</li>
+          <li>200 gr ikan segar (biasanya ikan kakap)</li>
+          <li>3 siung bawang merah</li>
+          <li>2 siung bawang putih</li>
+          <li>2 buah tomat</li>
+          <li>2 batang daun bawang</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>1 liter air</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus jagung dengan air hingga lunak.</li>
+          <li>Masukkan ikan, bawang, dan tomat, masak hingga ikan matang.</li>
+          <li>Beri garam, merica, dan daun bawang, aduk rata dan angkat.</li>
+          <li>Sajikan hangat sebagai sup segar khas daerah.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ayam Woku -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayam-woku.jpg" alt="Ayam Woku" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Woku</h2>
+      <p class="text-gray-700 mb-4">Ayam berbumbu pedas dan harum dengan rempah khas Sulawesi Utara.</p>
+      <button onclick="toggleResep('resep-ayam-woku')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ayam-woku" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam, potong-potong</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 cabai merah keriting</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 cm jahe</li>
+          <li>5 daun jeruk</li>
+          <li>Daun kemangi secukupnya</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang, cabai, jahe, dan serai, tumis hingga harum.</li>
+          <li>Masukkan ayam, aduk hingga berubah warna.</li>
+          <li>Tambahkan daun jeruk, garam, dan gula, masak dengan sedikit air hingga ayam empuk dan bumbu meresap.</li>
+          <li>Masukkan daun kemangi, aduk sebentar dan angkat.</li>
+          <li>Sajikan dengan nasi hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Pisang Epe -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/pisang-epe.jpg" alt="Pisang Epe" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Pisang Epe</h2>
+      <p class="text-gray-700 mb-4">Camilan manis khas Manado dari pisang bakar dengan saus gula merah dan kelapa parut.</p>
+      <button onclick="toggleResep('resep-pisang-epe')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-pisang-epe" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>6 buah pisang kepok matang</li>
+          <li>200 gr gula merah</li>
+          <li>100 ml air</li>
+          <li>Kelapa parut secukupnya</li>
+          <li>Daun pandan 1 lembar (optional)</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Bakar pisang hingga matang dan agak kering, tekan perlahan agar pipih.</li>
+          <li>Rebus gula merah, air, dan daun pandan hingga menjadi sirup kental.</li>
+          <li>Siram pisang bakar dengan sirup gula merah dan taburi kelapa parut.</li>
+          <li>Sajikan sebagai camilan manis dan lezat.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

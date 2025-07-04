@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Maluku - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Maluku 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Papeda -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/papeda.jpg" alt="Papeda" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Papeda</h2>
+      <p class="text-gray-700 mb-4">Bubur sagu khas Maluku yang memiliki tekstur kenyal dan biasanya disajikan dengan kuah kuning ikan.</p>
+      <button onclick="toggleResep('resep-papeda')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-papeda" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr tepung sagu</li>
+          <li>600 ml air</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Kuah ikan kuning:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr ikan tongkol, potong-potong</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 cm kunyit, bakar dan haluskan</li>
+          <li>5 siung bawang merah, iris tipis</li>
+          <li>2 siung bawang putih, iris tipis</li>
+          <li>5 cabai merah keriting</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung sagu dengan air, masak dengan api kecil sambil diaduk hingga mengental dan kenyal.</li>
+          <li>Untuk kuah, tumis bawang merah, bawang putih, dan cabai hingga harum.</li>
+          <li>Masukkan serai, kunyit, dan ikan, tambahkan air dan bumbu, masak hingga ikan matang dan kuah berwarna kuning.</li>
+          <li>Sajikan papeda dengan kuah ikan kuning hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Kuah Asam -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-kuah-asam-maluku.jpg" alt="Ikan Kuah Asam Maluku" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Kuah Asam</h2>
+      <p class="text-gray-700 mb-4">Masakan ikan segar dengan kuah asam pedas yang segar khas Maluku.</p>
+      <button onclick="toggleResep('resep-ikankuahasam')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikankuahasam" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan kakap atau ikan segar lainnya</li>
+          <li>2 buah tomat, potong-potong</li>
+          <li>3 siung bawang merah, iris</li>
+          <li>2 siung bawang putih, iris</li>
+          <li>5 cabai rawit merah</li>
+          <li>2 sdm air asam jawa</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus ikan bersama tomat, bawang merah, bawang putih, dan cabai rawit dalam air hingga matang.</li>
+          <li>Tambahkan air asam jawa, garam, dan gula, koreksi rasa sesuai selera.</li>
+          <li>Masak hingga kuah terasa asam segar dan ikan matang sempurna.</li>
+          <li>Sajikan hangat dengan nasi putih.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bubur Manado (Tinutuan Maluku) -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bubur-manado-maluku.jpg" alt="Bubur Manado Maluku" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bubur Tinutuan Maluku</h2>
+      <p class="text-gray-700 mb-4">Bubur sehat dari campuran sayuran dan beras khas Maluku yang kaya nutrisi.</p>
+      <button onclick="toggleResep('resep-buburtinutuan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-buburtinutuan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr beras</li>
+          <li>100 gr labu siam, potong dadu</li>
+          <li>100 gr bayam</li>
+          <li>50 gr jagung manis pipil</li>
+          <li>1 buah wortel, potong kecil</li>
+          <li>2 batang daun bawang, iris</li>
+          <li>2 siung bawang putih, cincang halus</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Masak beras bersama air hingga menjadi bubur lembut.</li>
+          <li>Masukkan semua sayuran dan bawang putih, masak hingga sayuran lunak.</li>
+          <li>Bumbui dengan garam dan merica, aduk rata.</li>
+          <li>Sajikan hangat sebagai sarapan sehat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ayam Kuah Kuning -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayam-kuah-kuning-maluku.jpg" alt="Ayam Kuah Kuning Maluku" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Kuah Kuning</h2>
+      <p class="text-gray-700 mb-4">Ayam yang dimasak dengan bumbu kuning khas Maluku yang gurih dan kaya rempah.</p>
+      <button onclick="toggleResep('resep-ayamkuahkuning')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ayamkuahkuning" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam, potong sesuai selera</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>3 cm kunyit, bakar dan haluskan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 lembar daun salam</li>
+          <li>500 ml santan</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, dan kunyit hingga harum.</li>
+          <li>Masukkan ayam, aduk hingga berubah warna.</li>
+          <li>Tambahkan serai, daun salam, dan santan, masak dengan api kecil hingga ayam empuk dan kuah mengental.</li>
+          <li>Bumbui dengan garam dan gula, koreksi rasa.</li>
+          <li>Sajikan hangat dengan nasi putih.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sambal Colo-colo -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sambal-colocolo-maluku.jpg" alt="Sambal Colo-colo Maluku" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sambal Colo-colo</h2>
+      <p class="text-gray-700 mb-4">Sambal segar khas Maluku yang pedas dan asam, cocok sebagai pelengkap ikan bakar.</p>
+      <button onclick="toggleResep('resep-colocolo')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-colocolo" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>10 cabai rawit merah, iris tipis</li>
+          <li>5 siung bawang merah, iris tipis</li>
+          <li>2 buah tomat merah, potong dadu kecil</li>
+          <li>1 buah jeruk nipis, ambil airnya</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak goreng secukupnya (untuk menyiram)</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur cabai, bawang merah, tomat, garam, dan gula dalam wadah.</li>
+          <li>Tambahkan air jeruk nipis, aduk rata.</li>
+          <li>Siram dengan minyak goreng panas agar aroma lebih keluar.</li>
+          <li>Sajikan sebagai pelengkap ikan bakar atau lauk lainnya.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Bakar Rica-Rica -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/ikan-bakar-rica.jpg" alt="Ikan Bakar Rica-Rica" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Bakar Rica-Rica</h2>
+  <p class="text-gray-700 mb-4">Ikan bakar dengan bumbu rica-rica pedas khas Maluku yang bikin lidah goyang.</p>
+  <button onclick="toggleResep('resep-ikanbakar-rica')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-ikanbakar-rica" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>1 ekor ikan segar (kakap, kerapu, atau sesuai selera)</li>
+      <li>6 siung bawang merah</li>
+      <li>4 siung bawang putih</li>
+      <li>10 cabai merah keriting</li>
+      <li>5 cabai rawit merah (sesuai selera pedas)</li>
+      <li>2 cm jahe</li>
+      <li>2 batang serai, memarkan</li>
+      <li>2 sdm air jeruk nipis</li>
+      <li>Garam dan gula secukupnya</li>
+      <li>Minyak untuk menumis</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Haluskan bawang merah, bawang putih, cabai, dan jahe.</li>
+      <li>Tumis bumbu halus bersama serai hingga harum.</li>
+      <li>Tambahkan garam, gula, dan air jeruk nipis, masak sebentar.</li>
+      <li>Baluri ikan dengan bumbu, diamkan minimal 30 menit agar meresap.</li>
+      <li>Bakar ikan hingga matang sambil sesekali diolesi sisa bumbu.</li>
+      <li>Sajikan hangat dengan nasi putih dan sambal tambahan.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

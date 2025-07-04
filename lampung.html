@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Lampung - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Lampung 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Seruit -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/seruit-lampung.jpg" alt="Seruit Lampung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Seruit</h2>
+      <p class="text-gray-700 mb-4">Lalapan ikan bakar yang disajikan dengan sambal khas Lampung yang pedas dan segar.</p>
+      <button onclick="toggleResep('resep-seruit')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-seruit" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ikan nila atau ikan mas segar</li>
+          <li>Garam dan jeruk nipis secukupnya</li>
+          <li>Daun kemangi untuk lalapan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan sambal:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>10 cabai rawit merah</li>
+          <li>5 cabai merah keriting</li>
+          <li>5 siung bawang merah</li>
+          <li>2 buah tomat merah</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air jeruk nipis secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Bersihkan ikan, lumuri dengan garam dan perasan jeruk nipis, diamkan 15 menit.</li>
+          <li>Bakar ikan hingga matang dan beraroma harum.</li>
+          <li>Haluskan semua bahan sambal dengan ulekan, koreksi rasa.</li>
+          <li>Sajikan ikan bakar dengan sambal dan lalapan daun kemangi segar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Gonggong -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/gonggong-lampung.jpg" alt="Gonggong Lampung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Gonggong</h2>
+      <p class="text-gray-700 mb-4">Makanan laut khas Lampung berupa kerang laut yang dimasak dengan bumbu pedas.</p>
+      <button onclick="toggleResep('resep-gonggong')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-gonggong" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr gonggong (kerang laut)</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>10 cabai rawit merah</li>
+          <li>2 cm lengkuas</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Bersihkan gonggong, rebus hingga matang dan tiriskan.</li>
+          <li>Haluskan bawang merah, bawang putih, cabai, dan lengkuas.</li>
+          <li>Tumis bumbu halus bersama serai hingga harum.</li>
+          <li>Masukkan gonggong, tambahkan garam dan gula, aduk rata.</li>
+          <li>Masak sebentar hingga bumbu meresap, angkat dan sajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tanjung Api -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tanjung-api.jpg" alt="Tanjung Api" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Tanjung Api</h2>
+      <p class="text-gray-700 mb-4">Sayur asam khas Lampung dengan rasa segar dan pedas, berisi berbagai sayuran segar.</p>
+      <button onclick="toggleResep('resep-tanjungapi')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-tanjungapi" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr labu siam, potong dadu</li>
+          <li>100 gr melinjo muda</li>
+          <li>50 gr daun melinjo</li>
+          <li>50 gr daun singkong, potong-potong</li>
+          <li>5 cabai rawit merah</li>
+          <li>3 siung bawang merah</li>
+          <li>2 buah asam kandis atau 2 sdm air asam jawa</li>
+          <li>Gula, garam, dan kaldu bubuk secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus air hingga mendidih, masukkan labu siam, melinjo muda, dan daun melinjo.</li>
+          <li>Tambahkan bawang merah, cabai rawit, asam kandis, garam, gula, dan kaldu bubuk.</li>
+          <li>Masukkan daun singkong, masak hingga sayuran matang dan rasa asam segar tercapai.</li>
+          <li>Sajikan hangat sebagai pelengkap nasi.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Nasi Tiwul Lampung -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasi-tiwul-lampung.jpg" alt="Nasi Tiwul Lampung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Nasi Tiwul Lampung</h2>
+      <p class="text-gray-700 mb-4">Alternatif nasi dari singkong yang dikeringkan dan diolah menjadi nasi khas Lampung.</p>
+      <button onclick="toggleResep('resep-nasitwiul')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-nasitwiul" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr tiwul (singkong kering)</li>
+          <li>400 ml air panas</li>
+          <li>Garam secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Cuci tiwul hingga bersih.</li>
+          <li>Sirami tiwul dengan air panas, aduk rata dan diamkan 10 menit.</li>
+          <li>Masak tiwul dengan kukusan selama 30 menit hingga matang dan pulen.</li>
+          <li>Sajikan sebagai pengganti nasi dengan lauk favorit.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Keripik Pisang Lampung -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/keripik-pisang-lampung.jpg" alt="Keripik Pisang Lampung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Keripik Pisang Lampung</h2>
+      <p class="text-gray-700 mb-4">Camilan renyah khas Lampung dari irisan pisang yang digoreng dan diberi rasa manis.</p>
+      <button onclick="toggleResep('resep-keripikpisang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-keripikpisang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr pisang kepok yang belum terlalu matang</li>
+          <li>Minyak goreng secukupnya</li>
+          <li>Gula pasir secukupnya (opsional)</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Kupas pisang dan iris tipis-tipis menggunakan alat pengiris.</li>
+          <li>Rendam irisan pisang dalam air garam selama 10 menit, tiriskan.</li>
+          <li>Goreng irisan pisang dalam minyak panas hingga kuning kecoklatan dan renyah.</li>
+          <li>Tiriskan dan taburi gula pasir jika suka rasa manis.</li>
+          <li>Sajikan sebagai camilan renyah dan lezat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Kepiting Soka Kaltim -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/kepiting-soka-kaltim.jpg" alt="Kepiting Soka Kaltim" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Kepiting Soka Kaltim</h2>
+  <p class="text-gray-700 mb-4">Kepiting muda (soka) dimasak dengan bumbu pedas manis khas Kalimantan Timur yang menggoda selera.</p>
+  <button onclick="toggleResep('resep-kepitingsoka')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-kepitingsoka" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>500 gr kepiting soka (kepiting muda), bersihkan</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>5 cabai merah keriting</li>
+      <li>3 cabai rawit (opsional untuk pedas ekstra)</li>
+      <li>2 sdm saus tiram</li>
+      <li>2 sdm kecap manis</li>
+      <li>1 sdt gula merah, sisir halus</li>
+      <li>Garam dan merica secukupnya</li>
+      <li>Minyak untuk menumis</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Haluskan bawang merah, bawang putih, dan cabai.</li>
+      <li>Tumis bumbu halus hingga harum dan matang.</li>
+      <li>Masukkan kepiting soka, aduk rata dengan bumbu.</li>
+      <li>Tambahkan saus tiram, kecap manis, gula merah, garam, dan merica.</li>
+      <li>Masak dengan api sedang hingga kepiting matang dan bumbu meresap.</li>
+      <li>Sajikan hangat dengan nasi putih.</li>
+    </ol>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+</body>
+</html>

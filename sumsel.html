@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Sumatra Selatan - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Sumatra Selatan 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Pempek -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/pempek.jpg" alt="Pempek" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Pempek</h2>
+      <p class="text-gray-700 mb-4">Camilan ikan khas Palembang yang digoreng atau direbus, disajikan dengan cuka ikan (cuko) pedas manis.</p>
+      <button onclick="toggleResep('resep-pempek')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-pempek" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan tenggiri fillet, haluskan</li>
+          <li>200 gr tepung sagu</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1 sdt garam</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur ikan halus, bawang putih, garam, dan air hingga rata.</li>
+          <li>Tambahkan tepung sagu sedikit demi sedikit hingga adonan bisa dipulung.</li>
+          <li>Bentuk sesuai selera, rebus hingga mengapung, angkat dan tiriskan.</li>
+          <li>Goreng pempek hingga kecoklatan jika suka.</li>
+          <li>Sajikan dengan cuko (kuah cuka pedas manis) dan irisan timun.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tekwan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tekwan.jpg" alt="Tekwan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Tekwan</h2>
+      <p class="text-gray-700 mb-4">Sup ikan dengan bola-bola ikan dan bihun, kuah bening harum dengan jamur dan ebi.</p>
+      <button onclick="toggleResep('resep-tekwan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-tekwan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr ikan tenggiri fillet, haluskan</li>
+          <li>100 gr tepung sagu</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1 sdt garam</li>
+          <li>1,5 liter kaldu udang</li>
+          <li>Bihun, jamur kuping, daun bawang</li>
+          <li>Garam dan merica secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur ikan, bawang putih, garam, dan tepung sagu hingga adonan bisa dibentuk bola-bola.</li>
+          <li>Rebus bola-bola ikan hingga mengapung, angkat dan tiriskan.</li>
+          <li>Rebus kaldu udang, masukkan jamur dan bihun, beri garam dan merica.</li>
+          <li>Masukkan bola-bola ikan ke dalam kuah, taburi daun bawang.</li>
+          <li>Sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Laksan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/laksan.jpg" alt="Laksan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Laksan</h2>
+      <p class="text-gray-700 mb-4">Pempek tipe kuah santan dengan irisan pempek lenjer, kuah gurih dan sedikit pedas.</p>
+      <button onclick="toggleResep('resep-laksan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-laksan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr pempek lenjer, iris tipis</li>
+          <li>500 ml santan</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1 lembar daun salam</li>
+          <li>2 cabai merah keriting, iris halus</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus santan dengan bawang putih, daun salam, dan cabai hingga mendidih dan bumbu meresap.</li>
+          <li>Masukkan irisan pempek, masak sebentar.</li>
+          <li>Sajikan hangat dengan taburan daun bawang.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Celimpungan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/celimpungan.jpg" alt="Celimpungan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Celimpungan</h2>
+      <p class="text-gray-700 mb-4">Pempek tipe tekwan dengan kuah santan kental dan rempah harum.</p>
+      <button onclick="toggleResep('resep-celimpungan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-celimpungan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr ikan tenggiri, haluskan</li>
+          <li>100 gr tepung sagu</li>
+          <li>500 ml santan</li>
+          <li>2 siung bawang putih</li>
+          <li>1 lembar daun salam</li>
+          <li>2 batang serai</li>
+          <li>Garam dan merica secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Buat adonan pempek, bentuk bola-bola kecil dan rebus hingga mengapung.</li>
+          <li>Rebus santan bersama bawang putih, daun salam, dan serai hingga harum.</li>
+          <li>Masukkan bola pempek ke dalam kuah santan, beri garam dan merica.</li>
+          <li>Masak sebentar lalu sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Model -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/model.jpg" alt="Model" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Model</h2>
+      <p class="text-gray-700 mb-4">Pempek isi tahu yang digoreng dengan tekstur renyah di luar dan lembut di dalam.</p>
+      <button onclick="toggleResep('resep-model')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-model" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr pempek lenjer</li>
+          <li>100 gr tahu putih, hancurkan</li>
+          <li>Minyak untuk menggoreng</li>
+          <li>Kuah cuko pedas manis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Belah pempek lenjer, isi dengan tahu hancur.</li>
+          <li>Rekatkan dan bentuk bulat, goreng hingga kecoklatan.</li>
+          <li>Sajikan dengan kuah cuko khas Palembang.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Pindang Patin -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/pindangpatin.jpg" alt="Pindang Patin" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Pindang Patin</h2>
+  <p class="text-gray-700 mb-4">Ikan patin dimasak dengan bumbu pindang khas Palembang, rasa asam, pedas, dan segar.</p>
+  <button onclick="toggleResep('resep-pindangpatin')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-pindangpatin" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>1 ekor ikan patin, potong-potong</li>
+      <li>2 liter air</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>3 buah cabai merah keriting</li>
+      <li>2 buah asam kandis atau belimbing wuluh</li>
+      <li>2 batang serai, memarkan</li>
+      <li>3 lembar daun salam</li>
+      <li>Garam dan gula secukupnya</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Rebus air bersama bawang merah, bawang putih, cabai, serai, daun salam, dan asam kandis hingga mendidih.</li>
+      <li>Masukkan ikan patin, beri garam dan gula, masak hingga ikan matang dan bumbu meresap.</li>
+      <li>Sajikan panas dengan nasi putih.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

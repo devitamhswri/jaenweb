@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Kalimantan Barat - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Kalimantan Barat 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Ayam Cincane -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayam-cincane.jpg" alt="Ayam Cincane" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Cincane</h2>
+      <p class="text-gray-700 mb-4">Ayam bakar khas Kalbar dengan bumbu rempah yang kaya dan aroma khas daun cincane.</p>
+      <button onclick="toggleResep('resep-ayamcincane')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ayamcincane" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam, potong sesuai selera</li>
+          <li>5 siung bawang merah</li>
+          <li>4 siung bawang putih</li>
+          <li>3 cm jahe</li>
+          <li>3 cm kunyit</li>
+          <li>5 buah cabai merah keriting</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Daun cincane secukupnya (bisa diganti daun salam jika sulit)</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, jahe, kunyit, dan cabai merah.</li>
+          <li>Tumis bumbu halus dengan serai dan daun cincane hingga harum.</li>
+          <li>Masukkan potongan ayam, aduk rata dan beri garam serta gula.</li>
+          <li>Masak ayam hingga bumbu meresap dan ayam empuk.</li>
+          <li>Bakar ayam di atas bara api sambil dioles sisa bumbu hingga matang dan beraroma.</li>
+          <li>Sajikan hangat dengan nasi putih dan sambal.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bubur Pedas -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bubur-pedas.jpg" alt="Bubur Pedas" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bubur Pedas</h2>
+      <p class="text-gray-700 mb-4">Bubur khas Suku Dayak dengan rempah dan sayur-sayuran segar yang menggugah selera.</p>
+      <button onclick="toggleResep('resep-buburpedas')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-buburpedas" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr beras</li>
+          <li>50 gr sagu</li>
+          <li>100 gr daun melinjo, cincang halus</li>
+          <li>100 gr daun kesum, cincang halus</li>
+          <li>100 gr daun kemangi</li>
+          <li>5 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, iris</li>
+          <li>2 buah cabai merah, iris tipis</li>
+          <li>1 liter kaldu ayam atau air</li>
+          <li>Garam dan lada secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Cuci beras dan sagu, rebus dengan kaldu hingga agak mengental.</li>
+          <li>Tumis bawang merah, bawang putih, dan cabai hingga harum.</li>
+          <li>Masukkan tumisan ke dalam rebusan bubur.</li>
+          <li>Tambahkan daun melinjo, kesum, dan kemangi, masak sebentar hingga layu.</li>
+          <li>Beri garam dan lada, aduk rata dan sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Patin Bakar Sambal Tempoyak -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-patin-bakar.jpg" alt="Ikan Patin Bakar Sambal Tempoyak" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Patin Bakar Sambal Tempoyak</h2>
+      <p class="text-gray-700 mb-4">Ikan patin bakar disajikan dengan sambal tempoyak khas fermentasi durian dari Kalbar.</p>
+      <button onclick="toggleResep('resep-ikanpatin')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikanpatin" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ikan patin, bersihkan dan belah dua</li>
+          <li>2 sdm minyak goreng</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>100 gr tempoyak (fermentasi durian)</li>
+          <li>5 buah cabai merah</li>
+          <li>3 siung bawang merah</li>
+          <li>2 siung bawang putih</li>
+          <li>1 sdt gula merah</li>
+          <li>2 sdm minyak goreng untuk sambal</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Bumbui ikan patin dengan garam dan merica, diamkan 15 menit.</li>
+          <li>Bakar ikan hingga matang dan beraroma, sisihkan.</li>
+          <li>Haluskan cabai, bawang merah, dan bawang putih.</li>
+          <li>Tumis bumbu halus dengan minyak hingga harum, masukkan tempoyak dan gula merah, masak hingga rata dan sedikit mengental.</li>
+          <li>Sajikan ikan bakar dengan sambal tempoyak.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Kek Lapis Sarawak -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/kek-lapis-sarawak.jpg" alt="Kek Lapis Sarawak" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Kek Lapis Sarawak</h2>
+      <p class="text-gray-700 mb-4">Kue lapis khas Kalbar dengan lapisan warna-warni yang cantik dan rasa manis lembut.</p>
+      <button onclick="toggleResep('resep-keklapi')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-keklapi" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr mentega</li>
+          <li>200 gr gula halus</li>
+          <li>6 butir telur</li>
+          <li>150 gr tepung terigu</li>
+          <li>100 gr susu kental manis</li>
+          <li>Pewarna makanan sesuai selera</li>
+          <li>1 sdt vanili bubuk</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Kocok mentega dan gula hingga lembut.</li>
+          <li>Masukkan telur satu per satu sambil terus dikocok.</li>
+          <li>Tambahkan tepung terigu, susu kental manis, dan vanili, aduk rata.</li>
+          <li>Bagi adonan menjadi beberapa bagian, beri pewarna sesuai selera.</li>
+          <li>Tuang lapisan adonan satu per satu di loyang, panggang tiap lapisan sampai matang sebelum lapisan berikutnya.</li>
+          <li>Panggang sampai semua lapisan selesai dan matang sempurna.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Soto Banjar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/soto-banjar.jpg" alt="Soto Banjar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Banjar</h2>
+      <p class="text-gray-700 mb-4">Sup ayam berempah dengan kuah bening khas Banjar yang segar dan gurih.</p>
+      <button onclick="toggleResep('resep-sotobanjar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sotobanjar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ayam kampung, potong-potong</li>
+          <li>2 liter air</li>
+          <li>5 siung bawang putih, haluskan</li>
+          <li>5 siung bawang merah, haluskan</li>
+          <li>2 cm jahe, memarkan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>1 sdt pala bubuk</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>100 gr bihun, seduh</li>
+          <li>Telur rebus, bawang goreng, dan daun seledri untuk pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus ayam dengan air hingga empuk dan kaldu keluar.</li>
+          <li>Tumis bawang putih, bawang merah, jahe, serai, dan daun salam hingga harum, masukkan ke dalam kaldu.</li>
+          <li>Tambahkan pala, garam, dan merica, masak 15 menit.</li>
+          <li>Siapkan mangkuk, tata bihun, ayam suwir, telur rebus, dan siram dengan kuah.</li>
+          <li>Taburi bawang goreng dan daun seledri, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ketupat Kandangan -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/ketupat-kandangan.jpg" alt="Ketupat Kandangan" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Ketupat Kandangan</h2>
+  <p class="text-gray-700 mb-4">Ketupat dengan lauk ikan gabus kuah santan pedas khas Kalimantan Barat.</p>
+  <button onclick="toggleResep('resep-ketupatkandangan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-ketupatkandangan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>500 gr ikan gabus, bersihkan dan potong-potong</li>
+      <li>2 buah ketupat</li>
+      <li>500 ml santan dari 1 butir kelapa</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>5 buah cabai merah keriting</li>
+      <li>2 lembar daun salam</li>
+      <li>2 batang serai, memarkan</li>
+      <li>Garam dan gula secukupnya</li>
+      <li>Minyak untuk menumis</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Tumis bawang merah, bawang putih, dan cabai merah hingga harum.</li>
+      <li>Masukkan daun salam dan serai, aduk sebentar.</li>
+      <li>Masukkan ikan gabus, aduk rata dan masak hingga ikan berubah warna.</li>
+      <li>Tuang santan, masak dengan api kecil sambil diaduk hingga kuah mengental.</li>
+      <li>Beri garam dan gula sesuai selera, koreksi rasa.</li>
+      <li>Sajikan ikan kuah santan bersama ketupat hangat.</li>
+    </ol>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+</body>
+</html>

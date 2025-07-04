@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas NTB - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas NTB 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Ayam Taliwang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayam-taliwang.jpg" alt="Ayam Taliwang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Taliwang</h2>
+      <p class="text-gray-700 mb-4">Ayam bakar pedas khas Lombok yang sangat populer dengan bumbu rica-rica dan sambal khas.</p>
+      <button onclick="toggleResep('resep-ayam-taliwang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ayam-taliwang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam kampung, potong sesuai selera</li>
+          <li>10 cabai merah keriting</li>
+          <li>5 cabai rawit merah</li>
+          <li>6 siung bawang merah</li>
+          <li>4 siung bawang putih</li>
+          <li>2 tomat merah</li>
+          <li>1 sdm terasi bakar</li>
+          <li>Garam dan gula merah secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang merah, bawang putih, tomat, dan terasi.</li>
+          <li>Tumis bumbu halus hingga harum dan matang.</li>
+          <li>Lumuri ayam dengan bumbu, diamkan selama 30 menit agar meresap.</li>
+          <li>Bakar ayam sambil sesekali dioles sisa bumbu hingga matang dan beraroma.</li>
+          <li>Sajikan dengan nasi putih dan lalapan segar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Plecing Kangkung -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/plecing-kangkung.jpg" alt="Plecing Kangkung" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Plecing Kangkung</h2>
+      <p class="text-gray-700 mb-4">Sayur kangkung rebus yang disiram sambal pedas manis khas Lombok.</p>
+      <button onclick="toggleResep('resep-plecing-kangkung')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-plecing-kangkung" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ikat kangkung, rebus dan tiriskan</li>
+          <li>5 cabai merah keriting</li>
+          <li>3 cabai rawit</li>
+          <li>3 siung bawang putih</li>
+          <li>3 buah tomat merah</li>
+          <li>2 sdm air jeruk limau</li>
+          <li>Garam dan gula merah secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang putih, dan tomat.</li>
+          <li>Tambahkan air jeruk limau, garam, dan gula merah, aduk rata.</li>
+          <li>Siramkan sambal ke kangkung rebus, aduk ringan.</li>
+          <li>Sajikan segar sebagai pelengkap hidangan utama.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sate Rembiga -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sate-rembiga.jpg" alt="Sate Rembiga" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sate Rembiga</h2>
+      <p class="text-gray-700 mb-4">Sate daging sapi khas Lombok dengan bumbu pedas khas yang menggoda selera.</p>
+      <button onclick="toggleResep('resep-sate-rembiga')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sate-rembiga" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi, potong dadu</li>
+          <li>8 cabai merah keriting</li>
+          <li>5 cabai rawit merah</li>
+          <li>6 siung bawang merah</li>
+          <li>4 siung bawang putih</li>
+          <li>2 sdm minyak goreng</li>
+          <li>Garam dan gula merah secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang merah, dan bawang putih.</li>
+          <li>Tumis bumbu halus dengan minyak hingga harum.</li>
+          <li>Marinasi daging dengan bumbu, garam, dan gula merah selama minimal 1 jam.</li>
+          <li>Tusuk daging pada tusuk sate, bakar hingga matang sambil dioles sisa bumbu.</li>
+          <li>Sajikan dengan nasi putih dan sambal.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Jaje Tumpu -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/jaje-tumpu.jpg" alt="Jaje Tumpu" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Jaje Tumpu</h2>
+      <p class="text-gray-700 mb-4">Kue tradisional Lombok dari singkong dan kelapa parut yang legit dan gurih.</p>
+      <button onclick="toggleResep('resep-jaje-tumpu')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-jaje-tumpu" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr singkong parut</li>
+          <li>200 gr kelapa parut</li>
+          <li>100 gr gula merah, serut halus</li>
+          <li>Sejumput garam</li>
+          <li>Daun pisang untuk membungkus</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur singkong parut, kelapa, gula merah, dan garam hingga rata.</li>
+          <li>Bungkus adonan dengan daun pisang, sematkan lidi di ujungnya.</li>
+          <li>Rebus atau kukus hingga matang sekitar 30 menit.</li>
+          <li>Sajikan sebagai camilan tradisional yang lezat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Pelecing Tahu -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/pelecing-tahu.jpg" alt="Pelecing Tahu" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Pelecing Tahu</h2>
+      <p class="text-gray-700 mb-4">Tahu goreng disiram sambal plecing pedas yang khas dari NTB.</p>
+      <button onclick="toggleResep('resep-pelecing-tahu')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-pelecing-tahu" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr tahu putih, potong dadu dan goreng</li>
+          <li>5 cabai merah keriting</li>
+          <li>3 cabai rawit</li>
+          <li>3 siung bawang putih</li>
+          <li>2 buah tomat merah</li>
+          <li>Garam dan gula merah secukupnya</li>
+          <li>Air jeruk limau secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang putih, dan tomat.</li>
+          <li>Tambahkan garam, gula merah, dan air jeruk limau, aduk rata.</li>
+          <li>Siramkan sambal plecing di atas tahu goreng.</li>
+          <li>Sajikan sebagai lauk pelengkap atau camilan pedas.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sate Bulayak -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/sate-bulayak.jpg" alt="Sate Bulayak" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Sate Bulayak</h2>
+  <p class="text-gray-700 mb-4">Sate khas Lombok yang disajikan dengan lontong bulayak dan bumbu kacang pedas yang menggoda selera.</p>
+  <button onclick="toggleResep('resep-sate-bulayak')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-sate-bulayak" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>500 gr daging sapi, potong dadu</li>
+      <li>10 tusuk sate</li>
+      <li>250 gr beras untuk lontong</li>
+      <li>10 lembar daun pisang untuk membungkus lontong</li>
+      <li>150 gr kacang tanah goreng untuk bumbu kacang</li>
+      <li>5 cabai merah keriting</li>
+      <li>3 siung bawang putih</li>
+      <li>1 sdm gula merah</li>
+      <li>Garam secukupnya</li>
+      <li>Minyak goreng secukupnya</li>
+      <li>Air secukupnya</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Cuci beras dan bungkus dengan daun pisang, kukus hingga matang untuk membuat lontong bulayak.</li>
+      <li>Haluskan kacang tanah, cabai, bawang putih, gula merah, dan garam untuk membuat bumbu kacang.</li>
+      <li>Tambahkan air sedikit demi sedikit sambil diaduk hingga bumbu kacang kental.</li>
+      <li>Marinasi daging sapi dengan sebagian bumbu kacang selama minimal 1 jam.</li>
+      <li>Tusuk daging pada tusuk sate dan bakar hingga matang sambil dioles sisa bumbu kacang.</li>
+      <li>Sajikan sate dengan lontong bulayak dan siram dengan bumbu kacang yang tersisa.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

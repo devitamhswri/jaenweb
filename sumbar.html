@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Sumatra Barat - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Sumatra Barat 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Rendang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/rendang2.jpg" alt="Rendang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Rendang</h2>
+      <p class="text-gray-700 mb-4">Masakan daging sapi yang dimasak dengan rempah dan santan hingga kering dan harum.</p>
+      <button onclick="toggleResep('resep-rendang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-rendang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 kg daging sapi, potong-potong</li>
+          <li>400 ml santan kental</li>
+          <li>10 siung bawang merah</li>
+          <li>5 siung bawang putih</li>
+          <li>5 cabai merah besar</li>
+          <li>2 cm jahe</li>
+          <li>2 cm lengkuas</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun jeruk</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai, jahe, dan lengkuas.</li>
+          <li>Tumis bumbu halus dengan serai dan daun jeruk hingga harum.</li>
+          <li>Masukkan daging, aduk hingga berubah warna.</li>
+          <li>Tuang santan, masak dengan api kecil sambil terus diaduk hingga santan menyusut dan bumbu meresap, sekitar 3-4 jam.</li>
+          <li>Beri garam dan gula, aduk rata. Masak hingga daging empuk dan kuah mengering.</li>
+          <li>Sajikan rendang dengan nasi hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sate Padang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sate-padang.jpg" alt="Sate Padang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sate Padang</h2>
+      <p class="text-gray-700 mb-4">Sate khas Padang dengan bumbu kental dan pedas dari tepung beras dan rempah.</p>
+      <button onclick="toggleResep('resep-sate-padang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sate-padang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi, potong dadu</li>
+          <li>Tusuk sate secukupnya</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>3 cabai merah</li>
+          <li>1 sdm tepung beras</li>
+          <li>1 liter kaldu sapi</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging dengan serai hingga empuk, tiriskan dan tusuk pada tusuk sate.</li>
+          <li>Haluskan bawang merah, bawang putih, dan cabai, tumis hingga harum.</li>
+          <li>Campur kaldu dengan tepung beras, aduk rata, masak hingga mengental.</li>
+          <li>Masukkan bumbu tumis, garam, dan gula, aduk hingga bumbu meresap dan saus mengental.</li>
+          <li>Siram sate dengan saus, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Dendeng Balado -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/dendeng-balado.jpg" alt="Dendeng Balado" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Dendeng Balado</h2>
+      <p class="text-gray-700 mb-4">Irisan daging sapi kering yang digoreng dan dibumbui sambal balado pedas khas Minang.</p>
+      <button onclick="toggleResep('resep-dendeng-balado')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-dendeng-balado" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gr dendeng sapi kering</li>
+          <li>10 cabai merah</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 tomat merah</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak goreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang merah, bawang putih, dan tomat.</li>
+          <li>Tumis bumbu halus hingga harum dan matang.</li>
+          <li>Masukkan dendeng, aduk rata hingga bumbu meresap.</li>
+          <li>Goreng sebentar agar kering dan renyah, angkat dan sajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Soto Padang -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/soto-padang" alt="Soto Padang" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Padang</h2>
+      <p class="text-gray-700 mb-4">Soto dengan kuah bening dan daging sapi goreng khas Padang, gurih dan segar.</p>
+      <button onclick="toggleResep('resep-soto-padang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-soto-padang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi, potong kecil</li>
+          <li>2 liter kaldu sapi</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>Garam dan lada secukupnya</li>
+          <li>Minyak goreng untuk menggoreng daging</li>
+          <li>Bawang goreng dan irisan daun bawang untuk taburan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging hingga empuk, tiriskan dan goreng hingga kering dan renyah.</li>
+          <li>Rebus kaldu dengan bawang, serai, dan daun salam hingga harum.</li>
+          <li>Masukkan daging goreng ke dalam mangkuk, siram dengan kuah panas.</li>
+          <li>Taburi bawang goreng dan daun bawang, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Gulai Itiak Lado Mudo -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/gulai-itiak-lado-mudo" alt="Gulai Itiak Lado Mudo" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Gulai Itiak Lado Mudo</h2>
+      <p class="text-gray-700 mb-4">Masakan bebek kuah gulai dengan cabai hijau khas Minang, pedas dan nikmat.</p>
+      <button onclick="toggleResep('resep-gulai-itiak-lado-mudo')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-gulai-itiak-lado-mudo" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor bebek, potong-potong</li>
+          <li>200 ml santan kental</li>
+          <li>10 cabai hijau besar</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 cm jahe</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus bebek hingga empuk, tiriskan.</li>
+          <li>Haluskan cabai hijau, bawang merah, bawang putih, dan jahe.</li>
+          <li>Tumis bumbu halus dengan serai hingga harum.</li>
+          <li>Masukkan bebek dan santan, masak dengan api kecil hingga kuah mengental.</li>
+          <li>Beri garam dan gula, aduk rata, angkat dan sajikan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Soto Padang -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/sotopadang.jpg" alt="Soto Padang" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Padang</h2>
+  <p class="text-gray-700 mb-4">Sup daging sapi khas Padang dengan kuah bening dan taburan perkedel serta emping yang gurih.</p>
+  <button onclick="toggleResep('resep-sotopadang')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-sotopadang" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>500 gr daging sapi, rebus dan suwir</li>
+      <li>2 liter kaldu sapi</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>2 batang serai, memarkan</li>
+      <li>2 lembar daun salam</li>
+      <li>Garam dan merica secukupnya</li>
+      <li>Perkedel kentang dan emping sebagai pelengkap</li>
+      <li>Daun bawang dan seledri cincang</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Tumis bawang merah dan bawang putih hingga harum.</li>
+      <li>Masukkan serai dan daun salam, tuang kaldu sapi, didihkan.</li>
+      <li>Masukkan daging suwir, beri garam dan merica, masak beberapa menit.</li>
+      <li>Siapkan mangkuk, tuang kuah dan daging, taburi daun bawang dan seledri.</li>
+      <li>Sajikan dengan perkedel kentang dan emping di atasnya.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

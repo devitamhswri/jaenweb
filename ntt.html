@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas NTT - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas NTT 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Se'i Sapi -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sei-sapi.jpg" alt="Se'i Sapi" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Se'i Sapi</h2>
+      <p class="text-gray-700 mb-4">Daging sapi asap khas Kupang dengan cita rasa gurih dan aroma khas.</p>
+      <button onclick="toggleResep('resep-sei-sapi')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sei-sapi" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi has dalam, iris tipis</li>
+          <li>5 siung bawang putih, haluskan</li>
+          <li>2 sdm garam</li>
+          <li>2 sdm gula merah serut</li>
+          <li>2 sdm ketumbar bubuk</li>
+          <li>Kayu asap untuk pengasapan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur daging dengan bawang putih, garam, gula merah, dan ketumbar. Diamkan 2 jam agar bumbu meresap.</li>
+          <li>Susun daging di rak pengasap, asap hingga matang dan beraroma khas.</li>
+          <li>Potong-potong dan sajikan dengan nasi hangat serta sambal sesuai selera.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Jagung Bose -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/jagung-bose.jpg" alt="Jagung Bose" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Jagung Bose</h2>
+      <p class="text-gray-700 mb-4">Makanan tradisional dari jagung dan kacang yang dimasak bersama dengan bumbu sederhana.</p>
+      <button onclick="toggleResep('resep-jagung-bose')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-jagung-bose" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr jagung kering, rendam semalaman</li>
+          <li>150 gr kacang merah, rendam semalaman</li>
+          <li>2 lembar daun salam</li>
+          <li>3 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, iris</li>
+          <li>Garam dan lada secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus jagung dan kacang hingga empuk.</li>
+          <li>Tumis bawang merah, bawang putih, dan daun salam hingga harum.</li>
+          <li>Masukkan tumisan ke dalam rebusan jagung dan kacang, tambahkan garam dan lada.</li>
+          <li>Masak dengan api kecil hingga bumbu meresap dan kuah sedikit menyusut.</li>
+          <li>Sajikan hangat sebagai pengganti nasi atau lauk pendamping.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ikan Kuah Kuning -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ikan-kuah-kuning.jpg" alt="Ikan Kuah Kuning" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ikan Kuah Kuning</h2>
+      <p class="text-gray-700 mb-4">Ikan segar dimasak dengan bumbu kunyit khas NTT yang segar dan gurih.</p>
+      <button onclick="toggleResep('resep-ikan-kuah-kuning')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ikan-kuah-kuning" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan segar (ikan kakap, ikan kerapu, atau ikan laut lainnya)</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 cm kunyit, haluskan</li>
+          <li>3 siung bawang merah, iris</li>
+          <li>3 siung bawang putih, iris</li>
+          <li>2 buah tomat, potong-potong</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, serai, dan kunyit hingga harum.</li>
+          <li>Masukkan air dan didihkan.</li>
+          <li>Masukkan ikan dan tomat, beri garam serta gula.</li>
+          <li>Masak hingga ikan matang dan bumbu meresap.</li>
+          <li>Sajikan dengan nasi putih hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Daging Se'i -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/daging-sei.jpg" alt="Daging Se'i" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Daging Se'i</h2>
+      <p class="text-gray-700 mb-4">Daging asap khas NTT dengan rasa gurih dan aroma asap yang kuat.</p>
+      <button onclick="toggleResep('resep-daging-sei')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-daging-sei" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi segar, iris tipis</li>
+          <li>5 siung bawang putih, haluskan</li>
+          <li>2 sdm garam</li>
+          <li>2 sdm gula merah serut</li>
+          <li>2 sdm ketumbar bubuk</li>
+          <li>Kayu asap untuk pengasapan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur daging dengan bawang putih, garam, gula merah, dan ketumbar, diamkan 2 jam.</li>
+          <li>Susun daging di rak pengasap dan asap hingga matang dan harum.</li>
+          <li>Potong dan sajikan dengan nasi hangat dan sambal favorit.</li>
+        </ol>
+      </div>
+    </div>
+
+   <!-- Daging Rimat -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/daging-rimat.jpg" alt="Daging Rimat" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Daging Rimat</h2>
+  <p class="text-gray-700 mb-4">Daging sapi yang dimasak dengan bumbu rempah khas NTT, berkuah kental dan pedas.</p>
+  <button onclick="toggleResep('resep-daging-rimat')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-daging-rimat" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>500 gr daging sapi, potong dadu</li>
+      <li>5 siung bawang merah</li>
+      <li>3 siung bawang putih</li>
+      <li>5 buah cabai merah keriting</li>
+      <li>2 batang serai, memarkan</li>
+      <li>2 lembar daun salam</li>
+      <li>1 ruas jahe</li>
+      <li>Garam dan gula secukupnya</li>
+      <li>Minyak goreng secukupnya</li>
+      <li>Air secukupnya</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Tumis bawang merah, bawang putih, cabai, serai, daun salam, dan jahe hingga harum.</li>
+      <li>Masukkan daging sapi, aduk rata dan masak hingga berubah warna.</li>
+      <li>Tuang air secukupnya, masak dengan api kecil hingga daging empuk dan kuah mengental.</li>
+      <li>Tambahkan garam dan gula sesuai selera.</li>
+      <li>Sajikan hangat dengan nasi putih.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Sambal Lu'at -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/sambal-luat.jpg" alt="Sambal Lu'at" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Sambal Lu'at</h2>
+  <p class="text-gray-700 mb-4">Sambal khas NTT berbahan dasar cabai dan tomat, pedas dan segar sebagai pelengkap lauk.</p>
+  <button onclick="toggleResep('resep-sambal-luat')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-sambal-luat" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>10 buah cabai merah keriting</li>
+      <li>5 buah cabai rawit</li>
+      <li>2 buah tomat merah, potong-potong</li>
+      <li>3 siung bawang putih</li>
+      <li>Garam dan gula secukupnya</li>
+      <li>Minyak goreng secukupnya</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Goreng cabai merah, cabai rawit, tomat, dan bawang putih hingga layu.</li>
+      <li>Haluskan semua bahan gorengan bersama garam dan gula.</li>
+      <li>Tambahkan minyak goreng sedikit demi sedikit hingga sambal agak berminyak.</li>
+      <li>Sajikan sebagai pelengkap lauk dan nasi hangat.</li>
+    </ol>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+</body>
+</html>

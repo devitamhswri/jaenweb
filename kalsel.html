@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Kalimantan Selatan - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0fff4;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Khas Kalimantan Selatan 🌿</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Soto Banjar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/soto-banjar.jpg" alt="Soto Banjar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Soto Banjar</h2>
+      <p class="text-gray-700 mb-4">Soto ayam berkuah kuning dengan rempah khas Banjar, segar dan gurih.</p>
+      <button onclick="toggleResep('resep-sotobanjar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sotobanjar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ayam kampung, potong</li>
+          <li>2 liter air</li>
+          <li>5 siung bawang putih, haluskan</li>
+          <li>5 siung bawang merah, haluskan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 cm jahe, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>1 sdt pala bubuk</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>100 gr bihun, seduh air panas</li>
+          <li>Telur rebus, kentang goreng, dan daun bawang untuk pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus ayam hingga empuk dan kaldu keluar.</li>
+          <li>Tumis bawang putih dan bawang merah, tambahkan serai, jahe, dan daun salam, masukkan ke kuah kaldu.</li>
+          <li>Tambahkan pala, garam, dan merica, masak hingga harum.</li>
+          <li>Siapkan mangkuk, tata bihun, ayam suwir, telur, kentang goreng, siram kuah.</li>
+          <li>Taburi daun bawang, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ketupat Kandangan -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ketupat-kandangan.jpg" alt="Ketupat Kandangan" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Ketupat Kandangan</h2>
+      <p class="text-gray-700 mb-4">Ketupat disajikan dengan lauk ikan gabus kuah santan pedas khas Kandangan.</p>
+      <button onclick="toggleResep('resep-ketupatkandangan')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-ketupatkandangan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan gabus, potong</li>
+          <li>2 buah ketupat</li>
+          <li>500 ml santan kelapa</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 buah cabai merah keriting</li>
+          <li>2 lembar daun salam</li>
+          <li>2 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, dan cabai hingga harum.</li>
+          <li>Masukkan daun salam dan serai, aduk sebentar.</li>
+          <li>Tambahkan ikan gabus, masak hingga berubah warna.</li>
+          <li>Tuang santan, masak dengan api kecil hingga mengental.</li>
+          <li>Beri garam dan gula, koreksi rasa.</li>
+          <li>Sajikan dengan ketupat hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Nasi Kuning Banjar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasi-kuning-banjar.jpg" alt="Nasi Kuning Banjar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Nasi Kuning Banjar</h2>
+      <p class="text-gray-700 mb-4">Nasi kuning khas Banjar dengan aroma rempah dan santan yang gurih.</p>
+      <button onclick="toggleResep('resep-nasikuningbanjar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-nasikuningbanjar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>2 gelas beras</li>
+          <li>400 ml santan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun salam</li>
+          <li>1 sdt kunyit bubuk atau 3 cm kunyit segar</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>Garam secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Cuci beras hingga bersih.</li>
+          <li>Rebus santan bersama serai, daun salam, kunyit, bawang putih, dan garam hingga mendidih.</li>
+          <li>Masukkan beras, masak dengan api kecil sambil sesekali diaduk hingga santan meresap.</li>
+          <li>Setelah hampir matang, kukus nasi hingga benar-benar matang dan wangi.</li>
+          <li>Sajikan dengan lauk pelengkap sesuai selera.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ketupat Kandangan Sambal Banjar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sambal-banjar.jpg" alt="Sambal Banjar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sambal Banjar</h2>
+      <p class="text-gray-700 mb-4">Sambal khas Banjar dengan cita rasa pedas dan aroma khas yang menggoda selera.</p>
+      <button onclick="toggleResep('resep-sambalbanjar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-sambalbanjar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>10 buah cabai merah keriting</li>
+          <li>5 buah cabai rawit</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>1 buah tomat merah</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak goreng untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan cabai, bawang merah, bawang putih, dan tomat.</li>
+          <li>Tumis bumbu halus hingga matang dan harum.</li>
+          <li>Beri garam dan gula, masak hingga sambal matang dan agak kental.</li>
+          <li>Sajikan sebagai pelengkap berbagai hidangan Banjar.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Amparan Tatak -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/amparan-tatak.jpg" alt="Amparan Tatak" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Amparan Tatak</h2>
+      <p class="text-gray-700 mb-4">Kue tradisional Banjar dari tepung beras dan santan dengan tekstur kenyal dan rasa manis.</p>
+      <button onclick="toggleResep('resep-amparantatak')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-amparantatak" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gr tepung beras</li>
+          <li>200 ml santan</li>
+          <li>150 gr gula merah, serut halus</li>
+          <li>1/2 sdt garam</li>
+          <li>Daun pisang untuk membungkus</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung beras, santan, gula merah, dan garam hingga rata.</li>
+          <li>Tuang adonan ke daun pisang yang sudah dilapisi minyak.</li>
+          <li>Kukus selama 30 menit hingga matang dan mengeras.</li>
+          <li>Potong-potong dan sajikan sebagai camilan tradisional.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Manday -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/manday.jpg" alt="Manday" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Manday</h2>
+      <p class="text-gray-700 mb-4">Hidangan olahan ikan patin khas Kalimantan Selatan dengan kuah santan gurih dan pedas.</p>
+      <button onclick="toggleResep('resep-manday')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-manday" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr ikan patin, potong</li>
+          <li>400 ml santan</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>10 buah cabai rawit</li>
+          <li>2 lembar daun salam</li>
+          <li>1 batang serai, memarkan</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Minyak untuk menumis</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang merah, bawang putih, dan cabai hingga harum.</li>
+          <li>Masukkan daun salam dan serai, aduk sebentar.</li>
+          <li>Tambahkan ikan patin, aduk rata.</li>
+          <li>Tuang santan, masak dengan api kecil hingga ikan matang dan kuah mengental.</li>
+          <li>Beri garam dan gula sesuai selera, sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
