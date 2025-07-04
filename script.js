@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ==================== DESKTOP EVENT LISTENERS ====================
 
-    // Desktop Recipe Dropdown
+    // Desktop Recipe Dropdown - HANYA TOGGLE DENGAN CLICK
     if (recipeDropdownBtn && recipeDropdownMenu) {
         // Toggle dropdown on button click
         recipeDropdownBtn.addEventListener('click', function(e) {
@@ -275,34 +275,9 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
             toggleDesktopRecipeDropdown();
         });
-        
-        // Show dropdown on hover (optional - sesuai design asli Anda)
-        const recipeDropdownParent = recipeDropdownBtn.parentElement;
-        if (recipeDropdownParent) {
-            recipeDropdownParent.addEventListener('mouseenter', function() {
-                if (!isDesktopRecipeOpen) {
-                    isDesktopRecipeOpen = true;
-                    recipeDropdownMenu.classList.add('show');
-                    if (recipeDropdownIcon) {
-                        recipeDropdownIcon.style.transform = 'rotate(180deg)';
-                    }
-                }
-            });
-            
-            // Hide dropdown on mouse leave (optional)
-            recipeDropdownParent.addEventListener('mouseleave', function() {
-                if (isDesktopRecipeOpen) {
-                    isDesktopRecipeOpen = false;
-                    recipeDropdownMenu.classList.remove('show');
-                    if (recipeDropdownIcon) {
-                        recipeDropdownIcon.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
-        }
     }
 
-    // Desktop Tips Dropdown
+    // Desktop Tips Dropdown - HANYA TOGGLE DENGAN CLICK
     if (tipsDropdownBtn && tipsDropdownMenu) {
         // Toggle dropdown on button click
         tipsDropdownBtn.addEventListener('click', function(e) {
@@ -310,31 +285,6 @@ document.addEventListener('DOMContentLoaded', function() {
             e.stopPropagation();
             toggleDesktopTipsDropdown();
         });
-        
-        // Show dropdown on hover (optional)
-        const tipsDropdownParent = tipsDropdownBtn.parentElement;
-        if (tipsDropdownParent) {
-            tipsDropdownParent.addEventListener('mouseenter', function() {
-                if (!isDesktopTipsOpen) {
-                    isDesktopTipsOpen = true;
-                    tipsDropdownMenu.classList.add('show');
-                    if (tipsDropdownIcon) {
-                        tipsDropdownIcon.style.transform = 'rotate(180deg)';
-                    }
-                }
-            });
-            
-            // Hide dropdown on mouse leave (optional)
-            tipsDropdownParent.addEventListener('mouseleave', function() {
-                if (isDesktopTipsOpen) {
-                    isDesktopTipsOpen = false;
-                    tipsDropdownMenu.classList.remove('show');
-                    if (tipsDropdownIcon) {
-                        tipsDropdownIcon.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
-        }
     }
 
     // ==================== SEARCH MODAL EVENT LISTENERS ====================
@@ -356,47 +306,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ==================== DROPDOWN ITEM LISTENERS ====================
     
-    // Mobile Recipe dropdown items
+    // Mobile Recipe dropdown items - TIDAK MENUTUP DROPDOWN
     const mobileRecipeItems = document.querySelectorAll('#mobileRecipeDropdown .dropdown-item, #mobileRecipeDropdown a');
     mobileRecipeItems.forEach(item => {
         item.addEventListener('click', function(e) {
             console.log('Selected Mobile Recipe Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleMobileRecipeDropdown();
-            // Close mobile menu as well
-            closeMobileMenu();
+            // DROPDOWN TETAP TERBUKA - tidak memanggil toggleMobileRecipeDropdown()
+            // MOBILE MENU TETAP TERBUKA - tidak memanggil closeMobileMenu()
         });
     });
 
-    // Mobile Tips dropdown items
+    // Mobile Tips dropdown items - TIDAK MENUTUP DROPDOWN
     const mobileTipsItems = document.querySelectorAll('#mobileTipsDropdown .tips-item, #mobileTipsDropdown a');
     mobileTipsItems.forEach(item => {
         item.addEventListener('click', function(e) {
             console.log('Selected Mobile Tips Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleMobileTipsDropdown();
-            // Close mobile menu as well
-            closeMobileMenu();
+            // DROPDOWN TETAP TERBUKA - tidak memanggil toggleMobileTipsDropdown()
+            // MOBILE MENU TETAP TERBUKA - tidak memanggil closeMobileMenu()
         });
     });
 
-    // Desktop Recipe dropdown items
+    // Desktop Recipe dropdown items - TIDAK MENUTUP DROPDOWN
     const desktopRecipeItems = document.querySelectorAll('#recipeDropdownMenu .dropdown-item, #recipeDropdownMenu a');
     desktopRecipeItems.forEach(item => {
         item.addEventListener('click', function(e) {
             console.log('Selected Desktop Recipe Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleDesktopRecipeDropdown();
+            // DROPDOWN TETAP TERBUKA - tidak memanggil toggleDesktopRecipeDropdown()
         });
     });
 
-    // Desktop Tips dropdown items
+    // Desktop Tips dropdown items - TIDAK MENUTUP DROPDOWN
     const desktopTipsItems = document.querySelectorAll('#tipsDropdownMenu .tips-item, #tipsDropdownMenu a');
     desktopTipsItems.forEach(item => {
         item.addEventListener('click', function(e) {
             console.log('Selected Desktop Tips Category:', this.textContent.trim());
-            // Close dropdown after selection
-            toggleDesktopTipsDropdown();
+            // DROPDOWN TETAP TERBUKA - tidak memanggil toggleDesktopTipsDropdown()
         });
     });
 
@@ -538,7 +482,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('Enhanced Mobile & Desktop Navigation initialized successfully');
 });
-        
 // ==================== TOMBOL SLIDE ====================
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
