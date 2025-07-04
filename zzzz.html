@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaen - Minuman Segar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaen - Resep Masakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Poppins', sans-serif;
             padding-top: 80px; 
         }
-    @media (max-width: 1024px) {
+        
+        @media (max-width: 1024px) {
             body {
                 padding-top: 140px; 
             }
@@ -99,19 +100,10 @@
             opacity: 1;
             visibility: visible;
         }
-  </style>
-  <script>
-    function toggleResep(id) {
-      const el = document.getElementById(id);
-      el.classList.toggle('hidden');
-      if (!el.classList.contains('hidden')) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
-  </script>
+    </style>
 </head>
-<body class="bg-orange-50 pt-20">
-  <!-- Search Modal for Mobile -->
+<body class="bg-orange-50">
+    <!-- Search Modal for Mobile -->
     <div id="searchModal" class="search-modal fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
         <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md mx-4">
             <div class="p-4">
@@ -150,7 +142,7 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden lg:flex space-x-8 items-center">
-                    <a href="index.html" class="text-orange-950 font-medium hover:text-orange-600 transition-colors">Home</a>
+                    <a href="#" class="text-orange-950 font-medium hover:text-orange-600 transition-colors">Home</a>
                     
                     <!-- Dropdown Resep Masakan -->
                     <div class="relative group">
@@ -222,7 +214,7 @@
                                 <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b border-orange-200 pb-2">Tips & Trik</h3>
                                 <ul class="space-y-2">
                                     <li>
-                                        <a href="tips-memasak.html" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
+                                        <a href="#" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
                                             <div class="flex items-center">
                                                 <svg class="w-5 h-5 text-orange-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
@@ -301,7 +293,7 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-orange-200">
                 <div class="px-4 py-4 space-y-4">
-                    <a href="index.html" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">Home</a>
+                    <a href="#" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">Home</a>
                     
                     <!-- Mobile Resep Masakan -->
                     <div>
@@ -352,7 +344,7 @@
                         </button>
                         <div id="mobileTipsDropdown" class="mobile-dropdown pl-4 mt-2">
                             <div class="space-y-2">
-                                <a href="tips-memasak.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
+                                <a href="#" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
                                     <svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                                     </svg>
@@ -386,193 +378,182 @@
         </div>
     </header>
 
-<section class="mt-20 max-w-6xl mx-auto px-4">
+   
+  
+     <!-- Artikel Nutrisi Section dengan ID -->
+    <section id="nutrisi-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-7xl mx-auto">
+                
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+               <!-- Articles Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Artikel 1 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <a href="sotoayam.html" class="block">
+                        <img src="img/teh-hijau.jpg" alt="Teh Herbal" class="w-full h-48 object-cover bg-green-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight hover:underline">
+                                Ngopi Udah Biasa, Yuk Kenalan Sama 7 Jenis Teh dan Manfaatnya!
+                            </h3>
+                            </a>
+                        </div>
+                    </article>
 
-    <!-- Es Buah -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/es-buah" alt="Es Buah" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-teal-800">Es Buah</h3>
-      <p class="text-sm text-gray-600 mb-4">Campuran buah segar dan sirup manis, cocok untuk menyegarkan hari Anda.</p>
-      <button onclick="toggleResep('resep-esbuah')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-      <div id="resep-esbuah" class="hidden">
-        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>1 buah apel, potong dadu</li>
-          <li>1 buah pir, potong dadu</li>
-          <li>1/2 buah melon, keruk bulat</li>
-          <li>1/2 buah semangka, potong kecil</li>
-          <li>1 sachet susu kental manis</li>
-          <li>2 sdm sirup merah (cocopandan)</li>
-          <li>Es batu secukupnya</li>
-          <li>Air matang dingin</li>
-        </ul>
-        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur semua potongan buah ke dalam mangkuk besar. Tambahkan es batu dan air dingin secukupnya. Tuang susu kental manis dan sirup merah, aduk rata. Sajikan dingin.</p>
-      </div>
-    </div>
+                    <!-- Artikel 2 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                         <a href="sotoayam.html" class="block">
+                        <img src="img/yogurt.jpg" alt="Yogurt Strawberry" class="w-full h-48 object-cover bg-pink-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight hover:underline">
+                                6 Rekomendasi Merk Yogurt untuk Bayi yang Aman dan Sehat
+                            </h3>
+                            </a>
+                        </div>
+                    </article>
 
-    <!-- Es Cincau Hijau -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/es-cincau-hijau" alt="Es Cincau Hijau" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-teal-800">Es Cincau Hijau</h3>
-      <p class="text-sm text-gray-600 mb-4">Minuman tradisional yang menyegarkan dan menyehatkan, dengan cincau buatan sendiri.</p>
-      <button onclick="toggleResep('resep-escincau')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-      <div id="resep-escincau" class="hidden">
-        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>1 genggam daun cincau hijau</li>
-          <li>400 ml air matang</li>
-          <li>Sirup gula merah atau gula aren cair</li>
-          <li>Santan matang</li>
-          <li>Es batu secukupnya</li>
-        </ul>
-        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Remas daun cincau dengan air matang hingga keluar gel hijau, saring dan diamkan hingga mengeras. Potong cincau sesuai selera. Sajikan dengan santan, sirup gula merah, dan es batu.</p>
-      </div>
-    </div>
+                    <!-- Artikel 3 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/protein-nabati.jpeg" alt="Protein Nabati" class="w-full h-48 object-cover bg-green-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                10 Sumber Protein Nabati Terbaik untuk Vegetarian
+                            </h3>
+                        </div>
+                    </article>
 
-    <!-- Es Jeruk Peras -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/jeruk-peras.jpg" alt="Es Jeruk" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-teal-800">Es Jeruk Peras</h3>
-      <p class="text-sm text-gray-600 mb-4">Segarnya jeruk asli peras, kaya vitamin C dan menyegarkan tenggorokan.</p>
-      <button onclick="toggleResep('resep-esjeruk')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-      <div id="resep-esjeruk" class="hidden">
-        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>4 buah jeruk manis</li>
-          <li>2 sdm gula (opsional)</li>
-          <li>Es batu secukupnya</li>
-        </ul>
-        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Peras jeruk dan saring airnya. Tambahkan gula jika perlu. Tuang ke gelas berisi es batu dan sajikan segera.</p>
-      </div>
-    </div>
+                    <!-- Artikel 4 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/pisang.jpg" alt="Buah Pisang" class="w-full h-48 object-cover bg-yellow-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Manfaat Luar Biasa Pisang untuk Kesehatan Tubuh
+                            </h3>
+                        </div>
+                    </article>
 
-    <!-- 4: Es Kelapa Muda -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/es-kelapa.jpg" alt="Es Kelapa Muda" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Kelapa Muda</h3>
-  <p class="text-sm text-gray-600 mb-4">Segarnya air kelapa muda dengan sensasi dingin yang menyegarkan.</p>
-  <button onclick="toggleResep('resep-eskelapamuda')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-eskelapamuda" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Air kelapa muda segar</li>
-      <li>Daging kelapa muda</li>
-      <li>Es batu</li>
-      <li>Sirup gula merah (optional)</li>
-      <li>Jeruk nipis (optional)</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Siapkan gelas dengan es batu, tuang air kelapa muda segar, tambahkan daging kelapa muda. Jika suka, beri sirup gula merah dan perasan jeruk nipis agar rasa lebih segar dan manis. Aduk rata dan sajikan segera.</p>
-  </div>
-</div>
+                    <!-- Artikel 5 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/kacang-almond.jpg" alt="Kacang Almond" class="w-full h-48 object-cover bg-amber-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                7 Manfaat Kacang Almond untuk Diet Sehat Harian
+                            </h3>
+                        </div>
+                    </article>
 
-<!-- 5: Es Teh Manis -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/teh-manis.jpg" alt="Es Teh Manis" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Teh Manis</h3>
-  <p class="text-sm text-gray-600 mb-4">Teh hitam manis dingin yang selalu cocok menemani hari.</p>
-  <button onclick="toggleResep('resep-estehmanis')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-estehmanis" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Teh celup atau daun teh hitam</li>
-      <li>Air panas</li>
-      <li>Gula pasir sesuai selera</li>
-      <li>Es batu</li>
-      <li>Jeruk nipis (optional)</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Seduh teh dengan air panas hingga pekat, tambahkan gula sesuai selera. Dinginkan dulu, lalu tuang ke gelas berisi es batu. Jika suka, beri perasan jeruk nipis untuk rasa segar tambahan. Aduk dan sajikan.</p>
-  </div>
-</div>
+                    <!-- Artikel 6 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/minuman-detox.jpg" alt="Minuman Detox" class="w-full h-48 object-cover bg-lime-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                5 Resep Minuman Detox untuk Membersihkan Racun Tubuh
+                            </h3>
+                        </div>
+                    </article>
 
-<!-- 6: Es Kopi Susu -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/kopi-susu.jpg" alt="Es Kopi Susu" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Kopi Susu</h3>
-  <p class="text-sm text-gray-600 mb-4">Kopi pahit yang dipadukan dengan susu segar dan es batu.</p>
-  <button onclick="toggleResep('resep-eskopisusu')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-eskopisusu" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Kopi bubuk atau kopi instan</li>
-      <li>Air panas</li>
-      <li>Susu cair (bisa susu kental manis atau susu segar)</li>
-      <li>Es batu</li>
-      <li>Gula (opsional)</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Seduh kopi dengan air panas. Tambahkan gula jika suka manis. Tuang ke gelas berisi es batu, lalu tambahkan susu cair secukupnya. Aduk rata dan sajikan dingin.</p>
-  </div>
-</div>
+                    <!-- Artikel 7 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/sayuran-hijau.jpg" alt="Sayuran Hijau" class="w-full h-48 object-cover bg-green-400">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Pentingnya Sayuran Hijau dalam Menu Sehari-hari
+                            </h3>
+                        </div>
+                    </article>
 
-<!-- 7: Es Cendol -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/es-cendol" alt="Es Cendol" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Cendol</h3>
-  <p class="text-sm text-gray-600 mb-4">Cendol hijau kenyal dengan santan manis yang sangat menyegarkan.</p>
-  <button onclick="toggleResep('resep-escendol')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-escendol" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Tepung beras</li>
-      <li>Daun pandan</li>
-      <li>Gula merah cair</li>
-      <li>Santan kental</li>
-      <li>Es serut atau es batu</li>
-      <li>Daun suji (opsional untuk warna hijau alami)</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Campur tepung beras dengan air pandan dan daun suji, masak sambil diaduk hingga kental. Cetak menggunakan saringan kecil ke dalam air dingin agar membentuk cendol. Sajikan cendol dengan gula merah cair, santan, dan es serut. Aduk sebelum diminum.</p>
-  </div>
-</div>
+                    <!-- Artikel 8 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/ikan-salmon.jpg" alt="Ikan Salmon" class="w-full h-48 object-cover bg-orange-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Kandungan Omega-3 pada Ikan dan Manfaatnya
+                            </h3>
+                        </div>
+                    </article>
 
-<!-- 8: Es Soda Gembira -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/soda-gembira.jpg" alt="Es Soda Gembira" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Soda Gembira</h3>
-  <p class="text-sm text-gray-600 mb-4">Perpaduan soda, sirup manis, dan susu kental yang menyegarkan.</p>
-  <button onclick="toggleResep('resep-essodagembira')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-essodagembira" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Soda tawar</li>
-      <li>Sirup cocopandan atau merah</li>
-      <li>Susu kental manis</li>
-      <li>Es batu</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Isi gelas dengan es batu, tuang sirup, kemudian susu kental manis. Tambahkan soda tawar perlahan agar tidak meluap. Aduk ringan dan sajikan segera.</p>
-  </div>
-</div>
+                    <!-- Artikel 9 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/buah-buahan.jpg" alt="Vitamin C" class="w-full h-48 object-cover bg-red-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Buah-buahan Kaya Vitamin C untuk Daya Tahan Tubuh
+                            </h3>
+                        </div>
+                    </article>
 
-<!-- 9: Es Alpukat -->
-<div class="bg-white shadow-md rounded-xl p-5">
-  <img src="img/es-alpukat.jpg" alt="Es Alpukat" class="w-full h-40 object-cover rounded-lg mb-4" />
-  <h3 class="text-xl font-semibold text-teal-800">Es Alpukat</h3>
-  <p class="text-sm text-gray-600 mb-4">Alpukat lembut dengan susu manis dan es yang dingin menyegarkan.</p>
-  <button onclick="toggleResep('resep-esalpukat')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
-  <div id="resep-esalpukat" class="hidden">
-    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
-    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-      <li>Buah alpukat matang</li>
-      <li>Susu kental manis</li>
-      <li>Es batu</li>
-      <li>Sirup cocopandan (opsional)</li>
-    </ul>
-    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
-    <p class="text-sm text-gray-700">Keruk daging alpukat, masukkan ke dalam gelas. Tambahkan es batu dan susu kental manis. Jika suka, beri sirup cocopandan. Aduk rata dan sajikan dingin.</p>
-  </div>
-</div>
+                    <!-- Artikel 10 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/oatmeal.jpg" alt="Oatmeal" class="w-full h-48 object-cover bg-amber-100">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Oatmeal: Sarapan Sehat untuk Menurunkan Kolesterol
+                            </h3>
+                        </div>
+                    </article>
 
-  </div>
-</section>
-<!-- Mobile Search Bar -->
+                    <!-- Artikel 11 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/air-mineral.jpg" alt="Air Mineral" class="w-full h-48 object-cover bg-blue-200">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Pentingnya Minum Air Mineral 8 Gelas Sehari
+                            </h3>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 12 -->
+                    <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <img src="img/quinoa.jpg" alt="Quinoa" class="w-full h-48 object-cover bg-yellow-100">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Quinoa: Superfood Pengganti Nasi yang Kaya Protein
+                            </h3>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 13 - Hidden by default -->
+                    <article id="article-13" class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 hidden">
+                        <img src="img/alpukat.jpg" alt="Alpukat" class="w-full h-48 object-cover bg-green-500">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Alpukat: Buah Super Kaya Lemak Sehat dan Nutrisi
+                            </h3>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 14 - Hidden by default -->
+                    <article id="article-14" class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 hidden">
+                        <img src="img/kedelai.jpg" alt="Kedelai" class="w-full h-48 object-cover bg-yellow-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Manfaat Kedelai untuk Kesehatan Jantung dan Tulang
+                            </h3>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 15 - Hidden by default -->
+                    <article id="article-15" class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 hidden">
+                        <img src="img/brokoli.jpg" alt="Brokoli" class="w-full h-48 object-cover bg-green-600">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 leading-tight">
+                                Brokoli: Sayuran Hijau dengan Segudang Manfaat
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More/Less Button -->
+                <div class="text-center mt-12">
+                    <button id="toggleButton" onclick="toggleArticles()" class="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+                        Lihat Artikel Lainnya
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Search Bar -->
     <div class="lg:hidden bg-white shadow-md p-4 fixed top-20 left-0 right-0 z-40">
         <div class="flex items-center bg-gray-100 rounded-full px-4 py-3">
             <input type="text" placeholder="Mau Masak Apa Hari Ini?" class="bg-transparent outline-none text-gray-600 flex-1">
@@ -583,7 +564,7 @@
     </div>
     
     <!-- Footer -->
-    <footer id="contact" class="bg-slate-800 text-white py-16 px-6 mt-16">
+    <footer id="contact" class="bg-slate-800 text-white py-16 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <!-- Brand Section -->
@@ -690,6 +671,5 @@
 
     </div>
   <script src="script.js"></script>
-
 </body>
 </html>
