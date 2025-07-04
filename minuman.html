@@ -3,353 +3,212 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaen - Minuman</title>
+  <title>Jaen - Minuman Segar</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #fff7ed;
+      background-color: #e0f7fa;
     }
   </style>
   <script>
     function toggleResep(id) {
       const el = document.getElementById(id);
       el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   </script>
 </head>
 <body>
 
 <section class="mt-20 max-w-6xl mx-auto px-4">
-  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Pilihan Minuman Segar & Nikmat 🧃</h2>
-  <p class="text-center text-gray-600 mb-8">Cocok menemani camilan atau makan siang dan malam.</p>
+  <h2 class="text-2xl font-bold text-teal-700 mb-4 text-center">Rekomendasi Minuman Segar 🥤</h2>
+  <p class="text-center text-gray-600 mb-8">Minuman dingin pelepas dahaga yang cocok untuk segala suasana.</p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- 1: Es Teh Manis -->
+    <!-- Es Buah -->
     <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/estehmanis.jpg" alt="Es Teh Manis" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Teh Manis</h3>
-      <p class="text-sm text-gray-600 mb-4">Pelepas dahaga sejuta umat, manis dan menyegarkan!</p>
-      <button onclick="toggleResep('resep-estehmanis')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-estehmanis" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+      <img src="img/esbuah.jpg" alt="Es Buah" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-teal-800">Es Buah</h3>
+      <p class="text-sm text-gray-600 mb-4">Campuran buah segar dan sirup manis, cocok untuk menyegarkan hari Anda.</p>
+      <button onclick="toggleResep('resep-esbuah')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+      <div id="resep-esbuah" class="hidden">
+        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Teh celup</li>
-          <li>Gula pasir</li>
-          <li>Es batu</li>
+          <li>1 buah apel, potong dadu</li>
+          <li>1 buah pir, potong dadu</li>
+          <li>1/2 buah melon, keruk bulat</li>
+          <li>1/2 buah semangka, potong kecil</li>
+          <li>1 sachet susu kental manis</li>
+          <li>2 sdm sirup merah (cocopandan)</li>
+          <li>Es batu secukupnya</li>
+          <li>Air matang dingin</li>
         </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Seduh teh, tambahkan gula, biarkan dingin, tuang ke gelas dengan es batu.</p>
+        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Campur semua potongan buah ke dalam mangkuk besar. Tambahkan es batu dan air dingin secukupnya. Tuang susu kental manis dan sirup merah, aduk rata. Sajikan dingin.</p>
       </div>
     </div>
 
-    <!-- 2: Es Jeruk -->
+    <!-- Es Cincau Hijau -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/escincau.jpg" alt="Es Cincau Hijau" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-teal-800">Es Cincau Hijau</h3>
+      <p class="text-sm text-gray-600 mb-4">Minuman tradisional yang menyegarkan dan menyehatkan, dengan cincau buatan sendiri.</p>
+      <button onclick="toggleResep('resep-escincau')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+      <div id="resep-escincau" class="hidden">
+        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>1 genggam daun cincau hijau</li>
+          <li>400 ml air matang</li>
+          <li>Sirup gula merah atau gula aren cair</li>
+          <li>Santan matang</li>
+          <li>Es batu secukupnya</li>
+        </ul>
+        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Remas daun cincau dengan air matang hingga keluar gel hijau, saring dan diamkan hingga mengeras. Potong cincau sesuai selera. Sajikan dengan santan, sirup gula merah, dan es batu.</p>
+      </div>
+    </div>
+
+    <!-- Es Jeruk Peras -->
     <div class="bg-white shadow-md rounded-xl p-5">
       <img src="img/esjeruk.jpg" alt="Es Jeruk" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Jeruk</h3>
-      <p class="text-sm text-gray-600 mb-4">Asam manis segar, favorit di siang terik!</p>
-      <button onclick="toggleResep('resep-esjeruk')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <h3 class="text-xl font-semibold text-teal-800">Es Jeruk Peras</h3>
+      <p class="text-sm text-gray-600 mb-4">Segarnya jeruk asli peras, kaya vitamin C dan menyegarkan tenggorokan.</p>
+      <button onclick="toggleResep('resep-esjeruk')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
       <div id="resep-esjeruk" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Jeruk peras</li>
-          <li>Air matang</li>
-          <li>Gula dan es batu</li>
+          <li>4 buah jeruk manis</li>
+          <li>2 sdm gula (opsional)</li>
+          <li>Es batu secukupnya</li>
         </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Peras jeruk, campur dengan air, tambahkan gula dan es batu sesuai selera.</p>
+        <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700">Peras jeruk dan saring airnya. Tambahkan gula jika perlu. Tuang ke gelas berisi es batu dan sajikan segera.</p>
       </div>
     </div>
 
-    <!-- 3: Es Cendol -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/escendol.jpg" alt="Es Cendol" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Cendol</h3>
-      <p class="text-sm text-gray-600 mb-4">Manis legit, kenyal cendolnya bikin nagih.</p>
-      <button onclick="toggleResep('resep-escendol')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-escendol" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Cendol siap pakai</li>
-          <li>Santan rebus</li>
-          <li>Gula merah cair, es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur semua bahan ke dalam gelas, sajikan dingin.</p>
-      </div>
-    </div>
+    <!-- 4: Es Kelapa Muda -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/eskelapamuda.jpg" alt="Es Kelapa Muda" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Kelapa Muda</h3>
+  <p class="text-sm text-gray-600 mb-4">Segarnya air kelapa muda dengan sensasi dingin yang menyegarkan.</p>
+  <button onclick="toggleResep('resep-eskelapamuda')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-eskelapamuda" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Air kelapa muda segar</li>
+      <li>Daging kelapa muda</li>
+      <li>Es batu</li>
+      <li>Sirup gula merah (optional)</li>
+      <li>Jeruk nipis (optional)</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Siapkan gelas dengan es batu, tuang air kelapa muda segar, tambahkan daging kelapa muda. Jika suka, beri sirup gula merah dan perasan jeruk nipis agar rasa lebih segar dan manis. Aduk rata dan sajikan segera.</p>
+  </div>
+</div>
 
-    <!-- 4: Es Kopi Susu -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/eskopisusu.jpg" alt="Es Kopi Susu" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Kopi Susu</h3>
-      <p class="text-sm text-gray-600 mb-4">Kopi dan susu berpadu creamy, cocok buat ngopi santai.</p>
-      <button onclick="toggleResep('resep-eskopisusu')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-eskopisusu" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Kopi hitam seduh</li>
-          <li>Susu kental manis</li>
-          <li>Es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur kopi dan susu, aduk rata, sajikan dengan es batu.</p>
-      </div>
-    </div>
+<!-- 5: Es Teh Manis -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/estehmanis.jpg" alt="Es Teh Manis" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Teh Manis</h3>
+  <p class="text-sm text-gray-600 mb-4">Teh hitam manis dingin yang selalu cocok menemani hari.</p>
+  <button onclick="toggleResep('resep-estehmanis')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-estehmanis" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Teh celup atau daun teh hitam</li>
+      <li>Air panas</li>
+      <li>Gula pasir sesuai selera</li>
+      <li>Es batu</li>
+      <li>Jeruk nipis (optional)</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Seduh teh dengan air panas hingga pekat, tambahkan gula sesuai selera. Dinginkan dulu, lalu tuang ke gelas berisi es batu. Jika suka, beri perasan jeruk nipis untuk rasa segar tambahan. Aduk dan sajikan.</p>
+  </div>
+</div>
 
-    <!-- 5: Wedang Jahe -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/wedangjahe.jpg" alt="Wedang Jahe" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Wedang Jahe</h3>
-      <p class="text-sm text-gray-600 mb-4">Hangat, pedas jahe, pas untuk malam dingin.</p>
-      <button onclick="toggleResep('resep-wedangjahe')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-wedangjahe" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Jahe bakar geprek</li>
-          <li>Air panas</li>
-          <li>Gula merah</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Rebus semua bahan hingga wangi dan hangatkan tubuh.</p>
-      </div>
-    </div>
+<!-- 6: Es Kopi Susu -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/eskopisusu.jpg" alt="Es Kopi Susu" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Kopi Susu</h3>
+  <p class="text-sm text-gray-600 mb-4">Kopi pahit yang dipadukan dengan susu segar dan es batu.</p>
+  <button onclick="toggleResep('resep-eskopisusu')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-eskopisusu" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Kopi bubuk atau kopi instan</li>
+      <li>Air panas</li>
+      <li>Susu cair (bisa susu kental manis atau susu segar)</li>
+      <li>Es batu</li>
+      <li>Gula (opsional)</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Seduh kopi dengan air panas. Tambahkan gula jika suka manis. Tuang ke gelas berisi es batu, lalu tambahkan susu cair secukupnya. Aduk rata dan sajikan dingin.</p>
+  </div>
+</div>
 
-     <!-- 6: Es Campur -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/escampur.jpg" alt="Es Campur" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Campur</h3>
-      <p class="text-sm text-gray-600 mb-4">Segar dengan isian buah dan manisan yang meriah!</p>
-      <button onclick="toggleResep('resep-escampur')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-escampur" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Nangka, kelapa muda, alpukat</li>
-          <li>Agar-agar, kolang-kaling</li>
-          <li>Susu kental manis, sirup merah, es serut</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur semua bahan, siram sirup dan susu, sajikan dingin.</p>
-      </div>
-    </div>
+<!-- 7: Es Cendol -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/escendol.jpg" alt="Es Cendol" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Cendol</h3>
+  <p class="text-sm text-gray-600 mb-4">Cendol hijau kenyal dengan santan manis yang sangat menyegarkan.</p>
+  <button onclick="toggleResep('resep-escendol')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-escendol" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Tepung beras</li>
+      <li>Daun pandan</li>
+      <li>Gula merah cair</li>
+      <li>Santan kental</li>
+      <li>Es serut atau es batu</li>
+      <li>Daun suji (opsional untuk warna hijau alami)</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Campur tepung beras dengan air pandan dan daun suji, masak sambil diaduk hingga kental. Cetak menggunakan saringan kecil ke dalam air dingin agar membentuk cendol. Sajikan cendol dengan gula merah cair, santan, dan es serut. Aduk sebelum diminum.</p>
+  </div>
+</div>
 
-    <!-- 7: Jus Alpukat -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/jusalpukat.jpg" alt="Jus Alpukat" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Jus Alpukat</h3>
-      <p class="text-sm text-gray-600 mb-4">Lembut, creamy, dan kaya nutrisi.</p>
-      <button onclick="toggleResep('resep-jusalpukat')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-jusalpukat" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Alpukat matang</li>
-          <li>Susu kental manis</li>
-          <li>Air matang dan es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Blender semua bahan hingga halus, sajikan dingin.</p>
-      </div>
-    </div>
+<!-- 8: Es Soda Gembira -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/essodagembira.jpg" alt="Es Soda Gembira" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Soda Gembira</h3>
+  <p class="text-sm text-gray-600 mb-4">Perpaduan soda, sirup manis, dan susu kental yang menyegarkan.</p>
+  <button onclick="toggleResep('resep-essodagembira')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-essodagembira" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Soda tawar</li>
+      <li>Sirup cocopandan atau merah</li>
+      <li>Susu kental manis</li>
+      <li>Es batu</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Isi gelas dengan es batu, tuang sirup, kemudian susu kental manis. Tambahkan soda tawar perlahan agar tidak meluap. Aduk ringan dan sajikan segera.</p>
+  </div>
+</div>
 
-    <!-- 8: Susu Jahe -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/susujahe.jpg" alt="Susu Jahe" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Susu Jahe</h3>
-      <p class="text-sm text-gray-600 mb-4">Hangat dan menyehatkan, cocok saat badan butuh kehangatan.</p>
-      <button onclick="toggleResep('resep-susujahe')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-susujahe" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Jahe geprek</li>
-          <li>Susu cair</li>
-          <li>Gula atau madu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Rebus jahe, masukkan susu dan pemanis, sajikan hangat.</p>
-      </div>
-    </div>
-
-    <!-- 9: Air Kelapa -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/airkelapa.jpg" alt="Air Kelapa" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Air Kelapa</h3>
-      <p class="text-sm text-gray-600 mb-4">Alami, segar, dan kaya elektrolit alami dari kelapa muda.</p>
-      <button onclick="toggleResep('resep-airkelapa')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-airkelapa" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Air kelapa muda</li>
-          <li>Daging kelapa muda</li>
-          <li>Es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campurkan air kelapa, daging kelapa, dan es. Sajikan dingin.</p>
-      </div>
-    </div>
-
-     <!-- 10: Teh Tarik -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/tehtarik.jpg" alt="Teh Tarik" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Teh Tarik</h3>
-      <p class="text-sm text-gray-600 mb-4">Manis dan creamy, disajikan dengan gaya khas tarik Malaysia.</p>
-      <button onclick="toggleResep('resep-tehtarik')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-tehtarik" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Teh hitam celup</li>
-          <li>Susu kental manis</li>
-          <li>Air panas</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Seduh teh, campur dengan susu, tarik-teguk berulang untuk membentuk buih, sajikan.</p>
-      </div>
-    </div>
-
-    <!-- 11: Es Teler -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/esteler.jpg" alt="Es Teler" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Teler</h3>
-      <p class="text-sm text-gray-600 mb-4">Campuran buah segar dan santan, favorit di cuaca panas.</p>
-      <button onclick="toggleResep('resep-esteler')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-esteler" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Alpukat, kelapa muda, nangka</li>
-          <li>Santan, susu kental manis</li>
-          <li>Es serut</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur buah dan bahan lain dalam gelas, tuang santan dan susu, sajikan dingin.</p>
-      </div>
-    </div>
-
-    <!-- 12: Es Lidah Buaya -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/eslidahbuaya.jpg" alt="Es Lidah Buaya" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Lidah Buaya</h3>
-      <p class="text-sm text-gray-600 mb-4">Segar, unik, dan penuh manfaat untuk kesehatan kulit.</p>
-      <button onclick="toggleResep('resep-eslidahbuaya')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-eslidahbuaya" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Lidah buaya potong dadu (rebus dulu)</li>
-          <li>Sirup cocopandan</li>
-          <li>Es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campurkan lidah buaya dengan sirup dan es batu. Sajikan dingin.</p>
-      </div>
-    </div>
- <!-- 10: Teh Tarik -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/tehtarik.jpg" alt="Teh Tarik" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Teh Tarik</h3>
-      <p class="text-sm text-gray-600 mb-4">Manis dan creamy, disajikan dengan gaya khas tarik Malaysia.</p>
-      <button onclick="toggleResep('resep-tehtarik')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-tehtarik" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Teh hitam celup</li>
-          <li>Susu kental manis</li>
-          <li>Air panas</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Seduh teh, campur dengan susu, tarik-teguk berulang untuk membentuk buih, sajikan.</p>
-      </div>
-    </div>
-
-    <!-- 11: Es Teler -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/esteler.jpg" alt="Es Teler" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Teler</h3>
-      <p class="text-sm text-gray-600 mb-4">Campuran buah segar dan santan, favorit di cuaca panas.</p>
-      <button onclick="toggleResep('resep-esteler')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-esteler" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Alpukat, kelapa muda, nangka</li>
-          <li>Santan, susu kental manis</li>
-          <li>Es serut</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur buah dan bahan lain dalam gelas, tuang santan dan susu, sajikan dingin.</p>
-      </div>
-    </div>
-
-    <!-- 12: Es Lidah Buaya -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/eslidahbuaya.jpg" alt="Es Lidah Buaya" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Lidah Buaya</h3>
-      <p class="text-sm text-gray-600 mb-4">Segar, unik, dan penuh manfaat untuk kesehatan kulit.</p>
-      <button onclick="toggleResep('resep-eslidahbuaya')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-eslidahbuaya" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Lidah buaya potong dadu (rebus dulu)</li>
-          <li>Sirup cocopandan</li>
-          <li>Es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campurkan lidah buaya dengan sirup dan es batu. Sajikan dingin.</p>
-      </div>
-    </div>
-
-     <!-- 10: Teh Tarik -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/tehtarik.jpg" alt="Teh Tarik" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Teh Tarik</h3>
-      <p class="text-sm text-gray-600 mb-4">Manis dan creamy, disajikan dengan gaya khas tarik Malaysia.</p>
-      <button onclick="toggleResep('resep-tehtarik')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-tehtarik" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Teh hitam celup</li>
-          <li>Susu kental manis</li>
-          <li>Air panas</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Seduh teh, campur dengan susu, tarik-teguk berulang untuk membentuk buih, sajikan.</p>
-      </div>
-    </div>
-
-    <!-- 11: Es Teler -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/esteler.jpg" alt="Es Teler" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Teler</h3>
-      <p class="text-sm text-gray-600 mb-4">Campuran buah segar dan santan, favorit di cuaca panas.</p>
-      <button onclick="toggleResep('resep-esteler')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-esteler" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Alpukat, kelapa muda, nangka</li>
-          <li>Santan, susu kental manis</li>
-          <li>Es serut</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur buah dan bahan lain dalam gelas, tuang santan dan susu, sajikan dingin.</p>
-      </div>
-    </div>
-
-    <!-- 12: Es Lidah Buaya -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/eslidahbuaya.jpg" alt="Es Lidah Buaya" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Es Lidah Buaya</h3>
-      <p class="text-sm text-gray-600 mb-4">Segar, unik, dan penuh manfaat untuk kesehatan kulit.</p>
-      <button onclick="toggleResep('resep-eslidahbuaya')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-eslidahbuaya" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Lidah buaya potong dadu (rebus dulu)</li>
-          <li>Sirup cocopandan</li>
-          <li>Es batu</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campurkan lidah buaya dengan sirup dan es batu. Sajikan dingin.</p>
-      </div>
-    </div>
-
+<!-- 9: Es Alpukat -->
+<div class="bg-white shadow-md rounded-xl p-5">
+  <img src="img/esalpukat.jpg" alt="Es Alpukat" class="w-full h-40 object-cover rounded-lg mb-4" />
+  <h3 class="text-xl font-semibold text-teal-800">Es Alpukat</h3>
+  <p class="text-sm text-gray-600 mb-4">Alpukat lembut dengan susu manis dan es yang dingin menyegarkan.</p>
+  <button onclick="toggleResep('resep-esalpukat')" class="mb-3 px-4 py-2 bg-teal-500 text-white text-sm rounded hover:bg-teal-600">Lihat Resep</button>
+  <div id="resep-esalpukat" class="hidden">
+    <p class="text-sm text-teal-700 font-semibold">Bahan:</p>
+    <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+      <li>Buah alpukat matang</li>
+      <li>Susu kental manis</li>
+      <li>Es batu</li>
+      <li>Sirup cocopandan (opsional)</li>
+    </ul>
+    <p class="text-sm text-teal-700 font-semibold">Cara Membuat:</p>
+    <p class="text-sm text-gray-700">Keruk daging alpukat, masukkan ke dalam gelas. Tambahkan es batu dan susu kental manis. Jika suka, beri sirup cocopandan. Aduk rata dan sajikan dingin.</p>
+  </div>
+</div>
 
   </div>
 </section>

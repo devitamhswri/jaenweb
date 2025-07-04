@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Jawa Timur - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff7f0;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-orange-700 mb-8 text-center">6 Menu Makanan Khas Jawa Timur 🍲</h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Rawon -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/rawon.jpg" alt="Rawon" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Rawon</h2>
+      <p class="text-gray-700 mb-4">Sup daging berkuah hitam khas Surabaya, gurih dan harum dengan kluwek.</p>
+      <button onclick="toggleResep('resep-rawon')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-rawon" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi, potong dadu</li>
+          <li>5 buah kluwek, ambil isinya</li>
+          <li>6 siung bawang merah</li>
+          <li>4 siung bawang putih</li>
+          <li>2 cm kunyit, jahe, lengkuas</li>
+          <li>2 batang serai, memarkan</li>
+          <li>3 lembar daun jeruk</li>
+          <li>Garam, gula, kaldu bubuk secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan semua bumbu termasuk kluwek.</li>
+          <li>Tumis bumbu sampai harum, masukkan ke dalam rebusan daging.</li>
+          <li>Tambahkan daun jeruk, serai, garam dan gula.</li>
+          <li>Masak hingga daging empuk dan kuah hitam mengental.</li>
+          <li>Sajikan dengan nasi, tauge, sambal, dan kerupuk udang.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Rujak Cingur -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/rujakcingur.jpg" alt="Rujak Cingur" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Rujak Cingur</h2>
+      <p class="text-gray-700 mb-4">Salad khas Surabaya dengan irisan cingur (hidung sapi), bumbu petis, dan sayuran.</p>
+      <button onclick="toggleResep('resep-rujakcingur')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-rujakcingur" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr cingur sapi, rebus dan iris</li>
+          <li>Kangkung rebus, tauge, mentimun, kol, tahu dan tempe goreng</li>
+          <li>Lontong atau ketupat</li>
+          <li>Kerupuk udang</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan bumbu petis:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>5 sdm petis udang</li>
+          <li>2 siung bawang putih, goreng</li>
+          <li>5 cabai rawit</li>
+          <li>1/2 sdt garam</li>
+          <li>2 sdm gula merah serut</li>
+          <li>2 sdm kacang goreng</li>
+          <li>Air matang secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan semua bahan bumbu petis dan encerkan dengan air.</li>
+          <li>Campur semua bahan rujak, siram dengan bumbu petis.</li>
+          <li>Taburi kerupuk dan sajikan segera.</li>
+        </ol>
+      </div>
+    </div>
+
+<!-- Lontong Balap -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/lontongbalap.jpg" alt="Lontong Balap" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Lontong Balap</h2>
+      <p class="text-gray-700 mb-4">Lontong dengan tauge, lentho, dan kuah gurih khas Surabaya.</p>
+      <button onclick="toggleResep('resep-lontongbalap')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-lontongbalap" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>Lontong, iris</li>
+          <li>200 gr tauge, seduh air panas</li>
+          <li>3 siung bawang putih</li>
+          <li>2 sdm kecap manis</li>
+          <li>2 gelas air kaldu</li>
+          <li>Garam, merica secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bahan pelengkap:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>Lentho (perkedel kacang tolo)</li>
+          <li>Sambal, bawang goreng, kerupuk</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bawang putih, tuang air kaldu, bumbui kecap, garam dan merica.</li>
+          <li>Susun lontong dan tauge di mangkuk.</li>
+          <li>Siram kuah, tambahkan lentho, sambal, dan bawang goreng.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tahu Tek -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/tahutek.jpg" alt="Tahu Tek" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Tahu Tek</h2>
+      <p class="text-gray-700 mb-4">Tahu goreng, kentang, dan lontong dengan bumbu kacang petis.</p>
+      <button onclick="toggleResep('resep-tahutek')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-tahutek" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>4 potong tahu goreng</li>
+          <li>2 buah kentang rebus, potong</li>
+          <li>1 lontong, potong</li>
+          <li>Kerupuk udang</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bumbu kacang petis:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr kacang tanah goreng</li>
+          <li>3 sdm petis udang</li>
+          <li>3 cabai rawit</li>
+          <li>1 siung bawang putih</li>
+          <li>2 sdm gula merah</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bumbu kacang petis hingga halus.</li>
+          <li>Susun tahu, kentang, dan lontong di piring.</li>
+          <li>Siram bumbu, taburi kerupuk.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Pecel Madiun -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/pecelmadiun.jpg" alt="Pecel Madiun" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Pecel Madiun</h2>
+      <p class="text-gray-700 mb-4">Sayuran rebus dengan sambal kacang khas Madiun.</p>
+      <button onclick="toggleResep('resep-pecel')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-pecel" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>Kangkung, bayam, kacang panjang, tauge (rebus)</li>
+          <li>Tempe goreng dan nasi</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Bumbu pecel:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr kacang tanah goreng</li>
+          <li>3 cabai merah keriting</li>
+          <li>2 siung bawang putih</li>
+          <li>2 sdm gula merah</li>
+          <li>1 sdm air asam jawa</li>
+          <li>Garam dan air matang secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bumbu pecel lalu encerkan dengan air.</li>
+          <li>Sajikan sayuran di piring dan siram dengan bumbu pecel.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sego Tempong -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/segotempong.jpg" alt="Sego Tempong" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-orange-700 mb-2">Sego Tempong</h2>
+      <p class="text-gray-700 mb-4">Nasi dengan sayur rebus, lauk, dan sambal super pedas khas Banyuwangi.</p>
+      <button onclick="toggleResep('resep-tempong')" class="px-5 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition">Lihat Resep</button>
+      <div id="resep-tempong" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>Nasi hangat</li>
+          <li>Sayur rebus: bayam, kenikir, daun singkong</li>
+          <li>Lauk: ikan asin, tahu/tempe goreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Sambal tempong:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>10 cabai rawit merah</li>
+          <li>1 tomat merah</li>
+          <li>1 siung bawang putih</li>
+          <li>1 sdt terasi, garam, dan gula secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan semua bahan sambal dan goreng sebentar.</li>
+          <li>Sajikan nasi dengan sayur, lauk, dan sambal di atasnya.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

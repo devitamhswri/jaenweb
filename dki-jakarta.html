@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Jakarta - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f6;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-yellow-700 mb-8 text-center">6 Menu Makanan Utama Khas Jakarta 🏙️</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Soto Betawi -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sotobetawi.jpg" alt="Soto Betawi" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Soto Betawi</h2>
+      <p class="text-gray-700 mb-4">Soto khas Betawi dengan kuah santan dan susu, gurih dan creamy.</p>
+      <button onclick="toggleResep('resep-soto')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-soto" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr daging sapi (sandung lamur/campuran jeroan)</li>
+          <li>200 ml santan</li>
+          <li>200 ml susu cair</li>
+          <li>5 siung bawang putih</li>
+          <li>7 siung bawang merah</li>
+          <li>2 cm jahe dan lengkuas, memarkan</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 lembar daun salam & 3 daun jeruk</li>
+          <li>Garam, merica, kaldu bubuk secukupnya</li>
+          <li>Tomat, emping, dan bawang goreng untuk pelengkap</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging hingga empuk, tiriskan lalu potong-potong.</li>
+          <li>Tumis bumbu halus dan rempah hingga harum, masukkan ke rebusan.</li>
+          <li>Tambahkan santan dan susu, aduk perlahan agar tidak pecah.</li>
+          <li>Masak hingga bumbu meresap, koreksi rasa.</li>
+          <li>Sajikan hangat dengan nasi, emping, dan sambal.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Kerak Telor -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/keraktelor.jpg" alt="Kerak Telor" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Kerak Telor</h2>
+      <p class="text-gray-700 mb-4">Telur bebek, ketan, dan ebi khas Betawi yang dimasak sampai kering dan gurih.</p>
+      <button onclick="toggleResep('resep-keraktelor')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-keraktelor" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>100 gr beras ketan putih, rendam 2 jam</li>
+          <li>1 butir telur bebek</li>
+          <li>1 sdm ebi, rendam lalu sangrai</li>
+          <li>2 sdm kelapa parut sangrai</li>
+          <li>1/2 sdt merica dan garam</li>
+          <li>Minyak secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Panaskan wajan anti lengket, beri sedikit minyak, tuang ketan, ratakan.</li>
+          <li>Kocok telur, campur ebi, kelapa, merica, dan garam, tuang di atas ketan.</li>
+          <li>Masak dengan api kecil hingga kering di bagian bawah.</li>
+          <li>Angkat dan sajikan hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Asinan Betawi -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/asinanbetawi.jpg" alt="Asinan Betawi" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Asinan Betawi</h2>
+      <p class="text-gray-700 mb-4">Sayur segar disiram kuah kacang asam pedas khas Betawi.</p>
+      <button onclick="toggleResep('resep-asinan')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-asinan" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>Kol, tauge, sawi asin, mentimun, selada (iris-iris)</li>
+          <li>100 gr kacang tanah goreng</li>
+          <li>3 cabai merah</li>
+          <li>2 sdm cuka, 1 sdm gula merah</li>
+          <li>Garam secukupnya, air matang</li>
+          <li>Kerupuk dan kacang goreng untuk topping</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan kacang, cabai, gula, garam, cuka dan beri air secukupnya hingga menjadi kuah asinan.</li>
+          <li>Susun sayuran di piring, siram kuah asinan.</li>
+          <li>Taburi kerupuk dan kacang goreng.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Nasi Uduk Betawi -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasiuduk.jpg" alt="Nasi Uduk Betawi" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Nasi Uduk Betawi</h2>
+      <p class="text-gray-700 mb-4">Nasi gurih yang dimasak dengan santan dan rempah, harum dan lezat.</p>
+      <button onclick="toggleResep('resep-nasiuduk')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-nasiuduk" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>2 gelas beras, cuci bersih</li>
+          <li>400 ml santan</li>
+          <li>2 batang serai, 2 daun salam, 2 daun jeruk</li>
+          <li>1 sdt garam</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Masak semua bahan dalam panci sampai setengah matang.</li>
+          <li>Masukkan ke dalam kukusan, kukus hingga matang dan pulen.</li>
+          <li>Sajikan dengan telur, tempe orek, dan sambal kacang.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Semur Jengkol -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/semurjengkol.jpg" alt="Semur Jengkol" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Semur Jengkol</h2>
+      <p class="text-gray-700 mb-4">Jengkol dimasak dalam kuah kecap kental berbumbu khas Betawi.</p>
+      <button onclick="toggleResep('resep-jengkol')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-jengkol" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>500 gr jengkol, rebus dan geprek</li>
+          <li>5 bawang merah, 3 bawang putih</li>
+          <li>3 sdm kecap manis</li>
+          <li>1 sdt ketumbar, pala bubuk, merica</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bumbu halus sampai harum.</li>
+          <li>Masukkan jengkol, tambahkan air, kecap, dan bumbu lainnya.</li>
+          <li>Masak hingga air menyusut dan bumbu meresap.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Laksa Betawi -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/laksabetawi.jpg" alt="Laksa Betawi" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-yellow-700 mb-2">Laksa Betawi</h2>
+      <p class="text-gray-700 mb-4">Laksa dengan kuah santan kental dan isi bihun, telur, dan oncom.</p>
+      <button onclick="toggleResep('resep-laksa')" class="px-5 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition">Lihat Resep</button>
+      <div id="resep-laksa" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gr bihun, seduh air panas</li>
+          <li>200 ml santan</li>
+          <li>1 papan oncom, haluskan</li>
+          <li>5 bawang merah, 3 bawang putih</li>
+          <li>2 cm kunyit, 2 cm lengkuas, 1 serai</li>
+          <li>Telur rebus dan kemangi</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Tumis bumbu halus dan rempah hingga harum.</li>
+          <li>Masukkan oncom, santan, dan sedikit air.</li>
+          <li>Masak hingga matang, sajikan dengan bihun, telur, dan kemangi.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

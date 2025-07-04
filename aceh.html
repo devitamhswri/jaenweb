@@ -2,110 +2,222 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cemilan Khas Aceh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Aceh - Resep Lengkap</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf0;
+    }
+  </style>
   <script>
     function toggleResep(id) {
-      document.getElementById(id).classList.toggle('hidden');
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   </script>
 </head>
-<body class="bg-orange-50 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="bg-orange-800 text-white py-5 text-center shadow">
-    <h1 class="text-3xl font-bold">Cemilan Khas Aceh</h1>
-    <p class="text-sm mt-1">Kelezatan tradisional Serambi Mekkah</p>
-  </header>
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-red-700 mb-8 text-center">6 Menu Makanan Utama Khas Aceh 🍽️</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  <!-- Konten -->
-  <main class="max-w-6xl mx-auto p-6 space-y-8">
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Timphan -->
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <img src="timpan.jpg" alt="Timphan" class="rounded-md mb-3 h-40 w-full object-cover">
-        <h2 class="text-xl font-semibold">Kue Timphan</h2>
-        <p class="text-gray-700 text-sm mb-2">Kue kukus isi kelapa dan pisang yang dibungkus daun pisang. Lembut dan harum.</p>
-        <button onclick="toggleResep('resep1')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
-      </div>
-
-      <!-- Kue Adee -->
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <img src="kueade.jpg" alt="Kue Adee" class="rounded-md mb-3 h-40 w-full object-cover">
-        <h2 class="text-xl font-semibold">Kue Adee</h2>
-        <p class="text-gray-700 text-sm mb-2">Bolu tradisional Aceh dari campuran tepung, santan, telur, dan bawang goreng.</p>
-        <button onclick="toggleResep('resep2')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
-      </div>
-
-      <!-- Kue Keukarah -->
-      <div class="bg-white p-4 rounded-xl shadow-md">
-        <img src="kuekeukarah.jpeg" alt="Kue Keukarah" class="rounded-md mb-3 h-40 w-full object-cover">
-        <h2 class="text-xl font-semibold">Kue Keukarah</h2>
-        <p class="text-gray-700 text-sm mb-2">Kue renyah dan manis dari campuran tepung beras dan gula, dibentuk seperti sarang burung.</p>
-        <button onclick="toggleResep('resep3')" class="text-orange-800 font-medium hover:underline">Lihat Resep</button>
+    <!-- Mie Aceh -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/mieaceh.jpg" alt="Mie Aceh" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Mie Aceh</h2>
+      <p class="text-gray-700 mb-4">Mie kuning berbumbu rempah, pedas dan gurih khas Aceh.</p>
+      <button onclick="toggleResep('resep-mieaceh')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-mieaceh" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gram mie kuning basah</li>
+          <li>150 gram daging sapi, potong dadu</li>
+          <li>100 gram udang, kupas (opsional)</li>
+          <li>4 siung bawang merah, haluskan</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>5 buah cabai merah keriting, haluskan</li>
+          <li>1 cm jahe, memarkan</li>
+          <li>1 batang serai, memarkan</li>
+          <li>1 sdt ketumbar bubuk</li>
+          <li>1/2 sdt jintan bubuk</li>
+          <li>1 batang daun bawang, iris</li>
+          <li>2 buah tomat, potong-potong</li>
+          <li>2 sdm minyak goreng</li>
+          <li>Garam, gula, lada secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus mie sampai matang, tiriskan dan sisihkan.</li>
+          <li>Panaskan minyak, tumis bawang merah, bawang putih, cabai, jahe, dan serai hingga harum.</li>
+          <li>Masukkan daging sapi dan udang, masak hingga berubah warna dan matang.</li>
+          <li>Tambahkan ketumbar, jintan, garam, gula, dan lada, aduk rata.</li>
+          <li>Masukkan tomat dan daun bawang, aduk sebentar.</li>
+          <li>Masukkan mie, aduk hingga bumbu merata dan mie panas.</li>
+          <li>Sajikan hangat dengan pelengkap acar dan emping.</li>
+        </ol>
       </div>
     </div>
 
-    <!-- Resep Timphan -->
-    <section id="resep1" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
-      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Timphan</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-3">
-        <li>250 gr tepung ketan</li>
-        <li>2 buah pisang matang, haluskan</li>
-        <li>Isian: kelapa parut, gula merah, vanili</li>
-        <li>Daun pisang untuk membungkus</li>
-      </ul>
-      <ol class="list-decimal list-inside text-gray-700">
-        <li>Campur tepung dan pisang hingga kalis.</li>
-        <li>Masak isian hingga agak kering.</li>
-        <li>Bungkus adonan isi dalam daun pisang, kukus 20–30 menit.</li>
-      </ol>
-      <button onclick="toggleResep('resep1')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
-    </section>
+    <!-- Kuah Pliek U -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/kuahpliek.jpg" alt="Kuah Pliek U" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Kuah Pliek U</h2>
+      <p class="text-gray-700 mb-4">Sup asam khas Aceh dengan santan, terasi, dan sayur.</p>
+      <button onclick="toggleResep('resep-kuahpliek')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-kuahpliek" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gram ikan asam (ikan gabus atau ikan laut)</li>
+          <li>150 gram kelapa parut, peras santannya</li>
+          <li>4 siung bawang merah, haluskan</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>5 buah cabai merah, haluskan</li>
+          <li>2 sdm terasi bakar</li>
+          <li>2 sdm asam jawa, larutkan dengan air</li>
+          <li>150 gram labu siam, potong dadu</li>
+          <li>100 gram kacang panjang, potong 4 cm</li>
+          <li>Segenggam daun kemangi</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus santan bersama air hingga mendidih, aduk perlahan agar santan tidak pecah.</li>
+          <li>Tumis bumbu halus dan terasi hingga harum, masukkan ke dalam rebusan santan.</li>
+          <li>Masukkan ikan asam, labu siam, dan kacang panjang. Masak hingga sayuran empuk dan ikan matang.</li>
+          <li>Tambahkan air asam jawa, garam, dan gula sesuai selera. Aduk rata.</li>
+          <li>Masukkan daun kemangi, aduk sebentar dan angkat.</li>
+          <li>Sajikan hangat dengan nasi putih.</li>
+        </ol>
+      </div>
+    </div>
 
-    <!-- Resep Kue Adee -->
-    <section id="resep2" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
-      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Adee</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-3">
-        <li>200 gr tepung terigu</li>
-        <li>3 butir telur</li>
-        <li>200 ml santan kental</li>
-        <li>150 gr gula pasir, 1 sdt vanili</li>
-        <li>2 sdm bawang merah goreng</li>
-      </ul>
-      <ol class="list-decimal list-inside text-gray-700">
-        <li>Kocok telur dan gula hingga mengembang.</li>
-        <li>Tambahkan santan, tepung, vanili, aduk rata.</li>
-        <li>Tambahkan bawang goreng. Panggang 35–40 menit pada suhu 180°C.</li>
-      </ol>
-      <button onclick="toggleResep('resep2')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
-    </section>
+    <!-- Ayam Tangkap -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/ayamtangkap.jpg" alt="Ayam Tangkap" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Ayam Tangkap</h2>
+      <p class="text-gray-700 mb-4">Ayam goreng renyah dengan daun kari dan rempah khas Aceh.</p>
+      <button onclick="toggleResep('resep-ayamtangkap')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-ayamtangkap" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor ayam, potong menjadi beberapa bagian</li>
+          <li>5 siung bawang merah, haluskan</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>5 buah cabai merah, haluskan</li>
+          <li>2 cm kunyit, haluskan</li>
+          <li>1 sdt ketumbar bubuk</li>
+          <li>1 sdt jintan bubuk</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Segenggam daun kari (daun salam Aceh)</li>
+          <li>Minyak goreng untuk menggoreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur bumbu halus dengan garam dan merica, lumuri ayam hingga rata. Diamkan minimal 30 menit agar bumbu meresap.</li>
+          <li>Panaskan minyak, goreng ayam hingga matang dan kulitnya renyah. Angkat dan tiriskan.</li>
+          <li>Goreng daun kari dalam minyak panas hingga garing, angkat.</li>
+          <li>Taburkan daun kari goreng di atas ayam goreng sebagai pelengkap.</li>
+          <li>Sajikan dengan nasi hangat dan sambal favorit.</li>
+        </ol>
+      </div>
+    </div>
 
-    <!-- Resep Keukarah -->
-    <section id="resep3" class="hidden bg-white border border-orange-200 rounded-xl p-6 shadow">
-      <h2 class="text-xl font-bold text-orange-800 mb-3">Resep Kue Keukarah</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-3">
-        <li>250 gr tepung beras</li>
-        <li>200 gr gula pasir</li>
-        <li>200 ml air</li>
-        <li>Minyak goreng secukupnya</li>
-      </ul>
-      <ol class="list-decimal list-inside text-gray-700">
-        <li>Larutkan gula dengan air, tambahkan tepung beras.</li>
-        <li>Aduk hingga menjadi adonan cair kental.</li>
-        <li>Masukkan ke botol berlubang, goreng membentuk jaring-jaring hingga renyah.</li>
-      </ol>
-      <button onclick="toggleResep('resep3')" class="mt-4 bg-orange-700 text-white px-4 py-1 rounded hover:bg-orange-900">Tutup Resep</button>
-    </section>
+    <!-- Nasi Gurih Aceh -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/nasigurihaceh.jpg" alt="Nasi Gurih Aceh" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Nasi Gurih Aceh</h2>
+      <p class="text-gray-700 mb-4">Nasi gurih dengan aroma daun pandan dan santan yang kaya rasa.</p>
+      <button onclick="toggleResep('resep-nasigurih')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-nasigurih" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>2 gelas beras, cuci bersih</li>
+          <li>300 ml santan dari 1/2 butir kelapa</li>
+          <li>2 lembar daun pandan</li>
+          <li>2 lembar daun salam</li>
+          <li>1 batang serai, memarkan</li>
+          <li>1 sdt garam</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campurkan beras, santan, daun pandan, daun salam, serai, dan garam ke dalam panci.</li>
+          <li>Tambahkan air hingga beras terendam sekitar 1 cm di atas permukaan beras.</li>
+          <li>Masak dengan api kecil hingga air menyusut dan nasi matang (atau gunakan rice cooker).</li>
+          <li>Aduk sesekali agar nasi tidak menggumpal dan matang merata.</li>
+          <li>Setelah matang, aduk nasi agar tekstur lebih pulen dan harum.</li>
+          <li>Sajikan dengan lauk khas Aceh seperti ayam tangkap atau kuah pliek u.</li>
+        </ol>
+      </div>
+    </div>
 
-  </main>
+    <!-- Roti Canai Aceh -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/roticanai.jpg" alt="Roti Canai Aceh" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Roti Canai Aceh</h2>
+      <p class="text-gray-700 mb-4">Roti lapis tipis yang gurih dan renyah, cocok untuk sarapan atau cemilan.</p>
+      <button onclick="toggleResep('resep-roticanai')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-roticanai" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gram tepung terigu protein sedang</li>
+          <li>150 ml air hangat</li>
+          <li>1 sdm minyak goreng</li>
+          <li>1/2 sdt garam</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur tepung terigu, garam, dan air hangat, uleni sampai kalis dan elastis.</li>
+          <li>Tambahkan minyak goreng, uleni lagi hingga tercampur rata.</li>
+          <li>Bagi adonan menjadi bola-bola kecil, diamkan 30 menit dengan tutup kain basah.</li>
+          <li>Giling adonan sampai tipis seperti kertas, lipat-lipat menjadi bentuk segitiga atau gulung.</li>
+          <li>Panaskan minyak banyak, goreng roti hingga kecoklatan dan renyah.</li>
+          <li>Tiriskan dan sajikan dengan kuah kari atau gula.</li>
+        </ol>
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer class="bg-orange-800 text-white text-center py-4 mt-10">
-    <p>&copy; 2025 ResepNusantara.id | Cemilan Aceh</p>
-  </footer>
+    <!-- Kuah Sie Reuboh -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/sie_reuboh.jpg" alt="Kuah Sie Reuboh" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-red-700 mb-2">Kuah Sie Reuboh</h2>
+      <p class="text-gray-700 mb-4">Sup khas Aceh dengan kuah asam segar dan daging sapi.</p>
+      <button onclick="toggleResep('resep-siereuboh')" class="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Lihat Resep</button>
+      <div id="resep-siereuboh" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>300 gram daging sapi, potong dadu</li>
+          <li>2 liter air</li>
+          <li>4 siung bawang merah, iris tipis</li>
+          <li>3 siung bawang putih, geprek</li>
+          <li>2 buah asam kandis</li>
+          <li>1 batang serai, memarkan</li>
+          <li>1 sdm gula merah</li>
+          <li>Garam dan lada secukupnya</li>
+          <li>Daun bawang dan seledri untuk taburan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging sapi bersama air, serai, bawang putih dan bawang merah sampai empuk.</li>
+          <li>Tambahkan asam kandis, gula merah, garam, dan lada. Masak hingga bumbu meresap dan kuah terasa segar asam.</li>
+          <li>Cicipi, sesuaikan rasa. Angkat.</li>
+          <li>Sajikan kuah dengan taburan daun bawang dan seledri segar.</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>

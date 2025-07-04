@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Makanan Khas Bali - Resep Lengkap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf0;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+      if (!el.classList.contains('hidden')) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+</head>
+<body>
+
+<section class="mt-20 max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold text-green-700 mb-8 text-center">6 Menu Makanan Utama Khas Bali 🍛</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Babi Guling -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/babiguling.jpg" alt="Babi Guling" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Babi Guling</h2>
+      <p class="text-gray-700 mb-4">Babi panggang khas Bali dengan bumbu rempah dan rasa gurih pedas.</p>
+      <button onclick="toggleResep('resep-babiguling')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-babiguling" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor babi (sekitar 3-4 kg), bersihkan dan belah punggungnya</li>
+          <li>6 siung bawang merah</li>
+          <li>5 siung bawang putih</li>
+          <li>5 buah cabai merah besar</li>
+          <li>2 cm kunyit</li>
+          <li>2 cm jahe</li>
+          <li>2 batang serai, memarkan</li>
+          <li>5 lembar daun jeruk</li>
+          <li>Garam dan gula merah secukupnya</li>
+          <li>Minyak kelapa atau minyak goreng untuk olesan</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai merah, kunyit, dan jahe menggunakan ulekan atau blender.</li>
+          <li>Tumis bumbu halus bersama serai dan daun jeruk hingga harum.</li>
+          <li>Olesi bumbu ke seluruh bagian dalam dan luar babi yang sudah dibersihkan.</li>
+          <li>Diamkan babi selama 2-3 jam agar bumbu meresap.</li>
+          <li>Panggang babi di atas bara api atau oven dengan suhu 180°C selama 2-3 jam sambil sesekali dioles sisa bumbu dan minyak kelapa agar kulit renyah.</li>
+          <li>Setelah matang, potong-potong dan sajikan dengan sambal matah dan nasi putih hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Lawar -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/lawar.jpg" alt="Lawar" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Lawar</h2>
+      <p class="text-gray-700 mb-4">Campuran sayur dan daging cincang dengan bumbu khas dan kelapa parut.</p>
+      <button onclick="toggleResep('resep-lawar')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-lawar" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>150 gram daging cincang (babi atau ayam)</li>
+          <li>100 gram kacang panjang, iris kecil</li>
+          <li>100 gram kelapa parut, sangrai</li>
+          <li>2 batang serai, memarkan</li>
+          <li>5 siung bawang merah, iris tipis</li>
+          <li>3 siung bawang putih, haluskan</li>
+          <li>5 buah cabai merah, haluskan</li>
+          <li>2 lembar daun jeruk</li>
+          <li>Garam dan gula secukupnya</li>
+          <li>Air jeruk nipis 1 sdm</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Rebus daging cincang hingga matang, tiriskan.</li>
+          <li>Tumis bawang merah, bawang putih, cabai, serai, dan daun jeruk hingga harum.</li>
+          <li>Campurkan tumisan dengan daging, kacang panjang, dan kelapa parut sangrai.</li>
+          <li>Beri garam, gula, dan air jeruk nipis, aduk rata.</li>
+          <li>Sajikan lawar sebagai pelengkap hidangan utama.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sate Lilit -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/satelilit.jpg" alt="Sate Lilit" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Sate Lilit</h2>
+      <p class="text-gray-700 mb-4">Sate khas Bali yang dibuat dari ikan cincang dan rempah, dililitkan di batang serai.</p>
+      <button onclick="toggleResep('resep-satelilit')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-satelilit" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>250 gram ikan tenggiri atau ikan kakap, cincang halus</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>5 siung bawang merah, haluskan</li>
+          <li>3 buah cabai merah, haluskan</li>
+          <li>2 batang serai, ambil batangnya untuk lilitan</li>
+          <li>1 batang daun jeruk, iris halus</li>
+          <li>2 sdm kelapa parut, sangrai</li>
+          <li>1 sdt gula merah</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>2 sdm minyak kelapa</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Campur ikan cincang dengan bawang putih, bawang merah, cabai, daun jeruk, kelapa parut, gula merah, garam, merica, dan minyak kelapa hingga rata.</li>
+          <li>Ambil sedikit adonan dan lilitkan pada batang serai sepanjang sekitar 10 cm.</li>
+          <li>Panaskan grill atau wajan anti lengket, bakar sate sambil sesekali diolesi minyak hingga matang dan harum.</li>
+          <li>Sajikan sate lilit dengan sambal matah atau sambal pedas Bali.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bebek Betutu -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/bebekbetutu.jpg" alt="Bebek Betutu" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Bebek Betutu</h2>
+      <p class="text-gray-700 mb-4">Bebek utuh yang dimasak dengan rempah khas dan dibungkus daun pisang, matang perlahan.</p>
+      <button onclick="toggleResep('resep-bebekbetutu')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-bebekbetutu" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>1 ekor bebek, bersihkan</li>
+          <li>10 siung bawang merah</li>
+          <li>6 siung bawang putih</li>
+          <li>5 buah cabai merah</li>
+          <li>2 cm jahe</li>
+          <li>2 cm kunyit</li>
+          <li>2 batang serai, memarkan</li>
+          <li>5 lembar daun jeruk</li>
+          <li>Garam dan gula merah secukupnya</li>
+          <li>Daun pisang untuk membungkus</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai, jahe, dan kunyit.</li>
+          <li>Tumis bumbu halus bersama serai dan daun jeruk hingga harum.</li>
+          <li>Olesi bebek dengan bumbu tumis, bungkus rapat dengan daun pisang.</li>
+          <li>Masak bebek dengan cara dikukus atau dipanggang perlahan selama 3-4 jam sampai empuk dan bumbu meresap.</li>
+          <li>Sajikan bebek betutu dengan sambal matah dan nasi putih hangat.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Jukut Urab -->
+    <div class="bg-white shadow-lg rounded-xl p-6">
+      <img src="img/jukuturab.jpg" alt="Jukut Urab" class="w-full h-44 object-cover rounded-lg mb-4" />
+      <h2 class="text-xl font-semibold text-green-700 mb-2">Jukut Urab</h2>
+      <p class="text-gray-700 mb-4">Sayur urap khas Bali dengan kelapa parut berbumbu dan segar.</p>
+      <button onclick="toggleResep('resep-jukuturab')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+      <div id="resep-jukuturab" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+        <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+        <ul class="list-disc list-inside mb-3">
+          <li>200 gram kacang panjang, potong 3 cm</li>
+          <li>150 gram tauge, bersihkan</li>
+          <li>100 gram bayam atau daun singkong, rebus sebentar</li>
+          <li>100 gram kelapa parut, sangrai</li>
+          <li>4 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>5 buah cabai merah</li>
+          <li>1 sdm terasi bakar</li>
+          <li>1 sdt gula merah</li>
+          <li>Garam secukupnya</li>
+          <li>Air jeruk nipis 1 sdm</li>
+        </ul>
+        <h3 class="font-semibold mb-1">Cara membuat:</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li>Haluskan bawang merah, bawang putih, cabai, terasi, gula merah, dan garam.</li>
+          <li>Campur bumbu halus dengan kelapa parut sangrai dan air jeruk nipis, aduk rata.</li>
+          <li>Campurkan sayur-sayuran rebus dengan bumbu kelapa, aduk rata.</li>
+          <li>Sajikan jukut urab sebagai pelengkap nasi dan lauk Bali lainnya.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Ayam Betutu -->
+<div class="bg-white shadow-lg rounded-xl p-6">
+  <img src="img/ayambetutu.jpg" alt="Ayam Betutu" class="w-full h-44 object-cover rounded-lg mb-4" />
+  <h2 class="text-xl font-semibold text-green-700 mb-2">Ayam Betutu</h2>
+  <p class="text-gray-700 mb-4">Ayam kampung yang dimasak dengan rempah khas Bali, dibungkus daun pisang dan dimasak perlahan hingga empuk.</p>
+  <button onclick="toggleResep('resep-ayambetutu')" class="px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Lihat Resep</button>
+  <div id="resep-ayambetutu" class="hidden mt-4 text-gray-800 text-sm leading-relaxed">
+    <h3 class="font-semibold mb-1">Bahan-bahan:</h3>
+    <ul class="list-disc list-inside mb-3">
+      <li>1 ekor ayam kampung, bersihkan</li>
+      <li>10 siung bawang merah</li>
+      <li>6 siung bawang putih</li>
+      <li>5 buah cabai merah</li>
+      <li>2 cm kunyit</li>
+      <li>2 cm jahe</li>
+      <li>2 batang serai, memarkan</li>
+      <li>5 lembar daun jeruk</li>
+      <li>Garam dan gula merah secukupnya</li>
+      <li>Daun pisang untuk membungkus</li>
+    </ul>
+    <h3 class="font-semibold mb-1">Cara membuat:</h3>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Haluskan bawang merah, bawang putih, cabai, kunyit, dan jahe.</li>
+      <li>Tumis bumbu halus bersama serai dan daun jeruk hingga harum.</li>
+      <li>Olesi ayam dengan bumbu tumis secara merata, bungkus dengan daun pisang.</li>
+      <li>Masak ayam dengan cara dikukus atau dipanggang perlahan selama 3-4 jam hingga empuk dan bumbu meresap.</li>
+      <li>Sajikan ayam betutu dengan nasi hangat dan sambal matah.</li>
+    </ol>
+  </div>
+</div>
+
+  </div>
+</section>
+
+</body>
+</html>

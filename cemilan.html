@@ -22,225 +22,307 @@
 <body>
 
 <section class="mt-20 max-w-6xl mx-auto px-4">
-  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Rekomendasi Camilan Favorit 🍩</h2>
-  <p class="text-center text-gray-600 mb-8">Cocok dinikmati di sela waktu atau teman ngobrol malam hari.</p>
+  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Rekomendasi Camilan Enak 🍩</h2>
+  <p class="text-center text-gray-600 mb-8">Camilan ringan pengisi waktu santai, cocok dinikmati kapan saja.</p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- 1: Pisang Goreng -->
+    <!-- Pisang Goreng Kremes -->
     <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/pisanggoreng.jpg" alt="Pisang Goreng" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Pisang Goreng</h3>
-      <p class="text-sm text-gray-600 mb-4">Renyaak dan manis, camilan sejuta umat.</p>
-      <button onclick="toggleResep('resep-pisanggoreng')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-pisanggoreng" class="hidden">
+      <img src="img/pisang-goreng.jpg" alt="Pisang Goreng Kremes" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Pisang Goreng Kremes</h3>
+      <p class="text-sm text-gray-600 mb-4">Manis dan renyah, camilan favorit yang selalu bikin kangen.</p>
+      <button onclick="toggleResep('resep-pisang')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-pisang" class="hidden">
         <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Pisang kepok</li>
-          <li>Tepung terigu, gula, vanili</li>
-          <li>Air dan minyak goreng</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Buat adonan, celupkan pisang, goreng hingga keemasan.</p>
-      </div>
-    </div>
-
-    <!-- 2: Cireng -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/cireng.jpg" alt="Cireng" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Cireng</h3>
-      <p class="text-sm text-gray-600 mb-4">Kenyal gurih, enak dicocol sambal rujak.</p>
-      <button onclick="toggleResep('resep-cireng')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-cireng" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Tepung tapioka, bawang putih</li>
-          <li>Daun bawang, air panas</li>
-          <li>Garam dan kaldu bubuk</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Aduk bahan, bentuk pipih, goreng hingga garing.</p>
-      </div>
-    </div>
-
-    <!-- 3: Tahu Crispy -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/tahucrispy.jpg" alt="Tahu Crispy" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Tahu Crispy</h3>
-      <p class="text-sm text-gray-600 mb-4">Garing di luar, lembut di dalam. Camilan praktis dan nikmat.</p>
-      <button onclick="toggleResep('resep-tahucrispy')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-tahucrispy" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Tahu putih</li>
-          <li>Tepung bumbu serbaguna</li>
-          <li>Minyak goreng</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Potong tahu, lumuri tepung, goreng hingga kering dan renyah.</p>
-      </div>
-    </div>
-
-    <!-- 4: Roti Bakar -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/rotibakar.jpg" alt="Roti Bakar" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Roti Bakar</h3>
-      <p class="text-sm text-gray-600 mb-4">Hangat dan manis, cocok dinikmati malam hari.</p>
-      <button onclick="toggleResep('resep-rotibakar')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-rotibakar" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Roti tawar</li>
-          <li>Margarin, cokelat meises, keju</li>
-          <li>Susu kental manis</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Oles roti, panggang, taburi topping. Sajikan hangat.</p>
-      </div>
-    </div>
-
-    <!-- 5: Singkong Keju -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/singkongkeju.jpg" alt="Singkong Keju" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Singkong Keju</h3>
-      <p class="text-sm text-gray-600 mb-4">Empuk dan lumer, camilan khas yang makin mantap dengan taburan keju.</p>
-      <button onclick="toggleResep('resep-singkongkeju')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-singkongkeju" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Singkong</li>
-          <li>Garam, bawang putih</li>
-          <li>Keju parut dan susu kental</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Rebus singkong, goreng, lalu beri topping keju dan susu.</p>
-      </div>
-    </div>
-
-    <!-- 6: Bakwan Sayur -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/bakwan.jpg" alt="Bakwan Sayur" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Bakwan Sayur</h3>
-      <p class="text-sm text-gray-600 mb-4">Gurih, garing, dan kaya sayuran. Cocok untuk semua usia.</p>
-      <button onclick="toggleResep('resep-bakwan')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-bakwan" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Kol, wortel, daun bawang</li>
-          <li>Tepung terigu dan bumbu</li>
-          <li>Air dan minyak goreng</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur bahan, goreng adonan hingga kuning keemasan.</p>
-      </div>
-    </div>
-
-    <!-- 7: Martabak Mini -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/martabakmini.jpg" alt="Martabak Mini" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Martabak Mini</h3>
-      <p class="text-sm text-gray-600 mb-4">Mini tapi penuh rasa, bisa manis atau asin sesuai selera.</p>
-      <button onclick="toggleResep('resep-martabakmini')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-martabakmini" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Adonan terigu dan telur</li>
-          <li>Gula, baking powder</li>
-          <li>Topping: keju, meses, cokelat</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Tuang adonan di cetakan kecil, beri topping, masak hingga matang.</p>
-      </div>
-    </div>
-
-    <!-- 8: Ubi Rebus -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/ubirebus.jpg" alt="Ubi Rebus" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Ubi Rebus</h3>
-      <p class="text-sm text-gray-600 mb-4">Manis alami, cocok buat yang ingin camilan sehat dan sederhana.</p>
-      <button onclick="toggleResep('resep-ubirebus')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-ubirebus" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Ubi jalar</li>
-          <li>Air dan sedikit garam</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Cuci ubi, rebus sampai empuk, sajikan hangat.</p>
-      </div>
-    </div>
-
-    <!-- 9: Donat Kentang -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/donat.jpg" alt="Donat Kentang" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Donat Kentang</h3>
-      <p class="text-sm text-gray-600 mb-4">Empuk dan manis, cocok buat suguhan sore dan malam.</p>
-      <button onclick="toggleResep('resep-donat')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-donat" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Kentang kukus, tepung terigu</li>
-          <li>Ragi, gula, susu bubuk</li>
-          <li>Mentega dan telur</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Uleni adonan, diamkan hingga mengembang, goreng, taburi topping.</p>
-      </div>
-    </div>
-
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/klepon.jpg" alt="Klepon" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Klepon</h3>
-      <p class="text-sm text-gray-600 mb-4">Kenyal dan manis, isian gula merahnya lumer di mulut.</p>
-      <button onclick="toggleResep('resep-klepon')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-klepon" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Tepung ketan, air daun pandan</li>
-          <li>Gula merah serut</li>
-          <li>Kelapa parut kukus</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Bentuk adonan isi gula merah, rebus hingga mengapung, gulingkan ke kelapa parut.</p>
-      </div>
-    </div>
-
-    <!-- 11: Lemper Ayam -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/lemper.jpg" alt="Lemper Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Lemper Ayam</h3>
-      <p class="text-sm text-gray-600 mb-4">Aroma daun pisangnya khas, isi ayam suwir gurih banget.</p>
-      <button onclick="toggleResep('resep-lemper')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-lemper" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Beras ketan, santan</li>
-          <li>Ayam suwir bumbu gurih</li>
-          <li>Daun pisang untuk membungkus</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Ketan dikukus dengan santan, beri isian ayam, bungkus daun pisang, kukus lagi.</p>
-      </div>
-    </div>
-
-    <!-- 12: Sosis Solo -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/sosissolo.jpg" alt="Sosis Solo" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Sosis Solo</h3>
-      <p class="text-sm text-gray-600 mb-4">Kulit lembut, isian daging gurih bikin nagih!</p>
-      <button onclick="toggleResep('resep-sosissolo')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-sosissolo" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Adonan kulit: telur, tepung, susu</li>
-          <li>Isian: daging cincang bumbu</li>
+          <li>6 buah pisang kepok matang, belah dua</li>
+          <li>150 gr tepung terigu</li>
+          <li>2 sdm tepung beras</li>
+          <li>1 sdm gula pasir</li>
+          <li>1/2 sdt garam</li>
+          <li>200 ml air</li>
           <li>Minyak untuk menggoreng</li>
         </ul>
         <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Buat kulit dadar, isi daging, gulung, goreng hingga keemasan.</p>
+        <p class="text-sm text-gray-700 mb-2">Campur tepung terigu, tepung beras, gula, dan garam dalam wadah. Tambahkan air sedikit demi sedikit sambil diaduk hingga adonan kental. Celupkan pisang ke dalam adonan, lalu goreng dalam minyak panas hingga berwarna keemasan dan kremes. Angkat dan tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 20 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan pisang yang benar-benar matang agar lebih manis alami.</li>
+          <li>Untuk hasil lebih kriuk, tambahkan sedikit baking powder ke dalam adonan.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan pisang goreng kremes saat hangat dengan taburan gula halus atau saus cokelat.</p>
       </div>
     </div>
-    
+
+    <!-- Pastel Isi Sayur -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/pastel.jpg" alt="Pastel Isi Sayur" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Pastel Isi Sayur</h3>
+      <p class="text-sm text-gray-600 mb-4">Camilan klasik dengan isian sayur dan ayam yang gurih dan renyah.</p>
+      <button onclick="toggleResep('resep-pastel')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-pastel" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan Kulit:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>250 gr tepung terigu</li>
+          <li>50 gr margarin</li>
+          <li>1 butir telur</li>
+          <li>1/2 sdt garam</li>
+          <li>Air secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Bahan Isian:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>1 buah wortel, potong kecil</li>
+          <li>100 gr kentang, potong dadu kecil</li>
+          <li>50 gr ayam cincang</li>
+          <li>50 gr bihun, seduh air panas, tiriskan</li>
+          <li>Bawang putih dan bawang merah, cincang</li>
+          <li>Garam, merica, dan kaldu bubuk secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Tumis bawang hingga harum, masukkan ayam, lalu sayuran dan bihun. Bumbui, masak hingga matang. Campur semua bahan kulit, uleni hingga kalis. Ambil adonan, pipihkan, beri isian, lipat dan pilin pinggirnya. Goreng dalam minyak panas hingga kuning keemasan. Angkat dan tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 45 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan margarin cair untuk hasil kulit yang lebih renyah.</li>
+          <li>Jangan terlalu banyak isian agar mudah ditutup.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati pastel hangat dengan cabai rawit atau saus sambal favoritmu.</p>
+      </div>
+    </div>
+
+    <!-- Tahu Isi -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/tahu-isi.jpg" alt="Tahu Isi" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Tahu Isi</h3>
+      <p class="text-sm text-gray-600 mb-4">Gurih, renyah, dan penuh kejutan sayur di dalamnya. Pas buat ngemil sore.</p>
+      <button onclick="toggleResep('resep-tahuisi')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-tahuisi" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>10 buah tahu goreng kotak, belah satu sisi dan keluarkan isinya</li>
+          <li>1 buah wortel, parut halus</li>
+          <li>50 gr kol, iris tipis</li>
+          <li>1 batang daun bawang, iris halus</li>
+          <li>1 butir telur</li>
+          <li>Bawang putih, garam, merica secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Adonan Tepung:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>100 gr tepung terigu</li>
+          <li>2 sdm tepung beras</li>
+          <li>Air secukupnya</li>
+          <li>1 siung bawang putih halus</li>
+          <li>Garam dan merica secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Campur isian dengan bumbu dan telur. Masukkan ke dalam tahu. Celupkan tahu ke adonan tepung, goreng hingga kuning kecoklatan. Angkat dan tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan tahu putih yang tidak terlalu lunak agar tidak hancur saat diisi.</li>
+          <li>Tambahkan cabai cincang dalam isian jika suka pedas.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan tahu isi hangat dengan cabai rawit atau saus sambal sebagai pelengkap.</p>
+      </div>
+    </div>
+
+    <!-- Cireng Isi Pedas -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/cireng.jpg" alt="Cireng Isi Pedas" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Cireng Isi Pedas</h3>
+      <p class="text-sm text-gray-600 mb-4">Renyah di luar, lembut di dalam dengan isian pedas menggoda selera.</p>
+      <button onclick="toggleResep('resep-cireng')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-cireng" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan Cireng:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>150 gr tepung tapioka</li>
+          <li>2 sdm tepung terigu</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1/2 sdt merica dan garam</li>
+          <li>200 ml air panas</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Bahan Isian:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>100 gr ayam suwir</li>
+          <li>2 sdm sambal terasi atau sambal bawang</li>
+          <li>Garam dan gula secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Campur semua bahan cireng, tambahkan air panas sedikit demi sedikit sambil diaduk hingga adonan kalis. Ambil sedikit adonan, pipihkan, beri isian ayam sambal, tutup dan bentuk bulat pipih. Goreng dalam minyak panas hingga matang dan renyah.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 35 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan air yang benar-benar panas agar cireng tidak keras.</li>
+          <li>Bisa juga diisi keju atau sosis untuk varian lain.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan cireng hangat dengan saus sambal atau cocolan favorit lainnya.</p>
+      </div>
+    </div>
+
+<!-- Sempol Ayam -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/sempol.jpg" alt="Sempol Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Sempol Ayam</h3>
+      <p class="text-sm text-gray-600 mb-4">Camilan khas Malang yang digoreng renyah dan cocok untuk semua umur.</p>
+      <button onclick="toggleResep('resep-sempol')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-sempol" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>250 gr daging ayam giling</li>
+          <li>100 gr tepung tapioka</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1 butir telur</li>
+          <li>1 batang daun bawang, iris halus</li>
+          <li>1/2 sdt lada, garam, dan penyedap</li>
+          <li>Tusuk sate secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Campur semua bahan menjadi adonan yang bisa dipulung. Ambil sedikit adonan, lilitkan pada tusuk sate. Rebus sebentar dalam air mendidih hingga mengapung, tiriskan. Setelah dingin, celupkan ke kocokan telur dan goreng sampai kuning keemasan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 40 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Pastikan adonan cukup padat agar tidak hancur saat direbus.</li>
+          <li>Sempol juga bisa dikukus jika ingin lebih sehat sebelum digoreng.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati dengan saus sambal atau mayones sebagai cocolan favorit.</p>
+      </div>
+    </div>
+
+    <!-- Keripik Tempe -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/keripiktempe.jpg" alt="Keripik Tempe" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Keripik Tempe</h3>
+      <p class="text-sm text-gray-600 mb-4">Camilan renyah yang cocok buat temen nonton atau ngobrol santai.</p>
+      <button onclick="toggleResep('resep-keripiktempe')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-keripiktempe" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>1 papan tempe iris tipis</li>
+          <li>100 gr tepung beras</li>
+          <li>2 sdm tepung tapioka</li>
+          <li>2 siung bawang putih</li>
+          <li>1/2 sdt ketumbar bubuk, garam, dan kaldu bubuk</li>
+          <li>150 ml air</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Haluskan bawang putih, campur dengan tepung beras, tepung tapioka, dan bumbu lainnya. Tambahkan air sedikit demi sedikit hingga adonan agak encer. Celupkan irisan tempe ke dalam adonan dan goreng dalam minyak panas hingga kering dan renyah. Angkat dan tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan irisan tempe yang sangat tipis agar hasilnya garing sempurna.</li>
+          <li>Pastikan minyak benar-benar panas sebelum menggoreng.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Simpan dalam toples tertutup agar tetap renyah. Nikmati bersama teh hangat atau kopi.</p>
+      </div>
+    </div>
+
+    <!-- Chicken Popcorn -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/chickenpopcorn.jpg" alt="Chicken Popcorn" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Chicken Popcorn</h3>
+      <p class="text-sm text-gray-600 mb-4">Camilan ayam renyah berbentuk kecil-kecil yang bikin nagih setiap gigitannya.</p>
+      <button onclick="toggleResep('resep-chickenpopcorn')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-chickenpopcorn" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>250 gr dada ayam fillet, potong kecil dadu</li>
+          <li>2 siung bawang putih, haluskan</li>
+          <li>1 sdm kecap asin</li>
+          <li>1/2 sdt lada bubuk dan garam</li>
+          <li>1 butir telur</li>
+          <li>100 gr tepung serbaguna</li>
+          <li>50 gr tepung maizena</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Marinasi ayam dengan bawang putih, kecap asin, lada, dan garam selama 15 menit. Tambahkan telur dan aduk rata. Gulingkan potongan ayam ke campuran tepung serbaguna dan maizena. Goreng dalam minyak panas hingga berwarna keemasan dan renyah. Tiriskan dan sajikan hangat.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Potong ayam kecil agar cepat matang dan renyah.</li>
+          <li>Gunakan api sedang agar ayam matang merata dan tidak gosong.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan dengan saus sambal, mayones, atau saus keju sebagai cocolan.</p>
+      </div>
+    </div>
+
+     <!-- Chicken Katsu Mini -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/chickenkatsu.jpg" alt="Chicken Katsu Mini" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Chicken Katsu Mini</h3>
+      <p class="text-sm text-gray-600 mb-4">Versi camilan dari chicken katsu yang renyah dan gurih, cocok untuk teman ngeteh.</p>
+      <button onclick="toggleResep('resep-chickenkatsu')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-chickenkatsu" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>250 gr dada ayam fillet, pipihkan</li>
+          <li>1 butir telur</li>
+          <li>50 gr tepung terigu</li>
+          <li>100 gr tepung roti (panko)</li>
+          <li>1/2 sdt garam, lada bubuk, dan bawang putih bubuk</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Bumbui ayam dengan garam, lada, dan bawang putih bubuk. Baluri ayam dengan tepung terigu, celupkan ke telur, lalu gulingkan di tepung roti. Goreng hingga keemasan dan renyah. Angkat dan tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan minyak banyak agar hasil gorengan rata dan tidak menyerap minyak berlebih.</li>
+          <li>Iris ayam lebih kecil agar pas dijadikan camilan.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan dengan saus sambal atau saus tonkatsu khas Jepang.</p>
+      </div>
+    </div>
+
+    <!-- Telur Gulung -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/telurgulung.jpg" alt="Telur Gulung" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Telur Gulung</h3>
+      <p class="text-sm text-gray-600 mb-4">Camilan legendaris dari masa kecil yang masih digemari hingga kini.</p>
+      <button onclick="toggleResep('resep-telurgulung')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-telurgulung" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>3 butir telur</li>
+          <li>1/2 sdt garam dan lada bubuk</li>
+          <li>1 sdt kaldu bubuk (opsional)</li>
+          <li>Air secukupnya</li>
+          <li>Minyak untuk menggoreng</li>
+          <li>Tusuk sate</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Kocok telur dengan bumbu dan sedikit air agar teksturnya lebih encer. Panaskan minyak agak banyak di wajan kecil. Tuang satu sendok sayur telur kocok ke minyak panas, lalu segera gulung dengan tusuk sate dari sisi pinggir saat telur mulai mengeras. Ulangi hingga telur habis. Tiriskan.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 20 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan minyak panas namun jangan terlalu panas agar tidak gosong.</li>
+          <li>Latihan menggulung agar hasilnya rapi dan padat.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati dengan saus sambal atau bumbu kacang sesuai selera.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 

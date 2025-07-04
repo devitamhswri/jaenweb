@@ -22,170 +22,43 @@
 <body>
 
 <section class="mt-20 max-w-6xl mx-auto px-4">
-  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Rekomendasi Menu Makan Malam 🍛</h2>
-  <p class="text-center text-gray-600 mb-8">Pilihan terbaik untuk mengakhiri hari dengan kenyang dan bahagia.</p>
+  <h2 class="text-2xl font-bold text-orange-700 mb-4 text-center">Rekomendasi Menu Makan Malam 🍽️</h2>
+  <p class="text-center text-gray-600 mb-8">Pilihan nikmat untuk menutup hari dengan rasa puas.</p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- Sate Ayam -->
+    <!-- Rendang -->
     <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/sateayam.jpg" alt="Sate Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Sate Ayam</h3>
-      <p class="text-sm text-gray-600 mb-4">Bumbu kacang dan bakaran yang harum bikin suasana malam makin nikmat.</p>
-      <button onclick="toggleResep('resep-sateayam')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-sateayam" class="hidden">
+      <img src="img/rendang.jpg" alt="Rendang" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Rendang</h3>
+      <p class="text-sm text-gray-600 mb-4">Daging empuk dan berbumbu pekat, menu juara dunia!</p>
+      <button onclick="toggleResep('resep-rendang')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-rendang" class="hidden">
         <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Daging ayam, tusuk sate</li>
-          <li>Bumbu kacang, kecap manis</li>
-          <li>Lontong, bawang goreng</li>
+          <li>500 gr daging sapi, potong kotak</li>
+          <li>400 ml santan kental</li>
+          <li>100 gr kelapa parut sangrai (serundeng)</li>
+          <li>2 batang serai, memarkan</li>
+          <li>2 lembar daun jeruk</li>
+          <li>2 lembar daun salam</li>
+          <li>1 ruas lengkuas, memarkan</li>
+          <li>Bumbu halus: 6 siung bawang merah, 4 siung bawang putih, 5 buah cabai merah besar, 1 ruas jahe, 1 sdt ketumbar bubuk, garam</li>
         </ul>
         <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Tusuk ayam, bakar sambil oles bumbu. Sajikan dengan lontong dan sambal kacang.</p>
-      </div>
-    </div>
-
-    <!-- Martabak Telur -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/martabak.jpg" alt="Martabak Telur" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Martabak Telur</h3>
-      <p class="text-sm text-gray-600 mb-4">Garing di luar, gurih di dalam, cocok disantap selagi hangat.</p>
-      <button onclick="toggleResep('resep-martabak')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-martabak" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Tumis bumbu halus bersama serai, daun jeruk, daun salam, dan lengkuas hingga harum. Masukkan potongan daging, aduk hingga berubah warna. Tuang santan dan masak dengan api kecil sambil sesekali diaduk. Setelah santan mulai menyusut, masukkan kelapa sangrai. Masak terus dengan api kecil hingga kuah mengering dan bumbu menghitam pekat serta meresap ke daging. Proses ini bisa memakan waktu 2-3 jam untuk hasil maksimal. Pastikan untuk terus mengaduk agar tidak gosong.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 3 jam</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Telur, daging cincang</li>
-          <li>Daun bawang, kulit lumpia</li>
-          <li>Bumbu kari, merica</li>
+          <li>Gunakan daging bagian sengkel atau paha agar tidak mudah hancur saat dimasak lama.</li>
+          <li>Rasa semakin nikmat bila didiamkan semalam sebelum disajikan.</li>
+          <li>Jangan menggunakan api besar agar santan tidak pecah.</li>
         </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Campur isian, bungkus dengan kulit, goreng hingga kecokelatan.</p>
-      </div>
-    </div>
-
-    <!-- Nasi Goreng Pete -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/nasigorengpete.jpg" alt="Nasi Goreng Pete" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Nasi Goreng Pete</h3>
-      <p class="text-sm text-gray-600 mb-4">Wangi pete berpadu nasi goreng, kombinasi mantap buat malam hari.</p>
-      <button onclick="toggleResep('resep-nasigorengpete')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-nasigorengpete" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Nasi putih, pete, telur</li>
-          <li>Bawang merah, bawang putih, cabai</li>
-          <li>Kecap manis, terasi</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Tumis bumbu, masukkan nasi dan pete, aduk rata dengan kecap.</p>
-      </div>
-    </div>
-
-    <!-- Mie Rebus Jawa -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/mierebus.jpg" alt="Mie Rebus Jawa" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Mie Rebus Jawa</h3>
-      <p class="text-sm text-gray-600 mb-4">Mie rebus kuah manis gurih, cocok untuk suasana santai malam.</p>
-      <button onclick="toggleResep('resep-mierebus')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-mierebus" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Mie telur, ayam suwir</li>
-          <li>Kol, tomat, telur</li>
-          <li>Bawang, kecap, lada</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Tumis bumbu, tambahkan air, masukkan mie dan bahan lain. Sajikan hangat.</p>
-      </div>
-    </div>
-
-    <!-- Bubur Ayam -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/buburayam.jpg" alt="Bubur Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Bubur Ayam</h3>
-      <p class="text-sm text-gray-600 mb-4">Lembut dan ringan, pas untuk makan malam menjelang tidur.</p>
-      <button onclick="toggleResep('resep-buburayam')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-buburayam" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Beras, air kaldu ayam</li>
-          <li>Ayam suwir, cakwe, seledri</li>
-          <li>Sambal dan kecap asin</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Masak beras dengan kaldu hingga bubur. Sajikan dengan topping dan sambal.</p>
-      </div>
-    </div>
-
-    <!-- Tempe Mendoan -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/mendoan.jpg" alt="Tempe Mendoan" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Tempe Mendoan</h3>
-      <p class="text-sm text-gray-600 mb-4">Garing tipis luar, lembut dalam. Pas dicocol sambal kecap.</p>
-      <button onclick="toggleResep('resep-mendoan')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-mendoan" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Tempe tipis</li>
-          <li>Adonan tepung: bawang, ketumbar, daun bawang</li>
-          <li>Minyak goreng, sambal kecap</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Celup tempe ke adonan, goreng sebentar. Sajikan hangat dengan sambal.</p>
-      </div>
-    </div>
-
-    <!-- Sup Iga -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/supiga.jpg" alt="Sup Iga" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Sup Iga</h3>
-      <p class="text-sm text-gray-600 mb-4">Hangat, gurih, dan penuh cita rasa, cocok dinikmati malam hari.</p>
-      <button onclick="toggleResep('resep-supiga')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-supiga" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Iga sapi</li>
-          <li>Wortel, kentang, tomat</li>
-          <li>Bumbu: bawang putih, lada, daun bawang</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Rebus iga hingga empuk, masukkan sayur dan bumbu. Sajikan hangat.</p>
-      </div>
-    </div>
-
-    <!-- Nasi Kuning Malam -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/nasikuning.jpg" alt="Nasi Kuning" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Nasi Kuning</h3>
-      <p class="text-sm text-gray-600 mb-4">Aroma kunyit yang khas, cocok untuk makan malam spesial.</p>
-      <button onclick="toggleResep('resep-nasikuning')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-nasikuning" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Beras, santan, kunyit</li>
-          <li>Daun salam, serai</li>
-          <li>Ayam suwir, telur balado, orek tempe</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Masak nasi dengan bumbu dan santan. Sajikan lengkap dengan lauk pelengkap.</p>
-      </div>
-    </div>
-
-    <!-- Tahu Telur -->
-    <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/tahutelur.jpg" alt="Tahu Telur" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Tahu Telur</h3>
-      <p class="text-sm text-gray-600 mb-4">Lembut, gurih, dan nikmat dengan saus kacang dan kecap manis.</p>
-      <button onclick="toggleResep('resep-tahutelur')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-tahutelur" class="hidden">
-        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
-        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Tahu, telur, kol, tauge</li>
-          <li>Saus kacang, kecap manis</li>
-          <li>Bawang goreng, kerupuk</li>
-        </ul>
-        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Goreng tahu dengan telur, tata di piring, siram saus, beri topping.</p>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan dengan nasi putih hangat, sambal ijo, daun singkong rebus, dan kerupuk jangek.</p>
       </div>
     </div>
 
@@ -198,56 +71,268 @@
       <div id="resep-ayambakar" class="hidden">
         <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Ayam potong</li>
-          <li>Kecap manis, bawang putih, ketumbar, kemiri</li>
-          <li>Jeruk nipis, daun salam</li>
+          <li>1 ekor ayam, potong menjadi 4 bagian</li>
+          <li>3 siung bawang putih</li>
+          <li>5 siung bawang merah</li>
+          <li>2 butir kemiri, sangrai</li>
+          <li>1 sdt ketumbar</li>
+          <li>1 ruas jahe</li>
+          <li>1 ruas kunyit</li>
+          <li>3 sdm kecap manis</li>
+          <li>2 sdm air asam jawa</li>
+          <li>2 lembar daun salam</li>
+          <li>1 batang serai, memarkan</li>
+          <li>Garam, gula, dan air secukupnya</li>
         </ul>
         <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Ungkep ayam, lalu bakar sambil dioles bumbu. Sajikan dengan sambal dan nasi.</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Haluskan bawang merah, bawang putih, kemiri, ketumbar, kunyit, dan jahe. Tumis bumbu hingga harum, lalu masukkan daun salam dan serai. Tambahkan air, kecap manis, air asam jawa, garam, dan gula. Masukkan potongan ayam dan masak hingga ayam matang dan bumbu meresap (ungkep). Setelah itu, panggang ayam di atas bara atau teflon sambil dioles sisa bumbu hingga kecokelatan.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 1 jam</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Untuk hasil terbaik, gunakan ayam kampung dan diamkan semalaman setelah diungkep sebelum dibakar.</li>
+          <li>Pembakaran menggunakan arang memberi aroma yang lebih sedap dibandingkan wajan.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan bersama nasi hangat, lalapan segar, dan sambal terasi.</p>
       </div>
     </div>
 
-    <!-- Nasi Uduk -->
+    <!-- Sate Ayam -->
     <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/nasiuduk.jpg" alt="Nasi Uduk" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Nasi Uduk</h3>
-      <p class="text-sm text-gray-600 mb-4">Aroma santan dan rempah-rempah membuat malam makin lezat.</p>
-      <button onclick="toggleResep('resep-nasiuduk')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-nasiuduk" class="hidden">
+      <img src="img/sateayam.jpg" alt="Sate Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Sate Ayam</h3>
+      <p class="text-sm text-gray-600 mb-4">Bumbu kacang dan bakaran yang harum bikin suasana malam makin nikmat.</p>
+      <button onclick="toggleResep('resep-sateayam')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-sateayam" class="hidden">
         <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Beras, santan</li>
-          <li>Daun salam, serai, kayu manis</li>
-          <li>Telur balado, bihun goreng, sambal kacang</li>
+          <li>500 gr daging ayam tanpa tulang, potong dadu</li>
+          <li>2 sdm kecap manis</li>
+          <li>1 sdm minyak goreng</li>
+          <li>Tusuk sate secukupnya</li>
+          <li>Bumbu kacang: 200 gr kacang tanah goreng, 3 siung bawang putih, 3 cabai merah, 1 sdt gula merah, 2 sdm kecap manis, air secukupnya, garam</li>
         </ul>
         <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Masak nasi dengan santan dan bumbu. Sajikan dengan lauk pelengkap.</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Marinasi ayam dengan kecap dan minyak goreng selama 30 menit. Tusuk ayam ke tusuk sate. Haluskan bahan bumbu kacang, tumis hingga wangi, lalu tambahkan air hingga kekentalan sesuai selera. Bakar sate di atas bara sambil dioles bumbu hingga matang. Sajikan dengan bumbu kacang.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 45 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan ayam bagian paha agar lebih juicy dan tidak cepat kering saat dibakar.</li>
+          <li>Rendam tusuk sate dalam air sebelum digunakan agar tidak mudah terbakar.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati sate ayam dengan lontong, bawang goreng, dan sambal kecap.</p>
       </div>
     </div>
 
-    <!-- Sayur Asem -->
+
+     <!-- Martabak Telur -->
     <div class="bg-white shadow-md rounded-xl p-5">
-      <img src="img/sayurasem.jpg" alt="Sayur Asem" class="w-full h-40 object-cover rounded-lg mb-4">
-      <h3 class="text-xl font-semibold text-orange-800">Sayur Asem</h3>
-      <p class="text-sm text-gray-600 mb-4">Segar dan ringan, jadi pilihan pas untuk santapan malam sehat.</p>
-      <button onclick="toggleResep('resep-sayurasem')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
-      <div id="resep-sayurasem" class="hidden">
+      <img src="img/martabak.jpg" alt="Martabak Telur" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Martabak Telur</h3>
+      <p class="text-sm text-gray-600 mb-4">Garing di luar, gurih di dalam, cocok disantap selagi hangat.</p>
+      <button onclick="toggleResep('resep-martabak')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-martabak" class="hidden">
         <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
         <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
-          <li>Jagung manis, kacang panjang, labu</li>
-          <li>Asam jawa, bawang putih, lengkuas</li>
-          <li>Garam, gula</li>
+          <li>200 gr daging sapi cincang</li>
+          <li>4 butir telur ayam</li>
+          <li>3 batang daun bawang, iris halus</li>
+          <li>1 buah bawang bombai, cincang</li>
+          <li>2 siung bawang putih, cincang</li>
+          <li>1 sdt kari bubuk</li>
+          <li>1/2 sdt lada bubuk, garam secukupnya</li>
+          <li>10 lembar kulit lumpia atau kulit martabak siap pakai</li>
+          <li>Minyak untuk menggoreng</li>
         </ul>
         <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
-        <p class="text-sm text-gray-700">Rebus semua bahan hingga empuk. Sajikan hangat bersama nasi dan sambal.</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Tumis bawang bombai dan bawang putih hingga harum. Masukkan daging cincang dan bumbu, masak hingga matang. Angkat dan dinginkan. Campurkan daging dengan telur, daun bawang, dan aduk rata. Ambil selembar kulit, isi dengan adonan, lipat seperti amplop. Goreng dalam minyak panas dengan api sedang hingga kecokelatan dan matang. Tiriskan dan potong-potong.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 45 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan api sedang agar kulit tidak cepat gosong sementara isi belum matang.</li>
+          <li>Adonan bisa disimpan dalam kulkas jika ingin digoreng nanti.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati martabak telur dengan acar timun dan cabai rawit hijau sebagai pelengkap.</p>
       </div>
     </div>
 
-  </div>
-</section>
+<!-- Ayam Geprek -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/ayamgeprek.jpg" alt="Ayam Geprek" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Ayam Geprek</h3>
+      <p class="text-sm text-gray-600 mb-4">Ayam goreng tepung yang digeprek dengan sambal pedas, bikin nagih!</p>
+      <button onclick="toggleResep('resep-ayamgeprek')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-ayamgeprek" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>500 gr dada ayam, potong fillet</li>
+          <li>100 gr tepung terigu, 50 gr tepung maizena</li>
+          <li>1 butir telur</li>
+          <li>Minyak untuk menggoreng</li>
+          <li>Bumbu marinasi: 3 siung bawang putih, 1 sdt merica, 1/2 sdt garam</li>
+          <li>Sambal: 10 cabai rawit merah, 2 siung bawang putih, garam, penyedap, minyak panas</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Marinasi ayam dengan bawang putih halus, garam, dan merica selama 15 menit. Balur ayam ke telur, lalu ke campuran tepung terigu dan maizena. Goreng ayam hingga kuning keemasan. Untuk sambal, ulek cabai dan bawang, tambahkan garam dan penyedap, lalu siram dengan minyak panas. Geprek ayam goreng dengan sambal di atasnya.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan ayam fillet agar mudah digeprek dan cepat matang.</li>
+          <li>Jangan terlalu lama menggoreng agar ayam tetap juicy.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati ayam geprek dengan nasi hangat, lalapan, dan sambal ekstra sesuai selera pedasmu.</p>
+      </div>
+    </div>
 
-</body>
-</html>
+     <!-- Cumi Hitam -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/cumihitam.jpg" alt="Cumi Hitam" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Cumi Hitam</h3>
+      <p class="text-sm text-gray-600 mb-4">Cumi segar dimasak dengan tintanya menghasilkan rasa gurih khas laut yang menggoda.</p>
+      <button onclick="toggleResep('resep-cumihitam')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-cumihitam" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>500 gr cumi segar dengan tinta</li>
+          <li>5 siung bawang merah</li>
+          <li>3 siung bawang putih</li>
+          <li>2 buah tomat merah</li>
+          <li>5 cabai rawit merah</li>
+          <li>1 sdm air asam jawa</li>
+          <li>Garam, gula, dan minyak goreng secukupnya</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Bersihkan cumi, sisihkan tintanya. Tumis bawang merah dan bawang putih hingga harum. Masukkan tomat dan cabai, tumis hingga layu. Tambahkan tinta cumi dan cuminya. Aduk rata, beri air asam jawa, garam, dan gula. Masak hingga cumi empuk dan kuah mengental. Sajikan selagi hangat.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 25 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Jangan masak cumi terlalu lama agar tidak alot.</li>
+          <li>Boleh tambahkan sedikit serai untuk aroma segar.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Cumi hitam sangat cocok dinikmati bersama nasi hangat dan sambal terasi.</p>
+      </div>
+    </div>
+
+     <!-- Ikan Goreng Bumbu -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/ikangorengbumbu.jpg" alt="Ikan Goreng Bumbu" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Ikan Goreng Bumbu</h3>
+      <p class="text-sm text-gray-600 mb-4">Ikan digoreng garing lalu disiram bumbu kuning gurih, cocok jadi lauk malam hari.</p>
+      <button onclick="toggleResep('resep-ikangorengbumbu')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-ikangorengbumbu" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>2 ekor ikan nila atau gurame</li>
+          <li>2 siung bawang putih</li>
+          <li>1 ruas kunyit</li>
+          <li>1 ruas jahe</li>
+          <li>1 batang serai, memarkan</li>
+          <li>3 lembar daun jeruk</li>
+          <li>1 sdm air jeruk nipis</li>
+          <li>Garam dan merica secukupnya</li>
+          <li>Minyak untuk menggoreng</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Bersihkan ikan dan lumuri dengan air jeruk nipis, diamkan 10 menit. Haluskan bawang putih, kunyit, jahe, garam, dan merica. Tumis bumbu halus bersama serai dan daun jeruk hingga harum. Goreng ikan hingga garing, lalu siram dengan bumbu kuning yang telah ditumis. Sajikan hangat.
+        </p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan ikan segar agar hasil lebih lezat.</li>
+          <li>Goreng dengan minyak banyak agar ikan renyah.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Ikan goreng bumbu kuning enak disajikan dengan nasi hangat dan sambal tomat.</p>
+      </div>
+    </div>
+
+     <!-- Ayam Goreng Lalapan -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/ayamgorenglalapan.jpg" alt="Ayam Goreng Lalapan" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Ayam Goreng Lalapan</h3>
+      <p class="text-sm text-gray-600 mb-4">Ayam goreng garing disajikan dengan lalapan segar dan sambal pedas, jadi andalan makan malam sederhana.</p>
+      <button onclick="toggleResep('resep-ayamgorenglalapan')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-ayamgorenglalapan" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>4 potong ayam</li>
+          <li>3 siung bawang putih</li>
+          <li>1 sdt ketumbar</li>
+          <li>2 cm kunyit</li>
+          <li>Garam secukupnya</li>
+          <li>Air dan minyak untuk menggoreng</li>
+          <li>Lalapan: timun, kol, kemangi, tomat</li>
+          <li>Sambal: cabai rawit, tomat, bawang merah</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Haluskan bawang putih, ketumbar, kunyit, dan garam. Rebus ayam dengan bumbu halus hingga empuk dan air menyusut. Goreng ayam hingga keemasan. Untuk sambal, ulek bahan sambal mentah atau rebus dahulu sesuai selera. Sajikan ayam dengan lalapan dan sambal.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 40 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan ayam kampung untuk rasa lebih gurih.</li>
+          <li>Goreng ayam dalam minyak banyak agar renyah.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Sajikan ayam goreng bersama nasi hangat, lalapan segar, dan sambal pedas untuk pengalaman makan malam khas Indonesia.</p>
+      </div>
+    </div>
+
+     <!-- Capcay Kuah -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/capcay.jpg" alt="Capcay Kuah" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-orange-800">Capcay Kuah</h3>
+      <p class="text-sm text-gray-600 mb-4">Campuran sayuran segar dan kuah gurih yang menyehatkan, cocok untuk makan malam ringan.</p>
+      <button onclick="toggleResep('resep-capcay')" class="mb-3 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">Lihat Resep</button>
+      <div id="resep-capcay" class="hidden">
+        <p class="text-sm text-orange-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>1 buah wortel, iris serong</li>
+          <li>1/2 bonggol kembang kol, potong kecil</li>
+          <li>5 batang sawi, potong-potong</li>
+          <li>1/2 cup jagung muda, iris</li>
+          <li>5 butir bakso, iris tipis</li>
+          <li>1 butir telur</li>
+          <li>2 siung bawang putih, cincang</li>
+          <li>1 sdm saus tiram</li>
+          <li>1 sdm kecap asin</li>
+          <li>1 sdt merica bubuk dan garam secukupnya</li>
+          <li>300 ml air kaldu ayam</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">Tumis bawang putih hingga harum. Masukkan telur, orak-arik. Tambahkan bakso, wortel, dan jagung muda. Tuang air kaldu dan masukkan saus tiram, kecap, garam, dan merica. Masak hingga sayuran setengah matang, lalu tambahkan kembang kol dan sawi. Masak sebentar lagi hingga semua sayuran matang namun tetap renyah. Sajikan hangat.</p>
+        <p class="text-sm text-orange-700 font-semibold">Waktu Memasak:</p>
+        <p class="text-sm text-gray-700 mb-2">± 30 menit</p>
+        <p class="text-sm text-orange-700 font-semibold">Tips:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>Gunakan kaldu ayam agar rasa kuah lebih gurih.</li>
+          <li>Jangan terlalu lama memasak sayuran agar teksturnya tetap segar.</li>
+        </ul>
+        <p class="text-sm text-orange-700 font-semibold">Saran Penyajian:</p>
+        <p class="text-sm text-gray-700">Nikmati capcay kuah dengan nasi hangat sebagai pilihan makan malam yang ringan dan bergizi.</p>
+      </div>
+    </div>
 
   </div>
 </section>
