@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Sarapan Indonesia - Jaen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <script>
+    function toggleResep(id) {
+      const div = document.getElementById(id);
+      div.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-yellow-50">
+
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-yellow-800 mb-8 text-center">Menu Sarapan Khas Indonesia</h1>
+
+    <!-- 1: Bubur Ayam -->
+    <div class="bg-white shadow-md rounded-xl p-5 mb-6">
+      <img src="img/bubur-ayam.jpg" alt="Bubur Ayam" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Bubur Ayam</h3>
+      <p class="text-sm text-gray-600 mb-4">Lembut, gurih, dan penuh topping bikin pagi makin semangat!</p>
+      <button onclick="toggleResep('resep-buburayam')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-buburayam" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>100 gr beras</li>
+          <li>1 liter kaldu ayam</li>
+          <li>1/2 ekor ayam, rebus dan suwir</li>
+          <li>1 batang daun bawang, iris halus</li>
+          <li>1 sdm bawang goreng</li>
+          <li>Kecap manis, kerupuk, dan sambal sesuai selera</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Cuci beras, rebus dengan kaldu hingga jadi bubur. Rebus ayam, suwir. Sajikan bubur dengan ayam suwir, bawang goreng, kecap, sambal, dan kerupuk.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2: Lontong Sayur -->
+    <div class="bg-white shadow-md rounded-xl p-5 mb-6">
+      <img src="img/lontong-sayur.jpg" alt="Lontong Sayur" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Lontong Sayur</h3>
+      <p class="text-sm text-gray-600 mb-4">Santan gurih dan lontong kenyal jadi andalan pagi hari.</p>
+      <button onclick="toggleResep('resep-lontongsayur')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-lontongsayur" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>5 buah lontong siap pakai</li>
+          <li>200 gr labu siam</li>
+          <li>100 gr kacang panjang</li>
+          <li>500 ml santan</li>
+          <li>Bumbu halus: bawang merah, bawang putih, kemiri, kunyit, ketumbar</li>
+          <li>Telur rebus, sambal, kerupuk</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Tumis bumbu, masukkan sayur, lalu tuang santan. Rebus hingga empuk. Sajikan dengan lontong, telur, kerupuk, dan sambal.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3: Nasi Uduk -->
+    <div class="bg-white shadow-md rounded-xl p-5 mb-6">
+      <img src="img/nasi-uduk.jpg" alt="Nasi Uduk" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Nasi Uduk</h3>
+      <p class="text-sm text-gray-600 mb-4">Harumnya santan dan rempah, bikin pagi makin nikmat.</p>
+      <button onclick="toggleResep('resep-nasiuduk')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-nasiuduk" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>2 cup beras</li>
+          <li>400 ml santan</li>
+          <li>Daun salam, serai, daun pandan</li>
+          <li>Tempe orek, telur, sambal, bawang goreng</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Masak beras dengan santan dan rempah sampai tanak. Sajikan dengan tempe, telur, sambal, dan bawang goreng.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4: Ketupat Sayur Padang -->
+    <div class="bg-white shadow-md rounded-xl p-5 mb-6">
+      <img src="img/ketupat-sayur.jpg" alt="Ketupat Sayur Padang" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Ketupat Sayur Padang</h3>
+      <p class="text-sm text-gray-600 mb-4">Kuah santan pedas dan bumbu khas bikin sarapan makin semangat!</p>
+      <button onclick="toggleResep('resep-ketupatsayur')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-ketupatsayur" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>4 buah ketupat</li>
+          <li>100 gr nangka muda</li>
+          <li>100 gr kacang panjang</li>
+          <li>500 ml santan</li>
+          <li>Bumbu halus: bawang merah, bawang putih, kunyit, cabai, ketumbar</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Tumis bumbu, masukkan nangka lalu santan. Rebus sampai empuk, lalu tambahkan kacang panjang. Sajikan dengan ketupat.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5: Bubur Kacang Hijau -->
+    <div class="bg-white shadow-md rounded-xl p-5 mb-6">
+      <img src="img/bubur-kacanghijau.jpg" alt="Bubur Kacang Hijau" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Bubur Kacang Hijau</h3>
+      <p class="text-sm text-gray-600 mb-4">Hangat, manis, dan lembut. Cocok buat sarapan santai.</p>
+      <button onclick="toggleResep('resep-buburkacanghijau')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-buburkacanghijau" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>200 gr kacang hijau</li>
+          <li>150 gr gula merah</li>
+          <li>200 ml santan</li>
+          <li>Daun pandan, garam</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Rebus kacang hingga empuk. Tambahkan gula dan santan, aduk terus agar tidak pecah. Sajikan hangat.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6: Roti Bakar Cokelat Keju -->
+    <div class="bg-white shadow-md rounded-xl p-5">
+      <img src="img/roti-bakar.jpg" alt="Roti Bakar" class="w-full h-40 object-cover rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-yellow-800">Roti Bakar Cokelat Keju</h3>
+      <p class="text-sm text-gray-600 mb-4">Manis, renyah, dan lumer. Teman teh atau kopi di pagi hari.</p>
+      <button onclick="toggleResep('resep-rotibakar')" class="mb-3 px-4 py-2 bg-yellow-500 text-white text-sm rounded hover:bg-yellow-600">Lihat Resep</button>
+      <div id="resep-rotibakar" class="hidden">
+        <p class="text-sm text-yellow-700 font-semibold">Bahan:</p>
+        <ul class="list-disc list-inside text-sm text-gray-700 mb-2">
+          <li>4 lembar roti tawar</li>
+          <li>Margarin, meses cokelat, keju parut</li>
+          <li>Susu kental manis (opsional)</li>
+        </ul>
+        <p class="text-sm text-yellow-700 font-semibold">Cara Membuat:</p>
+        <p class="text-sm text-gray-700 mb-2">
+          Olesi roti dengan margarin. Panggang kedua sisi hingga kecoklatan. Tambahkan meses dan keju, sajikan hangat.
+        </p>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
