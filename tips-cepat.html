@@ -3,29 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tips Memasak - Jaen</title>
-  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Tips Cepat & Resep Praktis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
-<body class="bg-orange-50 text-gray-800 leading-relaxed">
-  <div class="max-w-3xl mx-auto p-6">
-    <a href="index.html" class="text-sm text-orange-600 hover:underline">&larr; Kembali ke Beranda</a>
-    <h1 class="text-3xl font-bold mb-4 text-orange-700">Tips Memasak</h1>
-    <p class="mb-4">
-      Memasak adalah seni dan keterampilan. Untuk menghasilkan masakan yang lezat, ada beberapa teknik dan rahasia yang bisa kamu praktikkan di dapur.
-    </p>
-    <ul class="list-disc ml-5 space-y-3">
-      <li><strong>Gunakan bahan segar:</strong> Rasa makanan sangat dipengaruhi oleh kualitas bahan.</li>
-      <li><strong>Panaskan alat masak terlebih dahulu:</strong> Supaya masak lebih merata.</li>
-      <li><strong>Cicipi saat memasak:</strong> Biar rasa bisa disesuaikan.</li>
-      <li><strong>Gunakan bumbu bertahap:</strong> Agar tidak keasinan.</li>
-      <li><strong>Fokus pada teknik dasar:</strong> Kuasai menumis, mengukus, merebus, dan menggoreng.</li>
-    </ul>
+<body class="text-gray-800">
+
+  <!-- Background -->
+  <div class="min-h-screen bg-[url('img/bg-cepat.jpeg')] bg-cover bg-center bg-no-repeat bg-fixed">
+
+    <!-- Overlay -->
+    <div class="min-h-screen bg-white bg-opacity-90">
+
+      <!-- Header -->
+      <header class="py-10 text-center">
+        <h1 class="text-4xl font-bold text-indigo-800">⚡ Tips Cepat & Resep Praktis untuk Keseharian</h1>
+        <p class="text-indigo-600 mt-2 text-lg">Masak kilat, rasa nikmat. Solusi buat hari sibuk!</p>
+      </header>
+
+      <!-- Konten -->
+      <main class="max-w-3xl mx-auto px-6 py-10 space-y-6">
+
+        <!-- Tips Cepat -->
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-indigo-400">
+          <h2 class="text-xl font-semibold text-indigo-700 mb-2">1. Siapkan Bahan di Awal Minggu</h2>
+          <p>Cuci, potong, dan simpan sayuran, daging, serta bumbu dasar di kulkas agar proses masak harian lebih cepat.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-blue-400">
+          <h2 class="text-xl font-semibold text-blue-700 mb-2">2. Gunakan Rice Cooker Multifungsi</h2>
+          <p>Bisa untuk nasi, bubur, kukus, bahkan sup. Tinggal tekan tombol dan tunggu jadi.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-lime-400">
+          <h2 class="text-xl font-semibold text-lime-700 mb-2">3. Masakan 1 Wajan</h2>
+          <p>Gabungkan semua bahan jadi satu tumisan seperti capcay, orak-arik, atau nasi goreng. Praktis dan cepat.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-teal-400">
+          <h2 class="text-xl font-semibold text-teal-700 mb-2">4. Pakai Frozen Food Sehat</h2>
+          <p>Simpan sayur beku, ayam marinasi, atau edamame sebagai cadangan. Tinggal panaskan.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-yellow-400">
+          <h2 class="text-xl font-semibold text-yellow-600 mb-2">5. Buat Menu Batch Cooking</h2>
+          <p>Masak banyak sekaligus (contoh: rendang, sop), simpan dalam wadah, panaskan saat butuh.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-orange-400">
+          <h2 class="text-xl font-semibold text-orange-700 mb-2">6. Simpan Ide Menu Harian</h2>
+          <p>Siapkan daftar makanan kilat seperti telur ceplok sambal, mie goreng, atau tahu tumis.</p>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-pink-400">
+          <h2 class="text-xl font-semibold text-pink-700 mb-2">7. Gunakan Bumbu Instan Berkualitas</h2>
+          <p>Bumbu instan seperti rendang, soto, atau kari bisa jadi penyelamat kalau waktu mepet.</p>
+        </section>
+
+        <!-- Resep Praktis -->
+        <section class="bg-white p-6 rounded-xl shadow border-l-4 border-emerald-400">
+          <h2 class="text-xl font-semibold text-emerald-700 mb-3">🍳 Resep Praktis untuk Keseharian</h2>
+
+          <div class="space-y-4 text-gray-700 text-sm">
+            <div>
+              <h3 class="font-semibold text-emerald-800">1. Telur Kecap Pedas</h3>
+              <p><strong>Bahan:</strong> 3 telur, 2 siung bawang putih, 2 sdm kecap manis, cabai rawit, garam, merica.</p>
+              <p><strong>Cara:</strong> Goreng telur, sisihkan. Tumis bawang & cabai, masukkan kecap & air, aduk dengan telur. Masak sebentar.</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-emerald-800">2. Sayur Bening Bayam</h3>
+              <p><strong>Bahan:</strong> Bayam, jagung, bawang merah, garam, gula, air.</p>
+              <p><strong>Cara:</strong> Rebus air, masukkan bawang & jagung. Tambahkan bayam, bumbui, masak hingga layu.</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-emerald-800">3. Tahu Tumis Cabai Hijau</h3>
+              <p><strong>Bahan:</strong> Tahu putih, cabai hijau, bawang putih, kecap asin.</p>
+              <p><strong>Cara:</strong> Goreng tahu, tumis bawang & cabai, masukkan tahu, beri kecap & sedikit air, masak hingga bumbu meresap.</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-emerald-800">4. Nasi Goreng Simple</h3>
+              <p><strong>Bahan:</strong> Nasi, 1 telur, bawang putih, kecap manis, garam, cabai.</p>
+              <p><strong>Cara:</strong> Tumis bawang & telur, masukkan nasi & bumbu, aduk rata, sajikan dengan topping sesuai selera.</p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
   </div>
+
 </body>
 </html>
