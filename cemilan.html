@@ -108,33 +108,33 @@
   </script>
 </head>
 <body class="bg-orange-50 pt-20">
-<!-- Search Modal for Mobile -->
-    <div id="searchModal" class="search-modal fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
-        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md mx-4">
-            <div class="p-4">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800">Cari Resep</h3>
-                    <button id="closeSearchModal" class="text-gray-500 hover:text-gray-700">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex items-center bg-gray-100 rounded-full px-4 py-3">
-                    <input 
-                        type="text" 
-                        placeholder="Mau Masak Apa Hari Ini?" 
-                        class="bg-transparent outline-none text-gray-600 flex-1"
-                    >
-                    <button class="ml-2 p-1 hover:bg-gray-200 rounded-full transition-colors">
-                        <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
-                        </svg>
-                    </button>
-                </div>
+ <!-- Search Modal for Mobile -->
+<div id="searchModal" class="search-modal">
+    <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md mx-4">
+        <div class="p-4">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Cari Resep</h3>
+                <button id="closeSearchModal" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex items-center bg-gray-100 rounded-full px-4 py-3">
+                <input 
+                    type="text" 
+                    placeholder="Mau Masak Apa Hari Ini?" 
+                    class="bg-transparent outline-none text-gray-600 flex-1"
+                >
+                <button class="ml-2 p-1 hover:bg-gray-200 rounded-full transition-colors">
+                    <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Header -->
     <header class="bg-gradient-to-r from-orange-100 to-yellow-50 shadow-lg fixed top-0 left-0 right-0 z-40">
@@ -179,24 +179,25 @@
                                         <div class="max-h-64 overflow-y-auto">
                                             <ul class="space-y-1">
                                                 <li><a href="bali.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Bali</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Timur</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Aceh</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Barat</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Tengah</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">DKI Jakarta</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Utara</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Barat</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Selatan</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Timur</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Selatan</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Utara</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Selatan</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Papua</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Maluku</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Barat</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Timur</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Yogyakarta</a></li>
-                                                <li><a href="#" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Lampung</a></li>
+                                                <li><a href="jawatimur.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Timur</a></li>
+                                                <li><a href="aceh.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Aceh</a></li>
+                                                <li><a href="jawabarat.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Barat</a></li>
+                                                <li><a href="jawatengah.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Jawa Tengah</a></li>
+                                                <li><a href="dki-jakarta.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">DKI Jakarta</a></li>
+                                                <li><a href="sumut.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Utara</a></li>
+                                                <li><a href="sumbar.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Barat</a></li>
+                                                <li><a href="sumsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Selatan</a></li>
+                                                <li><a href="kalbar.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Barat</a></li>
+                                                <li><a href="kaltim.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Timur</a></li>
+                                                <li><a href="kalsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Selatan</a></li>
+                                                <li><a href="sulut.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Utara</a></li>
+                                                <li><a href="sulsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Selatan</a></li>
+                                                <li><a href="papua.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Papua</a></li>
+                                                <li><a href="maluku.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Maluku</a></li>
+                                                <li><a href="ntb.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Barat</a></li>
+                                                <li><a href="ntt.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Timur</a></li>
+                                                <li><a href="jogja.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Yogyakarta</a></li>
+                                                <li><a href="lampung.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Lampung</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -230,7 +231,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
+                                        <a href="tips-hemat.html" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
                                             <div class="flex items-center">
                                                 <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                                                     <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
@@ -241,7 +242,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
+                                        <a href="tips-cepat.html" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
                                             <div class="flex items-center">
                                                 <svg class="w-5 h-5 text-blue-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
@@ -252,7 +253,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
+                                        <a href="tips-sehat.html" class="tips-item block px-3 py-3 text-gray-700 hover:text-orange-600 rounded-lg transition-colors">
                                             <div class="flex items-center">
                                                 <svg class="w-5 h-5 text-red-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
                                                     <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
@@ -270,116 +271,129 @@
                     <a href="#contact" class="text-orange-950 font-medium hover:text-orange-600 transition-colors">Contact Us</a>
                 </nav>
 
- <!-- Desktop Search -->                 
-  <div class="hidden md:flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-sm">                     
+<!-- Desktop Search -->                 
+<div class="desktop-search hidden lg:flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-sm">                    
     <input type="text" placeholder="Mau Masak Apa Hari Ini?" class="bg-transparent outline-none text-gray-600 flex-1 text-sm">                     
     <button class="ml-2 p-1 hover:bg-gray-100 rounded-full transition-colors duration-200">                         
         <svg class="w-5 h-5 text-gray-400 hover:text-gray-600" fill="currentColor" viewBox="0 0 20 20">                             
             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
         </svg>                     
-        </button>                 
-    </div>                  
+    </button>                 
+</div>                
     
-    <!-- Mobile Search & Menu Buttons -->                 
-     <div class="flex items-center space-x-3 lg:hidden">                     
-        <!-- Search Button -->                     
-         <button id="mobileSearchBtn"></button>
-        </button>
+   <!-- Mobile Controls - Positioned at far right -->
+<div class="flex items-center space-x-2 lg:hidden ml-auto">   
 
-                    <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" class="text-orange-800">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    
+    <button id="openSearchModal" class="p-3 hover:bg-orange-100 rounded-full transition-colors">
+        <svg class="w-6 h-6 text-orange-800" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuBtn" class="p-3 hover:bg-orange-100 rounded-full transition-colors text-orange-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
+</div>
+
+           <!-- Mobile Menu - Full width dropdown -->
+<div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-orange-200 absolute top-full left-0 right-0 shadow-lg hidden">
+    <div class="container mx-auto px-4 py-4 space-y-4">
+        <a href="#" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">Home</a>
+        
+        <!-- Mobile Resep Masakan -->
+        <div>
+            <button id="mobileRecipeBtn" class="flex items-center justify-between w-full text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">
+                Resep Masakan
+                <svg class="w-4 h-4 transform transition-transform duration-200" id="mobileRecipeIcon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+            </button>
+            <div id="mobileRecipeDropdown" class="mobile-dropdown pl-4 mt-2 hidden">
+                <div class="space-y-3">
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800 mb-2">Kategori Makanan</h4>
+                        <div class="space-y-1">
+                            <a href="sarapan.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sarapan</a>
+                            <a href="makansiang.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Makan Siang</a>
+                            <a href="makanmalam.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Makan Malam</a>
+                            <a href="cemilan.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Cemilan</a>
+                            <a href="minuman.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Minuman</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-800 mb-2">Asal Daerah</h4>
+                        <div class="grid grid-cols-2 gap-1 max-h-32 overflow-y-auto">
+                            <a href="bali.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Bali</a>
+                            <a href="jawatimur.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Timur</a>
+                            <a href="aceh.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Aceh</a>
+                            <a href="jawabarat.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Barat</a>
+                            <a href="jawatengah.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Tengah</a>
+                            <a href="dki-jakarta.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">DKI Jakarta</a>
+                            <a href="sumut.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sumatera Utara</a>
+                            <a href="sumbar.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sumatera Barat</a>
+                            <a href="sumsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sumatera Selatan</a>
+                            <a href="kalbar.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Barat</a>
+                            <a href="kaltim.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Timur</a>
+                            <a href="kalsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Kalimantan Selatan</a>
+                            <a href="sulut.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Utara</a>
+                            <a href="sulsel.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Sulawesi Selatan</a>
+                            <a href="papua.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Papua</a>
+                            <a href="maluku.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Maluku</a>
+                            <a href="ntb.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Barat</a>
+                            <a href="ntt.html" class="dropdown-item text-gray-700 hover:text-orange-600 transition-colors block py-1">Nusa Tenggara Timur</a>
+                            <a href="jogja.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Yogyakarta</a>
+                            <a href="lampung.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Lampung</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Tips -->
+        <div>
+            <button id="mobileTipsBtn" class="flex items-center justify-between w-full text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">
+                Tips
+                <svg class="w-4 h-4 transform transition-transform duration-200" id="mobileTipsIcon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+            </button>
+            <div id="mobileTipsDropdown" class="mobile-dropdown pl-4 mt-2 hidden">
+                <div class="space-y-2">
+                    <a href="tips-memasak.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
+                        <svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                    </button>
+                        <span class="text-sm">Tips Memasak</span>
+                    </a>
+                    <a href="tips-hemat.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
+                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm">Tips Hemat</span>
+                    </a>
+                    <a href="tips-cepat.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
+                        <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm">Tips Cepat</span>
+                    </a>
+                    <a href="tips-sehat.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
+                        <svg class="w-4 h-4 text-red-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm">Tips Sehat</span>
+                    </a>
                 </div>
             </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="mobile-menu lg:hidden bg-white border-t border-orange-200">
-                <div class="px-4 py-4 space-y-4">
-                    <a href="index.html" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">Home</a>
-                    
-                    <!-- Mobile Resep Masakan -->
-                    <div>
-                        <button id="mobileRecipeBtn" class="flex items-center justify-between w-full text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">
-                            Resep Masakan
-                            <svg class="w-4 h-4 transform transition-transform duration-200" id="mobileRecipeIcon" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                        </button>
-                        <div id="mobileRecipeDropdown" class="mobile-dropdown pl-4 mt-2">
-                            <div class="space-y-3">
-                                <div>
-                                    <h4 class="text-sm font-semibold text-gray-800 mb-2">Kategori Makanan</h4>
-                                    <div class="space-y-1">
-                                        <a href="sarapan.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sarapan</a>
-                                        <a href="makansiang.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Makan Siang</a>
-                                        <a href="makanmalam.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Makan Malam</a>
-                                        <a href="cemilan.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Cemilan</a>
-                                        <a href="minuman.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Minuman</a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="text-sm font-semibold text-gray-800 mb-2">Asal Daerah</h4>
-                                    <div class="grid grid-cols-2 gap-1 max-h-32 overflow-y-auto">
-                                        <a href="bali.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Bali</a>
-                                        <a href="jawatimur.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Timur</a>
-                                        <a href="aceh.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Aceh</a>
-                                        <a href="jawabarat.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Barat</a>
-                                        <a href="jawatengah.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Jawa Tengah</a>
-                                        <a href="dki-jakarta.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">DKI Jakarta</a>
-                                        <a href="sumut.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sumatera Utara</a>
-                                        <a href="sumbar.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Sumatera Barat</a>
-                                        <a href="jogja.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Yogyakarta</a>
-                                        <a href="lampung.html" class="block text-gray-700 hover:text-orange-600 transition-colors py-1 text-sm">Lampung</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Mobile Tips -->
-                    <div>
-                        <button id="mobileTipsBtn" class="flex items-center justify-between w-full text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">
-                            Tips
-                            <svg class="w-4 h-4 transform transition-transform duration-200" id="mobileTipsIcon" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                            </svg>
-                        </button>
-                        <div id="mobileTipsDropdown" class="mobile-dropdown pl-4 mt-2">
-                            <div class="space-y-2">
-                                <a href="tips-memasak.html" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
-                                    <svg class="w-4 h-4 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                    </svg>
-                                    <span class="text-sm">Tips Memasak</span>
-                                </a>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
-                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-sm">Tips Hemat</span>
-                                </a>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
-                                    <svg class="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-sm">Tips Cepat</span>
-                                </a>
-                                <a href="#" class="flex items-center text-gray-700 hover:text-orange-600 transition-colors py-2">
-                                    <svg class="w-4 h-4 text-red-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-sm">Tips Sehat</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="#" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">About Us</a>
-                </div>
-            </div>
+        </div>
+        
+        <a href="#contact" class="block text-orange-950 font-medium hover:text-orange-600 transition-colors py-2">Contact Us</a>
+    </div>
+</div>
         </div>
     </header>
 
@@ -685,15 +699,7 @@
 
   </div>
 </section>
-<!-- Mobile Search Bar -->
-    <div class="lg:hidden bg-white shadow-md p-4 fixed top-20 left-0 right-0 z-40">
-        <div class="flex items-center bg-gray-100 rounded-full px-4 py-3">
-            <input type="text" placeholder="Mau Masak Apa Hari Ini?" class="bg-transparent outline-none text-gray-600 flex-1">
-            <svg class="w-5 h-5 text-gray-400 ml-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
-            </svg>
-        </div>
-    </div>
+
     
     <!-- Footer -->
     <footer id="contact" class="bg-slate-800 text-white py-16 px-6 mt-16">
