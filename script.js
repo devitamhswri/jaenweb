@@ -529,7 +529,7 @@ indicators.forEach((indicator, index) => {
 });
 
 // Auto-slide functionality
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 10000);
 
 document.getElementById('lihatSelengkapnyaBtn').addEventListener('click', function(e) {
     e.preventDefault();
