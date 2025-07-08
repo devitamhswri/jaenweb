@@ -1,5 +1,3 @@
-// ==================== ENHANCED MOBILE & DESKTOP DROPDOWN NAVIGATION SCRIPT ====================
-// Combines smooth animations with robust functionality for both mobile and desktop
 
 document.addEventListener('DOMContentLoaded', function() {
     // ==================== ELEMENT REFERENCES ====================
